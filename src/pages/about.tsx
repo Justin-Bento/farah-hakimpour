@@ -3,6 +3,8 @@ import Footer from "@/components/Footer";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { BsFillInboxFill, BsInstagram, BsLinkedin, BsPinterest } from "react-icons/bs"
+
 
 export default function About() {
   return (
@@ -56,14 +58,10 @@ export default function About() {
           </div>
           <div className="">
             <ul role="list" className="flex flex-col my-8">
-              {items.map((item) => (
-                <Link
-                  href={item.link}
-                  key={item.id}
-                  className="p-4 transition-all rounded-lg hover:bg-primary-100 hover:cursor-pointer active:bg-primary-300"
-                >
-                  {" "}
-                  {item.title}
+              {footer_navigation.social.map((item) => (
+                <Link key={item.name} href={item.href} className="flex items-center gap-2 px-3 py-4 transition-all rounded-lg hover:bg-primary-200 active:bg-primary-300 text-primary-500 hover:text-primary-700">
+                  <item.icon className="w-6 h-6" />
+                  <span>{item.name}</span>
                 </Link>
               ))}
             </ul>
@@ -74,21 +72,37 @@ export default function About() {
     </>
   );
 }
-const items = [
-  {
-    id: 1,
-    title: "Instagram",
-    link: "https://www.instagram.com/farahsdesignss_/",
-  },
-  {
-    id: 1,
-    title: "LinkedIn",
-    link: "https://www.linkedin.com/in/farah-hakimpour-0b41911b8/",
-  },
-  {
-    id: 1,
-    title: "Pintrest",
-    link: "https://www.pinterest.ca/fairyhakimpour/_saved/",
-  },
-  // More items...
-];
+const footer_navigation = {
+  social: [
+    {
+      name: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/farah-hakimpour-0b41911b8/',
+      icon: (props: any) => (
+        <BsLinkedin {...props} />
+      )
+    },
+    {
+      name: 'Instagram',
+      href: 'https://www.instagram.com/farahsdesignss_/',
+      icon: (props: any) => (
+        <BsInstagram {...props} />
+      )
+    },
+    {
+      name: 'Pintrest',
+      href: 'https://www.pinterest.ca/fairyhakimpour/_saved/',
+      icon: (props: any) => (
+        <BsPinterest {...props} />
+
+      )
+    },
+    {
+      name: 'Email',
+      href: 'mailto:farahsdesignss@gmail.com',
+      icon: (props: any) => (
+        <BsFillInboxFill {...props} />
+
+      )
+    },
+  ],
+}
