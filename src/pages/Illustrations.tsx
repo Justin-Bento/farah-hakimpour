@@ -1,4 +1,5 @@
 import Appbar from '@/components/Appbar'
+import Footer from '@/components/Footer'
 import Head from 'next/head'
 
 export default function Illustration() {
@@ -13,6 +14,7 @@ export default function Illustration() {
           <h1 className="">Illustration</h1>
         </section>
       </main>
+      <Footer />
     </>
   )
 }

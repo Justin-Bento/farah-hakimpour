@@ -1,5 +1,7 @@
-import Appbar from '@/components/Appbar'
-import Head from 'next/head'
+import Appbar from "@/components/Appbar";
+import Footer from "@/components/Footer";
+
+import Head from "next/head";
 
 export default function Design() {
   return (
@@ -13,7 +15,7 @@ export default function Design() {
           <h1 className="">Design</h1>
         </section>
       </main>
+      <Footer />
     </>
-  )
+  );
 }
-
