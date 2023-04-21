@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function Footer() {
   return (
     <footer className="py-32 bg-primary-200">
-      <div className="wrapper">
+      <div className="px-4 wrapper">
         <nav className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
           {footer_navigation.main.map((item) => (
             <div key={item.name} className="pb-6">

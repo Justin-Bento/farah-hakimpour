@@ -18,7 +18,7 @@ export default function Example() {
 
   return (
     <header className="shadow dark:bg-primary-900/70">
-      <div className="wrapper">
+      <div className="px-4 wrapper">
         <nav className="flex items-center justify-between py-4" aria-label="Global">
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5">
@@ -51,7 +51,7 @@ export default function Example() {
         </nav>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto dark:bg-primary-900 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto bg-primary-50 dark:bg-primary-900 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <Link href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Farah Designs</span>
