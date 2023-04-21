@@ -1,16 +1,19 @@
+import Appbar from '@/components/Appbar'
 import Head from 'next/head'
 
-export default function IllustrationsIndex() {
+export default function Illustration() {
   return (
     <>
       <Head>
-        <title>Illustrations - Farah Hakimpour</title>
+        <title>Illustration - Farah Hakimpour</title>
       </Head>
+      <Appbar />
       <main className="">
         <section className="wrapper">
-          <h1 className="">Illustrations</h1>
+          <h1 className="">Illustration</h1>
         </section>
       </main>
     </>
   )
 }
+
