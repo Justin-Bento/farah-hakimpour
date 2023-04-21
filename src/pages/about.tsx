@@ -4,11 +4,11 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>Home - Farah Hakimpour</title>
+        <title>About - Farah Hakimpour</title>
       </Head>
       <main className="">
         <section className="wrapper">
-          <h1 className="">Home</h1>
+          <h1 className="">About</h1>
         </section>
       </main>
     </>

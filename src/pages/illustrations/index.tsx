@@ -1,14 +1,14 @@
 import Head from 'next/head'
 
-export default function index() {
+export default function IllustrationsIndex() {
   return (
     <>
       <Head>
-        <title>Home - Farah Hakimpour</title>
+        <title>Illustrations - Farah Hakimpour</title>
       </Head>
       <main className="">
         <section className="wrapper">
-          <h1 className="">Home</h1>
+          <h1 className="">Illustrations</h1>
         </section>
       </main>
     </>

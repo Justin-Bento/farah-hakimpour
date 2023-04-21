@@ -1,14 +1,14 @@
 import Head from 'next/head'
 
-export default function index() {
+export default function IllustrationSlug() {
   return (
     <>
       <Head>
-        <title>Home - Farah Hakimpour</title>
+        <title>Illustration Dynamic - Farah Hakimpour</title>
       </Head>
       <main className="">
         <section className="wrapper">
-          <h1 className="">Home</h1>
+          <h1 className="">Illustration Dynamic</h1>
         </section>
       </main>
     </>
