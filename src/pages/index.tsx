@@ -1,4 +1,5 @@
 import Appbar from '@/components/Appbar'
+import Footer from '@/components/Footer'
 import Head from 'next/head'
 
 export default function index() {
@@ -13,6 +14,7 @@ export default function index() {
           <h1 className="">Home</h1>
         </section>
       </main>
+      <Footer />
     </>
   )
 }

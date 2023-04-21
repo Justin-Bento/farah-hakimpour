@@ -1,4 +1,5 @@
 import Appbar from '@/components/Appbar'
+import Footer from '@/components/Footer'
 import Head from 'next/head'
 
 export default function IllustrationDynamic() {
@@ -13,6 +14,7 @@ export default function IllustrationDynamic() {
           <h1 className="">Illustration Dynamic</h1>
         </section>
       </main>
+      <Footer />
     </>
   )
 }
