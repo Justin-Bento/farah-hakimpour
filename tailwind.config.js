@@ -6,6 +6,9 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ["Raleway", "sans-serif"],
+    },
     extend: {
       colors: {
         primary: {
