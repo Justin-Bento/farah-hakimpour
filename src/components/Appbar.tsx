@@ -44,9 +44,13 @@ export default function Example() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-primary-950 dark:text-primary-50">
-              Log in <span aria-hidden="true">&rarr;</span>
-            </a>
+            <Link
+              href="/"
+              target="_blank"
+              className="rounded-md bg-primary-300 px-3.5 py-2.5 text-center text-sm font-semibold text-primary-950 hover:bg-primary-400/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+            >
+              Resume
+            </Link>
           </div>
         </nav>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -81,10 +85,11 @@ export default function Example() {
                 </div>
                 <div className="py-6">
                   <Link
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-6 text-primary-950 dark:text-primary-50"
+                    href="/"
+                    target="_blank"
+                    className="rounded-md bg-primary-300 px-3.5 py-2.5 text-center text-sm font-semibold text-primary-950 hover:bg-primary-400/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
                   >
-                    Log in
+                    Resume
                   </Link>
                 </div>
               </div>
