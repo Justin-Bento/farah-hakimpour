@@ -1,31 +1,35 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 @font-face {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 100 900;
   font-display: block;
   font-style: normal;
-  font-named-instance: 'Regular';
-  src: url('/fonts/Raleway-VariableFont_wght.ttf') format('truetype');
+  font-named-instance: "Regular";
+  src: url("/fonts/Raleway-VariableFont_wght.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 100 900;
   font-display: block;
   font-style: italic;
-  font-named-instance: 'Italic';
-  src: url('/fonts/Raleway-Italic-VariableFont_wght.ttf') format('truetype');
+  font-named-instance: "Italic";
+  src: url("/fonts/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
 }
 
 @layer base {
   body {
-    /* Switched body background based on system theme. */
-    @apply bg-primary-50 dark:bg-primary-950 text-primary-950 dark:text-primary-50;
+    @apply bg-primary-50 text-primary-950 dark:bg-primary-950 dark:text-primary-50;
   }
 }
 @layer components {
   .wrapper {
     @apply container mx-auto sm:px-6 lg:px-8;
   }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#__next {
+  min-height: 100%;
 }
