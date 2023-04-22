@@ -2,13 +2,15 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: [
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    fontFamily: {
-      sans: ["Raleway", ...defaultTheme.fontFamily.sans],
-    },
     extend: {
+      fontFamily: {
+        sans: ["Raleway", ...defaultTheme.fontFamily.sans],
+      },
       colors: {
         primary: {
           50: "#faf7fc",
