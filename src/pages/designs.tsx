@@ -21,6 +21,8 @@ export default function design({posts}: any) {
     <>
       <Head>
         <title>Design - Farah Hakimpour</title>
+        <meta name="title" content=">Design - Farah Hakimpour" />
+        <meta name="description" content="Get to know Fara Hakimpour - a talented Graphic Designer and Illustrator based in Vancouver. Explore her digital portfolio and discover her creative process. " />
       </Head>
       <Appbar />
       <main className="p-4 my-32 space-y-16 wrapper">

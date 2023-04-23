@@ -16,11 +16,13 @@ export async function getStaticProps() {
   };
 }
 
-export default function Illustrations({posts}:any) {
+export default function Illustrations({ posts }: any) {
   return (
     <>
       <Head>
         <title>Illustrations - Farah Hakimpour</title>
+        <meta name="title" content=">Illustrations - Farah Hakimpour" />
+        <meta name="description" content="Get to know Fara Hakimpour - a talented Graphic Designer and Illustrator based in Vancouver. Explore her digital portfolio and discover her creative process. " />
       </Head>
       <Appbar />
       <main className="p-4 my-32 space-y-16 wrapper">
@@ -32,7 +34,7 @@ export default function Illustrations({posts}:any) {
           {posts.map((posts: any) => {
             return (
               <Link key={posts._id} href={`/illustrations/${posts.slug.current}`}>
-                <div  className="overflow-hidden h-[350px] transition-all border rounded-lg border-primary-300 bg-primary-200 hover:opacity-80 hover:cursor-pointer">
+                <div className="overflow-hidden h-[350px] transition-all border rounded-lg border-primary-300 bg-primary-200 hover:opacity-80 hover:cursor-pointer">
                   <div className="px-4 py-5 sm:p-6">&nbsp;</div>
                 </div>
               </Link>

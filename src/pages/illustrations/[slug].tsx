@@ -7,6 +7,8 @@ export default function IllustrationDynamic() {
     <>
       <Head>
         <title>Illustration Dynamic - Farah Hakimpour</title>
+        <meta name="title" content=">Design - Farah Hakimpour" />
+        <meta name="description" content="Get to know Fara Hakimpour - a talented Graphic Designer and Illustrator based in Vancouver. Explore her digital portfolio and discover her creative process. " />
       </Head>
       <Appbar />
       <main className="">

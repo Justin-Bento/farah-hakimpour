@@ -1,11 +1,17 @@
 import Appbar from "@/components/Appbar";
 import Footer from "@/components/Footer";
+import Head from "next/head";
 import { BsBuilding, BsEnvelope, BsPhone } from "react-icons/bs";
 
 export default function Contact() {
   return (
     <>
-    <Appbar  />
+      <Head>
+        <title>Contact - Farah Hakimpour</title>
+        <meta name="title" content=">Contact - Farah Hakimpour" />
+        <meta name="description" content="Get to know Fara Hakimpour - a talented Graphic Designer and Illustrator based in Vancouver. Explore her digital portfolio and discover her creative process. " />
+      </Head>
+      <Appbar />
       <main className="relative isolate">
         <div className="grid grid-cols-1 wrapper lg:grid-cols-2">
           <div className="relative pt-24 pb-20 sm:pt-32 lg:static lg:py-48">
@@ -171,7 +177,7 @@ export default function Contact() {
           </form>
         </div>
       </main>
-    <Footer  />
+      <Footer />
 
     </>
   );
