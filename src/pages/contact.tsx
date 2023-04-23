@@ -9,7 +9,10 @@ export default function Contact() {
       <Head>
         <title>Contact - Farah Hakimpour</title>
         <meta name="title" content=">Contact - Farah Hakimpour" />
-        <meta name="description" content="Get to know Fara Hakimpour - a talented Graphic Designer and Illustrator based in Vancouver. Explore her digital portfolio and discover her creative process. " />
+        <meta
+          name="description"
+          content="Get to know Fara Hakimpour - a talented Graphic Designer and Illustrator based in Vancouver. Explore her digital portfolio and discover her creative process. "
+        />
       </Head>
       <Appbar />
       <main className="relative isolate">
@@ -178,7 +181,6 @@ export default function Contact() {
         </div>
       </main>
       <Footer />
-
     </>
   );
 }

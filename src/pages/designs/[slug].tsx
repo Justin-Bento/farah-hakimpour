@@ -1,5 +1,5 @@
-import Appbar from '@/components/Appbar'
-import Head from 'next/head'
+import Appbar from "@/components/Appbar";
+import Head from "next/head";
 
 export default function DesignDynamic() {
   return (
@@ -7,7 +7,10 @@ export default function DesignDynamic() {
       <Head>
         <title>Design Dynamic - Farah Hakimpour</title>
         <meta name="title" content=">Design - Farah Hakimpour" />
-        <meta name="description" content="Get to know Fara Hakimpour - a talented Graphic Designer and Illustrator based in Vancouver. Explore her digital portfolio and discover her creative process. " />
+        <meta
+          name="description"
+          content="Get to know Fara Hakimpour - a talented Graphic Designer and Illustrator based in Vancouver. Explore her digital portfolio and discover her creative process. "
+        />
       </Head>
       <Appbar />
       <main className="">
@@ -16,6 +19,5 @@ export default function DesignDynamic() {
         </section>
       </main>
     </>
-  )
+  );
 }
-
