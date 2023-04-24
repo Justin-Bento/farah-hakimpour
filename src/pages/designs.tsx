@@ -2,9 +2,8 @@ import Appbar from "@/components/Appbar";
 import Footer from "@/components/Footer";
 
 import Head from "next/head";
-import Link from "next/link";
-import { client, urlFor } from "../../sanityClient";
-import Image from "next/image";
+import { client } from "../../sanityClient";
+import Card from "@/components/Card";
 
 
 export async function getStaticProps() {
@@ -56,22 +55,12 @@ export default function design({ posts }: any) {
           </p>
         </section>
         <section className="responsive-grid">
-          {posts.map((project: any) => {
-            return (
-              <Link key={project._id} href={`/designs/${project.slug.current}`}>
-                <div className="overflow-hidden transition-all border rounded-lg border-primary-300 bg-primary-200 hover:opacity-80 hover:cursor-pointer">
-                  <div className="relative h-[350px]">
-                    <Image
-                      fill
-                      quality={70}
-                      src={urlFor(project.mainImage).url()}
-                      alt={project.title}
-                      className="object-cover object-center rounded-lg"
-                    />
-                  </div>
-                </div>
-              </Link>
-            );
+          {posts.filter((post: any) =>
+            post.categories.some(
+              (category: any) => category.title === "Design"
+            )
+          ).map((post: any) => {
+            return <Card key={post._id} Headline={post.title}  Media={post.mainImage} URL={`/designs/${post.slug.current}`} />
           })}
         </section>
       </main>

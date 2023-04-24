@@ -1,8 +1,7 @@
 import Appbar from "@/components/Appbar";
 import Footer from "@/components/Footer";
-
+import Card from "@/components/Card"
 import Head from "next/head";
-import Link from "next/link";
 
 import { client } from "../../sanityClient";
 
@@ -53,17 +52,12 @@ export default function Illustrations({ posts }: any) {
           </p>
         </section>
         <section className="responsive-grid">
-          {posts.map((posts: any) => {
-            return (
-              <Link
-                key={posts._id}
-                href={`/illustrations/${posts.slug.current}`}
-              >
-                <div className="overflow-hidden h-[350px] transition-all border rounded-lg border-primary-300 bg-primary-200 hover:opacity-80 hover:cursor-pointer">
-                  <div className="px-4 py-5 sm:p-6">&nbsp;</div>
-                </div>
-              </Link>
-            );
+          {posts.filter((post: any) =>
+            post.categories.some(
+              (category: any) => category.title === "Illustrations"
+            )
+          ).map((post: any) => {
+            return <Card key={post._id} Headline={post.title}  Media={post.mainImage} URL={`/illustrations/${post.slug.current}`} />
           })}
         </section>
       </main>
