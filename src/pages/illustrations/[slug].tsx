@@ -1,6 +1,7 @@
 import Appbar from "@/components/Appbar";
 import Footer from "@/components/Footer";
 import Head from "next/head";
+import Image from "next/image";
 
 export default function IllustrationDynamic() {
   return (
@@ -64,11 +65,14 @@ export default function IllustrationDynamic() {
           </div>
         </div>
         <div className="relative pt-16 overflow-hidden lg:pt-20">
-          <img
-            className="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10"
-            src="https://tailwindui.com/img/component-images/project-app-screenshot.png"
-            alt=""
-          />
+        <div className="relative w-full aspect-video">
+            <Image
+              fill
+              className="mb-[-12%] border border-primary-300 rounded-xl shadow-2xl ring-1 ring-gray-900/10"
+              src="/media/dummy-image.png"
+              alt=""
+            />
+          </div>
           <div className="relative" aria-hidden="true">
             <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]" />
           </div>

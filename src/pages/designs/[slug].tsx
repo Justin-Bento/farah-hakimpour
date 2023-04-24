@@ -1,6 +1,7 @@
 import Appbar from "@/components/Appbar";
 import Footer from "@/components/Footer";
 import Head from "next/head";
+import Image from "next/image";
 
 export default function DesignDynamic() {
   return (
@@ -52,21 +53,16 @@ export default function DesignDynamic() {
               </p>
             </div>
           </div>
-          <div className="flex mt-10">
-            <a
-              href="#"
-              className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            >
-              Get started
-            </a>
-          </div>
         </div>
-        <div className="relative pt-16 overflow-hidden lg:pt-20">
-          <img
-            className="mb-[-12%] rounded-xl shadow-2xl ring-1 ring-gray-900/10"
-            src="https://tailwindui.com/img/component-images/project-app-screenshot.png"
-            alt=""
-          />
+        <div className="relative mt-16 overflow-hidden lg:pt-20">
+          <div className="relative w-full aspect-video">
+            <Image
+              fill
+              className="mb-[-12%] border border-primary-300 rounded-xl shadow-2xl ring-1 ring-gray-900/10"
+              src="/media/dummy-image.png"
+              alt=""
+            />
+          </div>
           <div className="relative" aria-hidden="true">
             <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]" />
           </div>
