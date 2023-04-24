@@ -37,7 +37,7 @@ function Content() {
           <p className="text-xl font-medium leading-7 tracking-wide text-purple-600">
             Starting an online business can be both exciting and daunting. With
             so many options and possibilities, it can be hard to know where to
-            start. In this post, we'll be sharing five tips to help you launch a
+            start. In this post, we&#39;ll be sharing five tips to help you launch a
             successful online business and achieve your goals
           </p>
           <div className="border"></div>
@@ -54,7 +54,7 @@ function Content() {
             </p>
             <p className="mt-8">
               Build a strong online presence: Your online presence is your
-              digital storefront, so it's important to make a strong impression.
+              digital storefront, so it&#39;s important to make a strong impression.
               This includes having a professional website, active social media
               profiles, and engaging content.
             </p>
@@ -68,7 +68,7 @@ function Content() {
             </p>
             <p className="mt-8">
               Focus on customer service: Your customers are the lifeblood of
-              your business, so it's important to provide them with excellent
+              your business, so it&#39;s important to provide them with excellent
               service. This includes being responsive to their needs, offering
               high-quality products and services, and going above and beyond to
               exceed their expectations.
