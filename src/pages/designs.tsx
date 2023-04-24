@@ -6,18 +6,32 @@ import Link from "next/link";
 import { client, urlFor } from "../../sanityClient";
 import Image from "next/image";
 
+
 export async function getStaticProps() {
-  const posts = await client.fetch(
-    ` *[_type == "post"] { _id, title, description, body, slug, "mainImage": mainImage.asset->url } `
-  );
+  const data = await client.fetch(`
+    {
+      "posts": *[_type == "post"] {
+        _id,
+        title,
+        description,
+        body,
+        slug,
+        "mainImage": mainImage.asset->url,
+        categories[]-> {
+          title
+        }
+      }
+    }
+  `);
+  const posts = data.posts;
   return {
-    props: {
-      posts,
-    },
+    props: { posts },
   };
 }
 
+
 export default function design({ posts }: any) {
+  console.log(posts);
   return (
     <>
       <Head>
