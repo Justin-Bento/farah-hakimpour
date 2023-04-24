@@ -52,7 +52,7 @@ export default function Illustrations({ posts }: any) {
             each piece is a unique expression of their artistic vision.
           </p>
         </section>
-        <section className="grid grid-cols-1 gap-16 lg:grid-cols-3">
+        <section className="responsive-grid">
           {posts.map((posts: any) => {
             return (
               <Link

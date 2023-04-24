@@ -55,7 +55,7 @@ export default function design({ posts }: any) {
             to life together.
           </p>
         </section>
-        <section className="grid grid-cols-1 gap-16 lg:grid-cols-3">
+        <section className="responsive-grid">
           {posts.map((project: any) => {
             return (
               <Link key={project._id} href={`/designs/${project.slug.current}`}>

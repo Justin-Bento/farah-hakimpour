@@ -24,6 +24,9 @@
   .wrapper {
     @apply container mx-auto sm:px-6 lg:px-8;
   }
+  .responsive-grid {
+    @apply grid grid-cols-1 gap-16 md:grid-cols-2 xl:grid-cols-3;
+  }
 }
 
 @tailwind base;
