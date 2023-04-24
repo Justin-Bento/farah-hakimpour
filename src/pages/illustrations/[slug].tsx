@@ -15,70 +15,78 @@ export default function IllustrationDynamic() {
         />
       </Head>
       <Appbar />
-      <main className="my-16 wrapper">
-        <div className="mx-auto">
-          <p className="text-sm uppercase text-primary-700">
-            Post Catagory
-          </p>
-          <h1 className="mt-2 font-bold text-7xl">
-            This is Where You Make A Cool Headline
-          </h1>
-          <div className="grid grid-cols-1 gap-8 mt-10 text-base leading-7 text-gray-700 lg:max-w-none lg:grid-cols-2">
-            <div>
-              <p>
-                Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-                risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-                Id dolor praesent donec est. Odio penatibus risus viverra tellus
-                varius sit neque erat velit. Faucibus commodo massa rhoncus,
-                volutpat. Dignissim sed eget risus enim. Mattis mauris semper
-                sed amet vitae sed turpis id.
-              </p>
-              <p className="mt-8">
-                Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis
-                odio id et. Id blandit molestie auctor fermentum dignissim.
-                Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate
-                et ultrices hac adipiscing egestas.
-              </p>
-            </div>
-            <div>
-              <p>
-                Erat pellentesque dictumst ligula porttitor risus eget et eget.
-                Ultricies tellus felis id dignissim eget. Est augue maecenas
-                risus nulla ultrices congue nunc tortor.
-              </p>
-              <p className="mt-8">
-                Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis
-                odio id et. Id blandit molestie auctor fermentum dignissim.
-                Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate
-                et ultrices hac adipiscing egestas. Iaculis convallis ac tempor
-                et ut. Ac lorem vel integer orci.
-              </p>
-            </div>
-          </div>
-          <div className="flex mt-10">
-            <a
-              href="#"
-              className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            >
-              Get started
-            </a>
-          </div>
-        </div>
-        <div className="relative pt-16 overflow-hidden lg:pt-20">
-        <div className="relative w-full aspect-video">
-            <Image
-              fill
-              className="mb-[-12%] border border-primary-300 rounded-xl shadow-2xl ring-1 ring-gray-900/10"
-              src="/media/dummy-image.png"
-              alt=""
-            />
-          </div>
-          <div className="relative" aria-hidden="true">
-            <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]" />
-          </div>
-        </div>
+      <main className="wrapper">
+        <Content />
       </main>
       <Footer />
     </>
+  );
+}
+
+function Content() {
+  return (
+    <article className="my-16 space-y-8">
+      <div className="max-w-2xl mx-auto">
+        <div className="space-y-4" aria-label="content-headline">
+          <p className="text-sm font-semibold leading-7 text-purple-400">
+            Article Post Demo
+          </p>
+          <h1 className="text-3xl font-bold tracking-tight text-gray-900 capitalize sm:text-4xl lg:text-5xl ">
+            5 Tips for Starting a Successful Online Business
+          </h1>
+          <p className="text-xl font-medium leading-7 tracking-wide text-purple-600">
+            Starting an online business can be both exciting and daunting. With
+            so many options and possibilities, it can be hard to know where to
+            start. In this post, we'll be sharing five tips to help you launch a
+            successful online business and achieve your goals
+          </p>
+          <div className="border"></div>
+        </div>
+        {/* End Of Content Headline */}
+        <div className="grid grid-cols-1 gap-8 mt-4 text-base leading-7 tracking-wide text-gray-700 lg:max-w-none lg:grid-cols-2">
+          <div>
+            <p>
+              Identify your niche: One of the keys to success in any business is
+              finding your niche. This means identifying a specific area or
+              market that you can serve better than anyone else. Research your
+              target audience and competition to help you narrow down your
+              niche.
+            </p>
+            <p className="mt-8">
+              Build a strong online presence: Your online presence is your
+              digital storefront, so it's important to make a strong impression.
+              This includes having a professional website, active social media
+              profiles, and engaging content.
+            </p>
+          </div>
+          <div>
+            <p>
+              Develop a solid business plan: A business plan is a roadmap that
+              outlines your goals, strategies, and tactics for achieving
+              success. It should include details on your target market, pricing,
+              marketing, and financial projections.
+            </p>
+            <p className="mt-8">
+              Focus on customer service: Your customers are the lifeblood of
+              your business, so it's important to provide them with excellent
+              service. This includes being responsive to their needs, offering
+              high-quality products and services, and going above and beyond to
+              exceed their expectations.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className=" relative aspect-video w-full mb-[-12%] ring-gray-900/10">
+        <Image
+          fill
+          className="shadow-2xl rounded-xl ring-1 "
+          src="https://images.unsplash.com/photo-1613909207039-6b173b755cc1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1247&q=80"
+          alt=""
+        />
+      </div>
+      <div className="relative" aria-hidden="true">
+        <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]" />
+      </div>
+    </article>
   );
 }
