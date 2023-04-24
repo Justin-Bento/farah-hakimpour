@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: "Raleway";
   font-weight: 100 900;
@@ -15,24 +19,18 @@
   src: url("/fonts/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
 }
 
+#__next {
+  min-height: 100%;
+}
+
 @layer base {
   body {
-    @apply bg-primary-50 text-primary-950 dark:bg-primary-950 dark:text-primary-50;
+    @apply bg-fuchsia-50 text-fuchsia-950 dark:bg-fuchsia-950 dark:text-fuchsia-50;
   }
-}
-@layer components {
   .wrapper {
     @apply container mx-auto sm:px-6 lg:px-8;
   }
   .responsive-grid {
     @apply grid grid-cols-1 gap-16 md:grid-cols-2 xl:grid-cols-3;
   }
-}
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-#__next {
-  min-height: 100%;
 }

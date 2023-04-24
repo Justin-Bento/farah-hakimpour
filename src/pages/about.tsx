@@ -73,7 +73,7 @@ export default function About() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="flex items-center gap-2 px-3 py-4 transition-all rounded-lg hover:bg-primary-200 active:bg-primary-300 text-primary-500 hover:text-primary-700"
+                    className="flex items-center gap-2 px-3 py-4 transition-all rounded-lg hover:bg-fuchsia-200 active:bg-fuchsia-300 text-fuchsia-500 hover:text-fuchsia-700"
                   >
                     <item.icon className="w-6 h-6" />
                     <span>{item.name}</span>
@@ -91,8 +91,8 @@ export default function About() {
             </h2>
           </div>
           <div className="grid grid-cols-2 gap-8 mt-8">
-            <div className="w-full h-64 bg-primary-400 rounded-xl">&nbsp;</div>
-            <div className="w-full h-64 bg-primary-400 rounded-xl">&nbsp;</div>
+            <div className="w-full h-64 bg-fuchsia-400 rounded-xl">&nbsp;</div>
+            <div className="w-full h-64 bg-fuchsia-400 rounded-xl">&nbsp;</div>
           </div>
         </section>
         {/* End Of Testimonials */}
