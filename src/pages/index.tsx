@@ -12,7 +12,7 @@ export default function index() {
       <Appbar />
       <main className="p-4 my-16 lg:wrapper md:p-0 md:my-0 theme">
         <div className="flex flex-col-reverse justify-center w-full gap-8 md:justify-normal md:p-0 md:flex-row md:items-center">
-          <section className="w-full aspect-video md:w-[350px] lg:w-[570px] md:h-[90vh] relative mt-16 md:mt-0">
+          <section className="w-full aspect-video md:w-[350px] lg:w-[570px] md:h-[93vh] relative mt-16 md:mt-0">
             <Image
               fill
               quality={70}
