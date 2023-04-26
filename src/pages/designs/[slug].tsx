@@ -26,7 +26,7 @@ export default function DesignDynamic() {
 function Content() {
   return (
     <article className="my-16 space-y-8">
-      <div className="max-w-2xl mx-auto">
+      <div className="">
         <div className="space-y-4" aria-label="content-headline">
           <p className="text-sm font-semibold leading-7 text-purple-400">
             Article Post Demo
@@ -79,13 +79,10 @@ function Content() {
       <div className=" relative aspect-video w-full mb-[-12%] ring-gray-900/10">
         <Image
           fill
-          className="shadow-2xl rounded-xl ring-1 "
+          className="rounded-xl ring-1 ring-fuchsia-800"
           src="https://images.unsplash.com/photo-1613909207039-6b173b755cc1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1247&q=80"
           alt=""
         />
-      </div>
-      <div className="relative" aria-hidden="true">
-        <div className="absolute -inset-x-20 bottom-0 bg-gradient-to-t from-white pt-[7%]" />
       </div>
     </article>
   );

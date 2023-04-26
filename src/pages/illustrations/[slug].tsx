@@ -26,7 +26,7 @@ export default function IllustrationDynamic() {
 function Content() {
   return (
     <article className="my-16 space-y-8">
-      <div className="max-w-2xl mx-auto">
+      <div className="">
         <div className="space-y-4" aria-label="content-headline">
           <p className="text-sm font-semibold leading-7 text-purple-400">
             Article Post Demo
