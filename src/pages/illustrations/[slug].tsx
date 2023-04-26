@@ -15,7 +15,6 @@ export default function IllustrationsPost({ post }: any) {
       <main className="my-16 wrapper">
         <article className="space-y-4">
           <div className="pb-4 border-b" aria-label="article-healidne">
-            <p>Introducing</p>
             <h1 className="mb-2 font-bold display-small">{post.title}</h1>
             <p className="title-large">{post.description}</p>
           </div>
@@ -44,6 +43,7 @@ export async function getStaticProps({ params }: any) {
     title,
     description,
     'slug': slug.current,
+    categories[]-> { title }
     "mainImage": mainImage.asset->url,
     body
   }`;
