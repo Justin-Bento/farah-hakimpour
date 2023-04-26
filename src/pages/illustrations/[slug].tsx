@@ -19,7 +19,7 @@ export default function IllustrationsPost({ post }: any) {
             <h1 className="mb-2 font-bold display-small">{post.title}</h1>
             <p className="title-large">{post.description}</p>
           </div>
-          <div className="mt-8 space-y-8 body-large" aria-label="">
+          <div className="mt-8 space-y-4 body-large" aria-label="article-body">
           <div className="relative h-[480px] w-full">
             <Image
               fill
