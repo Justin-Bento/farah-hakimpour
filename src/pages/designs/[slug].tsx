@@ -1,8 +1,9 @@
 import Appbar from "@/components/Appbar";
 import Footer from "@/components/Footer";
-import { client } from "../../../sanityClient";
+import { client, urlFor } from "../../../sanityClient";
 import Head from "next/head";
 import { PortableText } from "@portabletext/react";
+import Image from "next/image";
 
 export default function DesignPost({ post }: any) {
   return (
@@ -11,14 +12,23 @@ export default function DesignPost({ post }: any) {
         <title>{post.title} - Design - Farah Hakimpour</title>
       </Head>
       <Appbar />
-      <main className="my-16 wrapper">
+      <main className="h-screen my-16 wrapper">
         <article className="space-y-4">
-          <div className="" aria-label="article-healidne">
+          <div className="pb-4 border-b" aria-label="article-healidne">
             <p>Introducing</p>
-            <h1>{post.title}</h1>
-            <p>{post.description}</p>
+            <h1 className="mb-2 font-bold display-small">{post.title}</h1>
+            <p className="title-large">{post.description}</p>
           </div>
-          <div className="" aria-label="">
+          <div className="mt-8 space-y-16 body-large" aria-label="">
+          <div className="relative h-[480px] w-full">
+            <Image
+              fill
+              quality={70}
+              src={urlFor(post.mainImage).url()}
+              alt={post.slug}
+              className="object-cover object-center rounded-lg"
+            />
+          </div>
             <PortableText value={post.body} />
           </div>
         </article>
@@ -34,6 +44,7 @@ export async function getStaticProps({ params }: any) {
     title,
     description,
     'slug': slug.current,
+    "mainImage": mainImage.asset->url,
     body
   }`;
 
