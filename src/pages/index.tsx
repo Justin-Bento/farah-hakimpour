@@ -2,6 +2,7 @@ import Appbar from "@/components/Appbar";
 import Footer from "@/components/Footer";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function index() {
   return (
@@ -27,12 +28,12 @@ export default function index() {
               See my designs, art, and love of the colour purple!
             </p>
             <div className="mt-8">
-              <button
-                type="button"
+              <Link
+                href="/designs"
                 className="px-3 py-2 text-sm font-semibold text-white rounded-md bg-fuchsia-600 hover:bg-fuchsia-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600"
               >
                 View Work
-              </button>
+              </Link>
             </div>
           </section>
         </div>
