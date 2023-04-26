@@ -36,33 +36,33 @@
 }
 @layer components {
   .display-large {
-    @apply text-[3.563rem] leading-tight font-normal dark:text-fuchsia-50 text-fuchsia-950
+    @apply text-[3.563rem] leading-tight font-normal dark:text-fuchsia-50 text-fuchsia-950;
   }
   .display-medium {
-    @apply text-[2.813rem] leading-tight tracking-tight font-normal dark:text-fuchsia-50 text-fuchsia-950
+    @apply text-[2.813rem] leading-tight tracking-tight font-normal dark:text-fuchsia-50 text-fuchsia-950;
   }
   .display-small {
-    @apply text-[2.25rem] leading-tight font-normal dark:text-fuchsia-50 text-fuchsia-950
+    @apply text-[2.25rem] leading-tight font-normal dark:text-fuchsia-50 text-fuchsia-950;
   }
   /* End Of Display Typography */
   .headline-large {
-    @apply text-[2rem] leading-tight font-bold capitalize dark:text-fuchsia-50 text-fuchsia-950
+    @apply text-[2rem] leading-tight font-bold capitalize dark:text-fuchsia-50 text-fuchsia-950;
   }
   .headline-medium {
-    @apply text-[1.75rem] leading-tight font-bold capitalize dark:text-fuchsia-50 text-fuchsia-950
+    @apply text-[1.75rem] leading-tight font-bold capitalize dark:text-fuchsia-50 text-fuchsia-950;
   }
   .headline-small {
-    @apply text-[1.5rem] leading-tight font-bold capitalize dark:text-fuchsia-50 text-fuchsia-950
+    @apply text-[1.5rem] leading-tight font-bold capitalize dark:text-fuchsia-50 text-fuchsia-950;
   }
   /* End Of Headline Typography */
   .title-large {
-    @apply text-[1.375rem] leading-tight font-normal dark:text-fuchsia-50 text-fuchsia-950
+    @apply text-[1.375rem] leading-tight font-normal dark:text-fuchsia-50 text-fuchsia-950;
   }
   .title-medium {
-    @apply text-base leading-tight font-normal dark:text-fuchsia-50 text-fuchsia-950
+    @apply text-base font-normal leading-tight dark:text-fuchsia-50 text-fuchsia-950;
   }
   .title-small {
-    @apply text-sm leading-tight font-normal dark:text-fuchsia-50 text-fuchsia-950
+    @apply text-sm font-normal leading-tight dark:text-fuchsia-50 text-fuchsia-950;
   }
   /* End Of title Typography */
   .label-large {
