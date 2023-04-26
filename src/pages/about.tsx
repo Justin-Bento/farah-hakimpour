@@ -24,8 +24,8 @@ export default function About() {
       <Appbar />
       <main className="p-4 mb-16 space-y-16 wrapper">
         <section className="grid grid-cols-1 my-16 lg:grid-cols-2">
-          <div className="w-full space-y-8 text-base font-medium leading-8 tracking-wider lg:max-w-prose">
-            <h1 className="text-4xl font-extrabold leading-[1.3] tracking-[0.02rem]">
+          <div className="w-full space-y-8 body-large lg:max-w-prose">
+            <h1 className="headline-large">
               About Farah Hakimpour: Graphic Designer & Self Taught Artist
             </h1>
             <p>

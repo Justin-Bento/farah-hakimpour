@@ -44,10 +44,10 @@ export default function design({ posts }: any) {
       <Appbar />
       <main className="p-4 my-32 space-y-16 wrapper">
         <section className="space-y-2 ">
-          <h1 className="text-4xl font-extrabold leading-[1.3] tracking-[0.02rem]">
+          <h1 className="mb-2 font-bold headline-large">
             Visually Stunning Designs From Start To Finish!
           </h1>
-          <p className="max-w-5xl text-base leading-8 tracking-wider">
+          <p className="max-w-5xl body-large">
             Browse through my work to get a sense of my style and the type of
             design solutions I can provide for your business or personal brand.
             Contact me to discuss your project and let&#39;s bring your vision

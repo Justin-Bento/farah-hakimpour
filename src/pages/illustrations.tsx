@@ -41,11 +41,11 @@ export default function Illustrations({ posts }: any) {
       <Appbar />
       <main className="p-4 my-32 space-y-16 wrapper">
         <section className="space-y-2 ">
-          <h1 className="text-4xl font-extrabold leading-[1.3] tracking-[0.02rem] capitalize">
+          <h1 className="headline-large">
             {" "}
             vibrant, creative Illustrations!
           </h1>
-          <p className="max-w-5xl text-base leading-8 tracking-wider">
+          <p className="max-w-5xl body-large">
             Bringing my illustrations to life with rich colors and dynamic
             compositions. From whimsical characters to intricate landscapes,
             each piece is a unique expression of their artistic vision.
