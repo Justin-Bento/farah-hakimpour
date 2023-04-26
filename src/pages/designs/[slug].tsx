@@ -12,14 +12,14 @@ export default function DesignPost({ post }: any) {
         <title>{post.title} - Design - Farah Hakimpour</title>
       </Head>
       <Appbar />
-      <main className="h-screen my-16 wrapper">
+      <main className="my-16 wrapper">
         <article className="space-y-4">
           <div className="pb-4 border-b" aria-label="article-healidne">
             <p>Introducing</p>
             <h1 className="mb-2 font-bold display-small">{post.title}</h1>
             <p className="title-large">{post.description}</p>
           </div>
-          <div className="mt-8 space-y-16 body-large" aria-label="">
+          <div className="mt-8 space-y-4 body-large" aria-label="">
           <div className="relative h-[480px] w-full">
             <Image
               fill
