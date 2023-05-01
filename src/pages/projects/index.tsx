@@ -3,6 +3,7 @@ import { client } from "../../../sanityClient";
 import Appbar from "@/components/Appbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import Head from "next/head";
 
 interface Category {
   _id: string;
@@ -17,6 +18,9 @@ export default function CategoryPage(props: CategoryProps) {
   const { data } = props;
   return (
     <>
+      <Head>
+        <title>Projects - Farah Hakimpour</title>
+      </Head>
       <Appbar />
       <main className="my-32 wrapper">
         <section className="my-16 space-y-2">
