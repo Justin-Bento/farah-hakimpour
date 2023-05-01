@@ -2,7 +2,7 @@ import Appbar from "@/components/Appbar";
 import Footer from "@/components/Footer";
 
 import Head from "next/head";
-import { client } from "../../sanityClient";
+import { client } from "../../../../sanityClient";
 import Card from "@/components/Card";
 
 

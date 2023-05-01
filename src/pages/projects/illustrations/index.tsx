@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Card from "@/components/Card"
 import Head from "next/head";
 
-import { client } from "../../sanityClient";
+import { client } from "../../../../sanityClient";
 
 export async function getStaticProps() {
   const data = await client.fetch(`
