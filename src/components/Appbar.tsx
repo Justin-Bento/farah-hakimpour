@@ -8,8 +8,7 @@ import Logo from './Logo';
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
-  { name: 'Designs', href: '/designs' },
-  { name: 'Illustrations', href: '/illustrations' },
+  { name: 'Projects', href: '/projects' },
   { name: 'Contact', href: '/contact' },
 ]
 
@@ -18,7 +17,7 @@ export default function Example() {
 
   return (
     <header className="shadow bg-fuchsia-200/20 dark:bg-fuchsia-900/70">
-      <div className="px-4 wrapper">
+      <div className="wrapper">
         <nav className="flex items-center justify-between py-4" aria-label="Global">
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5">
