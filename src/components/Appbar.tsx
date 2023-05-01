@@ -17,12 +17,12 @@ export default function Example() {
 
   return (
     <header className="shadow bg-fuchsia-200/20 dark:bg-fuchsia-900/70">
-      <div className="wrapper">
+      <div className="px-4 wrapper">
         <nav className="flex items-center justify-between py-4" aria-label="Global">
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Farah Designs</span>
-              <Logo classNames="fill-primary-700 dark:fill-primary-50" />
+              <Logo classNames="fill-fuchsia-700 dark:fill-fuchsia-50" />
             </Link>
           </div>
           <div className="flex lg:hidden">
@@ -32,7 +32,7 @@ export default function Example() {
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
-              <MdMenu className="w-6 h-6 fill-primary-950 dark:fill-primary-50" aria-hidden="true" />
+              <MdMenu className="w-6 h-6 fill-fuchsia-950 dark:fill-fuchsia-50" aria-hidden="true" />
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
@@ -46,7 +46,7 @@ export default function Example() {
             <Link
               href="/"
               target="_blank"
-              className="rounded-md bg-primary-300 px-3.5 py-2.5 text-center text-sm font-semibold text-primary-950 hover:bg-primary-400/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+              className="rounded-md bg-fuchsia-300 px-3.5 py-2.5 text-center text-sm font-semibold text-fuchsia-950 hover:bg-fuchsia-400/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600"
             >
               Resume
             </Link>
@@ -54,11 +54,11 @@ export default function Example() {
         </nav>
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto bg-primary-50 dark:bg-primary-900 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto bg-fuchsia-50 dark:bg-fuchsia-900 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <Link href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Farah Designs</span>
-                <Logo classNames="fill-primary-700 dark:fill-primary-50" />
+                <Logo classNames="fill-fuchsia-700 dark:fill-fuchsia-50" />
               </Link>
               <button
                 type="button"
@@ -66,7 +66,7 @@ export default function Example() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
-                <MdClose className="w-6 h-6 fill-primary-950 dark:fill-primary-50" aria-hidden="true" />
+                <MdClose className="w-6 h-6 fill-fuchsia-950 dark:fill-fuchsia-50" aria-hidden="true" />
               </button>
             </div>
             <div className="flow-root mt-6">
@@ -86,7 +86,7 @@ export default function Example() {
                   <Link
                     href="/"
                     target="_blank"
-                    className="rounded-md bg-primary-300 px-3.5 py-2.5 text-center text-sm font-semibold text-primary-950 hover:bg-primary-400/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+                    className="rounded-md bg-fuchsia-300 px-3.5 py-2.5 text-center text-sm font-semibold text-fuchsia-950 hover:bg-fuchsia-400/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600"
                   >
                     Resume
                   </Link>
