@@ -57,10 +57,10 @@ export default function design({ posts }: any) {
         <section className="responsive-grid">
           {posts.filter((post: any) =>
             post.categories.some(
-              (category: any) => category.title === "Design"
+              (category: any) => category.title === "Designs"
             )
           ).map((post: any) => {
-            return <Card key={post._id} Headline={post.title}  Media={post.mainImage} URL={`/designs/${post.slug.current}`} />
+            return <Card key={post._id} Headline={post.title}  Media={post.mainImage} URL={`/projects/designs/${post.slug.current}`} />
           })}
         </section>
       </main>
