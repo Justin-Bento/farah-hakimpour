@@ -19,7 +19,7 @@ export default function projects(props: CategoryProps) {
         </section>
         <ul className="grid grid-cols-1 gap-8 my-8 md:grid-cols-2">
           {data.map((category) => (
-            <Link href={`/projects/${category.title.toString().toLowerCase()}`} key={category._id} className="overflow-hidden border rounded-lg hover:opacity-80 border-fuchsia-300 bg-fuchsia-200">
+            <Link href={`/projects/${category.title.toString().toLowerCase()}`} key={category._id} className="overflow-hidden border rounded-lg hover:opacity-80 border-fuchsia-300 bg-fuchsia-200 dark:border-fuchsia-700 dark:bg-fuchsia-700">
               <div className="px-4 py-5 sm:p-6">{category.title}</div>
             </Link>
           ))}

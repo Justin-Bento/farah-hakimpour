@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
-    <footer className="py-32 bg-fuchsia-300">
+    <footer className="py-32 bg-fuchsia-300 dark:bg-fuchsia-900/40">
       <div className="wrapper">
         <nav className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
           {footer_navigation.main.map((item) => (
