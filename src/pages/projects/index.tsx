@@ -5,6 +5,24 @@ import Head from "next/head";
 import { client } from "../../../sanityClient";
 import Link from "next/link";
 
+interface Category {
+  _id: string;
+  title: string;
+}
+
+interface CategoryProps {
+  data: Category[];
+}
+
+export const getStaticProps: GetStaticProps<CategoryProps> = async () => {
+  const data = await client.fetch(`
+    *[_type == "category"] {_id, title}
+  `);
+  return {
+    props: { data },
+  };
+};
+
 export default function projects(props: CategoryProps) {
   const { data } = props;
   return (
@@ -30,20 +48,3 @@ export default function projects(props: CategoryProps) {
   )
 }
 
-interface Category {
-  _id: string;
-  title: string;
-}
-
-interface CategoryProps {
-  data: Category[];
-}
-
-export const getStaticProps: GetStaticProps<CategoryProps> = async () => {
-  const data = await client.fetch(`
-    *[_type == "category"] {_id, title}
-  `);
-  return {
-    props: { data },
-  };
-};
