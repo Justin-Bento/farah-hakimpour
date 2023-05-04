@@ -14,7 +14,9 @@ export default function CategoryPage() {
   return (
     <>
       <Appbar />
-      <CategoryHeader Category={category} />
+      <main className="p-4 my-16 space-y-16 wrapper sm:p-0 ">
+        <CategoryHeader Category={category} />
+      </main>
       <Footer />
     </>
   );
@@ -26,30 +28,28 @@ function CategoryHeader({ Category }: CategoryItemComponentProps) {
     case "illustrations":
       return (
         <>
-          <main className="grid-cols-1 p-4 my-16 space-y-16 wrapper sm:p-0 ">
-            <GridList Columns="grid-cols-1 md:grid-cols-2">
-              {files.map((data: any) => {
-                return (
-                  <>
-                    <Link
-                      href={`/projects/${Category}/project_name`}
-                      className="flex flex-col gap-3"
-                    >
-                      <div className="w-full h-[21.875rem] relative">
-                        <Image
-                          fill
-                          src={data.source}
-                          alt=""
-                          className="object-cover object-center rounded"
-                        />
-                      </div>
-                      <p className="body-large">{data.title}</p>
-                    </Link>
-                  </>
-                );
-              })}
-            </GridList>
-          </main>
+          <GridList Columns="grid-cols-1 md:grid-cols-2">
+            {files.map((data: any) => {
+              return (
+                <>
+                  <Link
+                    href={`/projects/${Category}/project_name`}
+                    className="flex flex-col gap-3"
+                  >
+                    <div className="w-full h-[21.875rem] relative">
+                      <Image
+                        fill
+                        src={data.source}
+                        alt=""
+                        className="object-cover object-center rounded"
+                      />
+                    </div>
+                    <p className="body-large">{data.title}</p>
+                  </Link>
+                </>
+              );
+            })}
+          </GridList>
         </>
       );
     default:
