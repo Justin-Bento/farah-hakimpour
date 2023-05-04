@@ -31,13 +31,19 @@ export default function projects(props: CategoryProps) {
         <title>Projects - Farah</title>
       </Head>
       <Appbar />
-      <main className="my-32 wrapper">
-        <section className="">
-          <h1 className="headline-large">projects</h1>
+      <main className="p-4 my-16 space-y-8 wrapper sm:p-0">
+        <section className="space-y-2">
+          <h1 className="title-medium">🖌️ 🎨</h1>
+          <h1 className="headline-large">Let&#39;s Create Something Beautiful Together</h1>
+          <p className="body-large">As a budding graphic designer, I7&#39;m eager to explore all the design disciplines out there. From logo design to typography to web design, I7&#39;m ready to dive in and bring your vision to life. Let7&#39;s work together to create something beautiful and impactful</p>
         </section>
-        <ul className="grid grid-cols-1 gap-8 my-8 md:grid-cols-2">
+        <ul className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {data.map((category) => (
-            <Link href={`/projects/${category.title.toString().toLowerCase()}`} key={category._id} className="overflow-hidden border rounded-lg hover:opacity-80 border-fuchsia-300 bg-fuchsia-200 dark:border-fuchsia-700 dark:bg-fuchsia-700">
+            <Link
+              href={`/projects/${category.title.toString().toLowerCase()}`}
+              key={category._id}
+              className="h-[350px] bg-fuchsia-400 hover:opacity-80 transition-all hover:cursor-pointer rounded  flex place-content-center place-items-center"
+            >
               <div className="px-4 py-5 sm:p-6">{category.title}</div>
             </Link>
           ))}
@@ -45,6 +51,5 @@ export default function projects(props: CategoryProps) {
       </main>
       <Footer />
     </>
-  )
+  );
 }
-
