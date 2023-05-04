@@ -1,58 +1,30 @@
 import Appbar from "@/components/Appbar";
 import Footer from "@/components/Footer";
-import Error from "next/error";
-import { useRouter } from "next/router";
-import { CategoryItemComponentProps } from "../../../../typings";
 import GridList from "@/components/GridList";
-import Image from "next/image";
-import Link from "next/link";
-import { files } from "../../../../lib/data";
+import ImageCard from "@/components/ImageCard";
+import { useRouter } from "next/router";
+import { data } from "../../../../lib/data";
 
-export default function CategoryPage() {
+export default function index() {
   const router = useRouter();
   const { category } = router.query;
+  const Grid_List_Items = data.map((info: any) => {
+    return <ImageCard key={info.id} Media={info.image} Title={info.headline} Links={`/projects/${category}/*`} />
+  })
   return (
     <>
       <Appbar />
-      <main className="p-4 my-16 space-y-16 wrapper sm:p-0 ">
-        <CategoryHeader Category={category} />
+      <main className="p-6 my-4 lg:my-16 wrapper sm:p-0">
+        <section className="my-8 space-y-1 tracking-wider">
+          <h1 className="headline-large">Lorem ipsum dolor sit amet consectetur.</h1>
+          <p className="body-large">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium necessitatibus aut sequi quis, ex, unde quidem, tenetur quibusdam nam animi omnis atque saepe cumque provident? Cum omnis vel corporis minus mollitia maxime sit, voluptatibus cumque? Hic pariatur molestias, iste accusantium illum vero totam.</p>
+        </section>
+        <GridList Columns="grid-cols-1 md:grid-cols-2">
+          {Grid_List_Items}
+        </GridList>
       </main>
       <Footer />
     </>
-  );
+  )
 }
 
-function CategoryHeader({ Category }: CategoryItemComponentProps) {
-  switch (Category) {
-    case "designs":
-    case "illustrations":
-      return (
-        <>
-          <GridList Columns="grid-cols-1 md:grid-cols-2">
-            {files.map((data: any) => {
-              return (
-                <>
-                  <Link
-                    href={`/projects/${Category}/project_name`}
-                    className="flex flex-col gap-3"
-                  >
-                    <div className="w-full h-[21.875rem] relative">
-                      <Image
-                        fill
-                        src={data.source}
-                        alt=""
-                        className="object-cover object-center rounded"
-                      />
-                    </div>
-                    <p className="body-large">{data.title}</p>
-                  </Link>
-                </>
-              );
-            })}
-          </GridList>
-        </>
-      );
-    default:
-      return <Error statusCode={504} />;
-  }
-}
