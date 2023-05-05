@@ -1,12 +1,16 @@
-import Link from 'next/link'
 import React from 'react'
 
-type Props = {}
+type GridListProps = {
+  Columns: string;
+  children: any
+}
 
-export default function GridList({ children, Columns }: any) {
+const GridList: React.FC<GridListProps> = ({ children, Columns }:  GridListProps) => {
   return (
     <div aria-label="grid" className={`grid ${Columns} gap-8 `}>
       {children}
     </div>
   )
 }
+
+export default GridList;
