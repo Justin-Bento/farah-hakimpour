@@ -29,7 +29,7 @@ export default function index() {
             </p>
             <div className="mt-8">
               <Link
-                href="/designs"
+                href="/projects"
                 className="px-3 py-2 text-sm font-semibold text-white rounded-md bg-fuchsia-600 hover:bg-fuchsia-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600"
               >
                 View Work
