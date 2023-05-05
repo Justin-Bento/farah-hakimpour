@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { MdMenu, MdClose } from "react-icons/md";
-
+import { TbExternalLink } from "react-icons/tb";
 import Link from 'next/link';
 import Logo from './Logo';
 
@@ -44,11 +44,12 @@ export default function Example() {
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <Link
-              href="/"
+              href="https://www.linkedin.com/in/farah-hakimpour-0b41911b8/"
               target="_blank"
-              className="rounded-md bg-fuchsia-300 px-3.5 py-2.5 text-center text-sm font-semibold text-fuchsia-950 hover:bg-fuchsia-400/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600"
+              className="rounded-md inline-flex items-center gap-2 bg-fuchsia-300 px-3.5 py-2.5 text-center text-sm font-semibold text-fuchsia-950 hover:bg-fuchsia-400/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600"
             >
-              Resume
+              <TbExternalLink className="w-4 h-4" />
+              LinkedIn
             </Link>
           </div>
         </nav>
@@ -84,11 +85,12 @@ export default function Example() {
                 </div>
                 <div className="py-6">
                   <Link
-                    href="/"
+                    href="https://www.linkedin.com/in/farah-hakimpour-0b41911b8/"
                     target="_blank"
-                    className="rounded-md bg-fuchsia-300 px-3.5 py-2.5 text-center text-sm font-semibold text-fuchsia-950 hover:bg-fuchsia-400/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600"
+                    className="rounded-md inline-flex items-center gap-2 bg-fuchsia-300 px-3.5 py-2.5 text-center text-sm font-semibold text-fuchsia-950 hover:bg-fuchsia-400/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600"
                   >
-                    Resume
+                    <TbExternalLink className="w-4 h-4" />
+                    LinkedIn
                   </Link>
                 </div>
               </div>
