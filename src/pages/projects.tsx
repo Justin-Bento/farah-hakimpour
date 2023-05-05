@@ -8,11 +8,10 @@ import ImageCard from '@/components/ImageCard';
 import GridList from '@/components/GridList';
 
 export default function projects({ posts }: AllPosts) {
-  console.log(posts);
   return (
     <>
       <Appbar />
-      <main className="my-16 wrapper sm:p-0">
+      <main className="p-4 my-16 wrapper sm:p-0">
         <section className="space-y-1.5">
           <p className="body-small">Main Page</p>
           <h1 className="headline-large">Here is where all projects will be listed</h1>
@@ -20,7 +19,7 @@ export default function projects({ posts }: AllPosts) {
         </section>
         <GridList Columns="grid-cols-1 md:grid-cols-2" className='my-8'>
           {posts.map((post: any) => {
-            return <ImageCard key={post._id} Links={post.title} Media={urlFor(post.mainImage)} Title={post.title} CardType={false} />
+            return <ImageCard key={post._id} Links={`/projects/${post.slug.current}`} Media={urlFor(post.mainImage).url()} Title={post.title} CardType={false} />
           })}
         </GridList>
       </main>
@@ -31,7 +30,7 @@ export default function projects({ posts }: AllPosts) {
 
 export const getStaticProps: GetStaticProps<AllPosts> = async () => {
   const data = await client.fetch(`
-    *[_type == "post"]{_id, title,   "mainImage": mainImage.asset->urls  }
+    *[_type == "post"]{_id, title, slug,   "mainImage": mainImage.asset->url  }
   `);
   return {
     props: { posts: data },
