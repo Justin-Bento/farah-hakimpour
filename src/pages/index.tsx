@@ -9,7 +9,7 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>Home - Farah Hakimpour</title>
+        <title>Farah Hakimpour</title>
       </Head>
       <Appbar />
       <main className="p-4 my-16 md:p-0 md:my-0 theme">
@@ -28,7 +28,7 @@ export default function index() {
             </div>
           </div>
           <div className="relative w-full h-screen">
-            <Image fill quality={90} src={`/media/main photo.png`} alt="&nbsp;" className="object-cover object-center rounded-l aspect-square" />
+            <Image fill quality={90} src={`/media/dummy-image.png`} alt="&nbsp;" className="object-cover object-center rounded-l aspect-square" />
           </div>
         </div>
       </main>
