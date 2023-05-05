@@ -2,10 +2,9 @@ import Appbar from "@/components/Appbar";
 import Footer from "@/components/Footer";
 import Head from "next/head";
 import Image from "next/image";
-import { useRouter } from "next/router";
+import Link from "next/link";
 
 export default function index() {
-  const router = useRouter();
   return (
     <>
       <Head>
@@ -18,13 +17,13 @@ export default function index() {
             <div className="lg:pl-24">
               <h1 className="font-bold display-medium">Farah Hakimpour</h1>
               <p className="mt-2 text-xl tracking-wide">See my stunning visuals that blend traditional and modern techniques and include my love of the colour purple!</p>
-              <button
+              <Link
                 type="button"
-                onClick={() => router.push('/projects')}
+                href="/projects"
                 className="px-3 py-2 mt-8 text-sm font-semibold text-white rounded-md shadow-sm bg-fuchsia-600 hover:bg-fuchsia-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 View Projects
-              </button>
+              </Link>
             </div>
           </div>
           <div className="relative w-full h-screen">
