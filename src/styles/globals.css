@@ -24,6 +24,9 @@
 }
 
 @layer base {
+  p {
+    @apply body-large
+  }
   body {
     @apply bg-fuchsia-50 text-fuchsia-950 dark:bg-fuchsia-950 dark:text-fuchsia-50;
   }
@@ -76,7 +79,7 @@
   }
   /* End Of label Typography */
   .body-large {
-    @apply text-base font-normal leading-7 tracking-normal dark:text-fuchsia-50 text-fuchsia-950;
+    @apply text-base font-normal leading-7 tracking-wide dark:text-fuchsia-50 text-fuchsia-950;
   }
   .body-medium {
     @apply text-sm font-normal leading-6 tracking-wide dark:text-fuchsia-50 text-fuchsia-950;
