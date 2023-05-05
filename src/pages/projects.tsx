@@ -6,10 +6,14 @@ import { AllPosts } from '../../typings';
 import { client, urlFor } from '../../sanityClient';
 import ImageCard from '@/components/ImageCard';
 import GridList from '@/components/GridList';
+import Head from 'next/head';
 
 export default function projects({ posts }: AllPosts) {
   return (
     <>
+      <Head>
+        <title>Projects - Farah Hakimpour</title>
+      </Head>
       <Appbar />
       <main className="p-4 my-16 wrapper sm:p-0">
         <section className="space-y-1.5">
