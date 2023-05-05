@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 type Props = {
-  Media: string,
+  Media: any,
   Title: string,
-  Links: string,
+  Links: any,
   CardType: any
 }
 
