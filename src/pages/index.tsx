@@ -9,6 +9,8 @@ export default function index() {
     <>
       <Head>
         <title>Farah Hakimpour</title>
+        <meta name="description" content="Explore Farah Hakimpour's portfolio of digital art, drawing, and graphic design. Unique, traditional, and modern techniques." />
+        <meta name="keywords" content="Digital art, Photography, Graphic design, Traditional techniques Modern techniques Illustration, Website design, Custom art, Creative services, Visuals, Portfolio, Artistic, style,High-quality, Professional"/>
       </Head>
       <Appbar />
       <main className="p-4 my-16 md:p-0 md:my-0 theme">
