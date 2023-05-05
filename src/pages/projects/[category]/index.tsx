@@ -31,7 +31,7 @@ export default function index() {
                 key={info.id}
                 Media={info.image}
                 Title={info.headline}
-                Links={`/projects/${category}/*`}
+                Links={`/projects/${category}/${info.headline.toString().toLowerCase().replace(/\s+/g, "-")}`}
                 CardType={false}
               />
             );
