@@ -32,8 +32,7 @@ const footer_navigation = {
   main: [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
-    { name: 'Designs', href: '/designs' },
-    { name: 'Illustrations', href: '/illustrations' },
+    { name: 'Projects', href: '/projects' },
     { name: 'Contact', href: '/contact' },
   ],
   social: [
