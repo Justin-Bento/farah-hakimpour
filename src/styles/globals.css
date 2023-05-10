@@ -3,20 +3,20 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Raleway";
+  font-family: "Wix Madefor Text";
   font-weight: 100 900;
   font-display: block;
   font-style: normal;
   font-named-instance: "Regular";
-  src: url("/fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+  src: url("/fonts/WixMadeforText-VariableFont_wght.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Raleway";
+  font-family: "Wix Madefor Text";
   font-weight: 100 900;
   font-display: block;
   font-style: italic;
   font-named-instance: "Italic";
-  src: url("/fonts/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
+  src: url("/fonts/WixMadeforText-Italic-VariableFont_wght.ttf") format("truetype");
 }
 
 #__next {
@@ -24,6 +24,9 @@
 }
 
 @layer base {
+  html {
+    font-family: "Wix Madefor Text", sans-serif;
+  }
   p {
     @apply body-large
   }
