@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Raleway", ...defaultTheme.fontFamily.sans],
+        sans: ["Wix Madefor Text", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: {
