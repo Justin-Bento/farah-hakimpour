@@ -37,7 +37,7 @@ export default function Example() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <Link key={item.name} href={item.href} className="p-2 body-large">
+              <Link key={item.name} href={item.href} className="rounded-md bg-transparent px-2.5 py-1.5 font-semibold hover:bg-fuchsia-200 transition-all body-medium active:bg-fuchsia-300 active:text-fuchsia-950">
                 {item.name}
               </Link>
             ))}
@@ -46,7 +46,7 @@ export default function Example() {
             <Link
               href="https://www.linkedin.com/in/farah-hakimpour-0b41911b8/"
               target="_blank"
-              className="rounded-md inline-flex items-center gap-2 bg-fuchsia-300 px-3.5 py-2.5 text-center text-sm font-semibold text-fuchsia-950 hover:bg-fuchsia-400/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600"
+              className="inline-flex items-center gap-x-1.5 rounded-md bg-fuchsia-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-fuchsia-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600"
             >
               <TbExternalLink className="w-4 h-4" />
               LinkedIn
@@ -77,18 +77,17 @@ export default function Example() {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="block px-3 py-2 -mx-3 body-large"
+                      className="rounded-md block bg-transparent px-2.5 py-1.5 font-semibold hover:bg-fuchsia-200 transition-all body-medium active:bg-fuchsia-300 active:text-fuchsia-950"
                     >
                       {item.name}
                     </Link>
                   ))}
                 </div>
-                <div className="py-6">
+                <div className="w-full py-6">
                   <Link
                     href="https://www.linkedin.com/in/farah-hakimpour-0b41911b8/"
                     target="_blank"
-                    className="rounded-md inline-flex items-center gap-2 bg-fuchsia-300 px-3.5 py-2.5 text-center text-sm font-semibold text-fuchsia-950 hover:bg-fuchsia-400/50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600"
-                  >
+                    className="inline-flex w-full items-center gap-x-1.5 rounded-md bg-fuchsia-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-fuchsia-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600">
                     <TbExternalLink className="w-4 h-4" />
                     LinkedIn
                   </Link>
