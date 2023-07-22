@@ -1,3 +1,5 @@
+import { RiFacebookCircleFill, RiInstagramLine, RiTwitterFill, RiLinkedinBoxFill, RiYoutubeFill } from "react-icons/ri";
+
 export const files = [
   {
     title: 'IMG_4985.HEIC',
@@ -58,4 +60,31 @@ export const data = [
   { id: 4, link: "/#", headline: "Project Name", image: "https://images.unsplash.com/photo-1682496693547-77bab4b1f94e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80" },
   { id: 5, link: "/#", headline: "Project Name", image: "https://images.unsplash.com/photo-1682496693547-77bab4b1f94e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80" },
   { id: 6, link: "/#", headline: "Project Name", image: "https://images.unsplash.com/photo-1682496693547-77bab4b1f94e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80" },
+]
+export const footer_navigation = [
+  {
+    name: 'Facebook',
+    href: '#',
+    icon: (props:any) => <RiFacebookCircleFill {...props} />
+  },
+  {
+    name: 'Instagram',
+    href: '#',
+    icon: (props:any) => <RiInstagramLine {...props} />
+  },
+  {
+    name: 'Twitter',
+    href: '#',
+    icon: (props:any) => <RiTwitterFill {...props} />
+  },
+  {
+    name: 'LinkedIn',
+    href: '#',
+    icon: (props:any) => <RiLinkedinBoxFill {...props} />
+  },
+  {
+    name: 'YouTube',
+    href: '#',
+    icon: (props:any) => <RiYoutubeFill {...props} />
+  },
 ]
