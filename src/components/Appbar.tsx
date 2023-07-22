@@ -24,25 +24,27 @@ export default function Appbar() {
         </div>
         <div className={`${mobileMenuOpen ? "hidden lg:flex" : ""}`}>
           <nav className="flex flex-col justify-start w-full gap-6 lg:justify-center lg:flex-row">
-            <Link href="">
+            <Link href="/">
               <Button variant="navLink" size="lg" className="w-full">Home</Button>
             </Link>
-            <Link href="">
+            <Link href="/about">
               <Button variant="navLink" size="lg" className="w-full">About</Button>
             </Link>
-            <Link href="">
+            <Link href="/projects">
               <Button variant="navLink" size="lg" className="w-full">Projects</Button>
             </Link>
-            <Link href="">
+            <Link href="/contact">
               <Button variant="navLink" size="lg" className="w-full">Contact</Button>
             </Link>
           </nav>
         </div>
         <div className={`${mobileMenuOpen ? "hidden" : ""} lg:flex lg:items-center md:justify-end`}>
-          <Button variant="secondary" className="flex gap-1.5 w-full lg:w-auto">
-            <RiExternalLinkLine />
-            LinkedIn
-          </Button>
+          <Link target="_blank" href="https://www.linkedin.com/in/farah-hakimpour-0b41911b8/">
+            <Button variant="secondary" className="flex gap-1.5 w-full lg:w-auto">
+              <RiExternalLinkLine />
+              LinkedIn
+            </Button>
+          </Link>
         </div>
       </div>
     </header>
