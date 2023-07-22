@@ -39,7 +39,7 @@ export default function Appbar() {
           </nav>
         </div>
         <div className={`${mobileMenuOpen ? "hidden" : ""} lg:flex lg:items-center md:justify-end`}>
-          <Button className="flex gap-1.5 w-full lg:w-auto">
+          <Button variant="secondary" className="flex gap-1.5 w-full lg:w-auto">
             <RiExternalLinkLine />
             LinkedIn
           </Button>
