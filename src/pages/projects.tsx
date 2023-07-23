@@ -15,11 +15,10 @@ export default function projects({ posts }: AllPosts) {
         <title>Projects - Farah Hakimpour</title>
       </Head>
       <Appbar />
-      <main className="p-4 my-16 wrapper sm:p-0">
+      <main className="p-4 my-16 lg:container lg:mx-auto sm:p-0">
         <section className="space-y-1.5">
-          <p className="body-small">Main Page</p>
-          <h1 className="headline-large">Here is where all projects will be listed</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ipsa, possimus repellat voluptatem ad molestias eius iste obcaecati. Optio ut eligendi ipsam eos aliquam magni! Explicabo voluptatum fugiat rem dolor!</p>
+          <h1 className="pb-2 text-3xl font-semibold tracking-tight capitalize transition-colors scroll-m-20 first:mt-0">Here is where all projects will be listed</h1>
+          <p className="text-base lg:text-xl text-primary-960/70">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ipsa, possimus repellat voluptatem ad molestias eius iste obcaecati. Optio ut eligendi ipsam eos aliquam magni! Explicabo voluptatum fugiat rem dolor!</p>
         </section>
         <GridList Columns="grid-cols-1 md:grid-cols-2" className='my-8'>
           {posts.map((post: any) => {
