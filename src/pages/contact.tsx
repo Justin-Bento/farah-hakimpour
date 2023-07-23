@@ -1,5 +1,6 @@
 import Appbar from "@/components/Appbar";
 import Footer from "@/components/Footer";
+import { Button } from "@/components/Button";
 import Head from "next/head";
 import { BsBuilding, BsEnvelope, BsPhone } from "react-icons/bs";
 
@@ -15,24 +16,24 @@ export default function Contact() {
         />
       </Head>
       <Appbar />
-      <main className="relative isolate">
-        <div className="grid grid-cols-1 wrapper lg:grid-cols-2">
-          <div className="relative pt-24 pb-20 sm:pt-32 lg:static lg:py-48">
-            <div className="max-w-xl mx-auto lg:mx-0 lg:max-w-lg">
-              <h2 className="text-3xl font-bold tracking-tight text-fuchsia-900">
+      <main className="relative p-6 lg:py-32 isolate">
+        <div className="grid items-center grid-cols-1 gap-8 lg:container lg:mx-auto lg:grid-cols-2">
+          <div className="relative ">
+            <div className="mx-auto lg:mx-0 lg:max-w-lg">
+              <h2 className="mb-1 text-3xl font-bold tracking-tight capitalize scroll-m-20 text-primary-960">
                 Get in touch
               </h2>
-              <p className="mt-6 text-lg leading-8 text-fuchsia-950">
+              <p className="leading-7 text-primary-950">
                 Proin volutpat consequat porttitor cras nullam gravida at. Orci
                 molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
                 Arcu sed malesuada et magna.
               </p>
-              <dl className="mt-10 space-y-4 text-base leading-7 text-fuchsia-950">
+              <dl className="mt-10 space-y-4 text-base leading-7 text-primary-950">
                 <div className="flex gap-x-4">
                   <dt className="flex-none">
                     <span className="sr-only">Address</span>
                     <BsBuilding
-                      className="w-6 text-fuchsia-700 h-7"
+                      className="w-6 text-primary-700 h-7"
                       aria-hidden="true"
                     />
                   </dt>
@@ -42,13 +43,13 @@ export default function Contact() {
                   <dt className="flex-none">
                     <span className="sr-only">Telephone</span>
                     <BsPhone
-                      className="w-6 text-fuchsia-700 h-7"
+                      className="w-6 text-primary-700 h-7"
                       aria-hidden="true"
                     />
                   </dt>
                   <dd>
                     <a
-                      className="hover:text-fuchsia-900"
+                      className="hover:text-primary-900"
                       href="tel:+1 (555) 234-5678"
                     >
                       +1 (555) 234-5678
@@ -59,13 +60,13 @@ export default function Contact() {
                   <dt className="flex-none">
                     <span className="sr-only">Email</span>
                     <BsEnvelope
-                      className="w-6 text-fuchsia-700 h-7"
+                      className="w-6 text-primary-700 h-7"
                       aria-hidden="true"
                     />
                   </dt>
                   <dd>
                     <a
-                      className="hover:text-fuchsia-900"
+                      className="hover:text-primary-900"
                       href="mailto:hello@example.com"
                     >
                       hello@example.com
@@ -75,112 +76,113 @@ export default function Contact() {
               </dl>
             </div>
           </div>
-          <form
-            action="#"
-            method="POST"
-            className="px-6 pt-20 pb-24 sm:pb-32 lg:px-8 lg:py-48"
-          >
-            <div className="max-w-xl mx-auto lg:mr-0 lg:max-w-lg">
-              <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-                <div>
-                  <label
-                    htmlFor="first-name"
-                    className="block text-sm font-semibold leading-6 text-fuchsia-900"
-                  >
-                    First name
-                  </label>
-                  <div className="mt-2.5">
-                    <input
-                      type="text"
-                      name="first-name"
-                      id="first-name"
-                      autoComplete="given-name"
-                      className="block w-full rounded-md border-0 px-3.5 py-2 text-fuchsia-900 shadow-sm ring-1 ring-inset ring-fuchsia-300 placeholder:text-fuchsia-400 focus:ring-2 focus:ring-inset focus:ring-fuchsia-600 sm:text-sm sm:leading-6"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label
-                    htmlFor="last-name"
-                    className="block text-sm font-semibold leading-6 text-fuchsia-900"
-                  >
-                    Last name
-                  </label>
-                  <div className="mt-2.5">
-                    <input
-                      type="text"
-                      name="last-name"
-                      id="last-name"
-                      autoComplete="family-name"
-                      className="block w-full rounded-md border-0 px-3.5 py-2 text-fuchsia-900 shadow-sm ring-1 ring-inset ring-fuchsia-300 placeholder:text-fuchsia-400 focus:ring-2 focus:ring-inset focus:ring-fuchsia-600 sm:text-sm sm:leading-6"
-                    />
-                  </div>
-                </div>
-                <div className="sm:col-span-2">
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-semibold leading-6 text-fuchsia-900"
-                  >
-                    Email
-                  </label>
-                  <div className="mt-2.5">
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      autoComplete="email"
-                      className="block w-full rounded-md border-0 px-3.5 py-2 text-fuchsia-900 shadow-sm ring-1 ring-inset ring-fuchsia-300 placeholder:text-fuchsia-400 focus:ring-2 focus:ring-inset focus:ring-fuchsia-600 sm:text-sm sm:leading-6"
-                    />
-                  </div>
-                </div>
-                <div className="sm:col-span-2">
-                  <label
-                    htmlFor="phone-number"
-                    className="block text-sm font-semibold leading-6 text-fuchsia-900"
-                  >
-                    Phone number
-                  </label>
-                  <div className="mt-2.5">
-                    <input
-                      type="tel"
-                      name="phone-number"
-                      id="phone-number"
-                      autoComplete="tel"
-                      className="block w-full rounded-md border-0 px-3.5 py-2 text-fuchsia-900 shadow-sm ring-1 ring-inset ring-fuchsia-300 placeholder:text-fuchsia-400 focus:ring-2 focus:ring-inset focus:ring-fuchsia-600 sm:text-sm sm:leading-6"
-                    />
-                  </div>
-                </div>
-                <div className="sm:col-span-2">
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-semibold leading-6 text-fuchsia-900"
-                  >
-                    Message
-                  </label>
-                  <div className="mt-2.5">
-                    <textarea
-                      name="message"
-                      id="message"
-                      rows={4}
-                      className="block w-full rounded-md border-0 px-3.5 py-2 text-fuchsia-900 shadow-sm ring-1 ring-inset ring-fuchsia-300 placeholder:text-fuchsia-400 focus:ring-2 focus:ring-inset focus:ring-fuchsia-600 sm:text-sm sm:leading-6"
-                      defaultValue={""}
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="flex justify-end mt-8">
-                <button
-                  type="submit"
-                  className="rounded-md bg-fuchsia-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-fuchsia-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-fuchsia-600"
-                >
-                  Send message
-                </button>
-              </div>
-            </div>
-          </form>
+          <MyContactForm />
         </div>
       </main>
       <Footer />
     </>
+  );
+}
+
+function MyContactForm() {
+  return (
+    <form
+      action="#"
+      method="POST"
+      className=""
+    >
+      <div className="max-w-xl mx-auto lg:mr-0 lg:max-w-lg">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+          <div>
+            <label
+              htmlFor="first-name"
+              className="text-sm font-medium leading-none capitalize peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+            >
+              First name
+            </label>
+            <div className="mt-2.5">
+              <input
+                type="text"
+                name="first-name"
+                id="first-name"
+                autoComplete="given-name"
+                className="flex w-full px-3 py-1 text-sm transition-colors border rounded-md shadow-sm h-9 ring-primary-600 border-primary-600 bg-primary-10 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-gray-960/60 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+              />
+            </div>
+          </div>
+          <div>
+            <label
+              htmlFor="last-name"
+              className="text-sm font-medium leading-none capitalize peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+            >
+              Last name
+            </label>
+            <div className="mt-2.5">
+              <input
+                type="text"
+                name="last-name"
+                id="last-name"
+                autoComplete="family-name"
+                className="flex w-full px-3 py-1 text-sm transition-colors border rounded-md shadow-sm h-9 ring-primary-600 border-primary-600 bg-primary-10 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-gray-960/60 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+              />
+            </div>
+          </div>
+          <div className="sm:col-span-2">
+            <label
+              htmlFor="email"
+              className="text-sm font-medium leading-none capitalize peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+            >
+              Email
+            </label>
+            <div className="mt-2.5">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autoComplete="email"
+                className="flex w-full px-3 py-1 text-sm transition-colors border rounded-md shadow-sm h-9 ring-primary-600 border-primary-600 bg-primary-10 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-gray-960/60 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+              />
+            </div>
+          </div>
+          <div className="sm:col-span-2">
+            <label
+              htmlFor="phone-number"
+              className="text-sm font-medium leading-none capitalize peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+            >
+              Phone number
+            </label>
+            <div className="mt-2.5">
+              <input
+                type="tel"
+                name="phone-number"
+                id="phone-number"
+                autoComplete="tel"
+                className="flex w-full px-3 py-1 text-sm transition-colors border rounded-md shadow-sm h-9 ring-primary-600 border-primary-600 bg-primary-10 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-gray-960/60 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+              />
+            </div>
+          </div>
+          <div className="sm:col-span-2">
+            <label
+              htmlFor="message"
+              className="text-sm font-medium leading-none capitalize peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+            >
+              Message
+            </label>
+            <div className="mt-2.5">
+              <textarea
+                name="message"
+                id="message"
+                rows={4}
+                className="flex min-h-[60px] w-full rounded-md border ring-primary-600 border-primary-600 bg-transparent px-3 py-2 text-sm shadow-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+                defaultValue={""}
+              />
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-end mt-8">
+          <Button>Send message</Button>
+        </div>
+      </div>
+    </form>
   );
 }
