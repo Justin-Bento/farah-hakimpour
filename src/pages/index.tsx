@@ -15,7 +15,7 @@ export default function index() {
             <h1 className="text-5xl font-bold tracking-tight scroll-m-20 text-primary-960 ">Hi &#128075;, I&#39;m Farah Hakimpour!</h1>
             <p className="mt-3 text-xl leading-7 tracking-wide">See my designs, art, and love of the colour purple!</p>
             <Link href="/projects">
-              <Button variant="secondary" className="mt-6">Continue</Button>
+              <Button variant="secondary" className="mt-6">View My Work</Button>
             </Link>
           </div>
           <div className="relative w-full aspect-square md:h-screen md:w-72 lg:w-96">
