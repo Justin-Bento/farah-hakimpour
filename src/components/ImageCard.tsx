@@ -14,14 +14,14 @@ export default function ImageCard({ Media, Title, Links, CardType }: Props) {
       <>
         <Link
           href={Links}
-          className="flex flex-col gap-3 transition-all hover:opacity-90"
+          className="flex flex-col gap-3 p-1 transition-all lg:p-4 hover:opacity-80 active:ring-1 ring-primary-400"
         >
-          <div className="w-full h-[20rem] relative">
+          <div className="relative w-full aspect-square ">
             <Image
               fill
               src={Media}
               alt=""
-              className="object-cover object-center transition-all rounded hover:grayscale hover:object-top"
+              className="object-cover object-center rounded-lg"
             />
           </div>
         </Link>
@@ -32,14 +32,14 @@ export default function ImageCard({ Media, Title, Links, CardType }: Props) {
       <>
         <Link
           href={Links}
-          className="flex flex-col gap-3 transition-all hover:opacity-90"
+          className="flex flex-col gap-3 p-1 transition-all lg:p-4 hover:opacity-80 active:ring-1 ring-primary-400"
         >
-          <div className="w-full h-[20rem] relative">
+          <div className="relative w-full aspect-square">
             <Image
               fill
               src={Media}
               alt=""
-              className="object-cover object-center transition-all rounded hover:grayscale hover:object-top"
+              className="object-cover object-center rounded-lg"
             />
           </div>
           <p className="body-large">{Title}</p>
