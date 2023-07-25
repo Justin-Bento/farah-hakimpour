@@ -1,6 +1,8 @@
+import { Button } from "@/components/Button";
 import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { RiArrowLeftLine } from "react-icons/ri";
 
 export default function Error404() {
   const router = useRouter();
@@ -9,25 +11,28 @@ export default function Error404() {
       <Head>
         <title>Page Not Found</title>
       </Head>
-      <main className="flex flex-col justify-center flex-auto wrapper h-[90vh] items-start">
-        <p className="text-base font-semibold leading-8 text-fuchsia-600">
-          404
-        </p>
-        <h1 className="mt-4 text-3xl font-bold tracking-tight text-fuchsia-900 sm:text-5xl">
-          Page not found
-        </h1>
-        <p className="mt-6 text-base leading-7 text-fuchsia-600">
-          Sorry, we couldn&#39;t find the page you&#39;re looking for.
-        </p>
-        <div className="mt-10">
-          <button
-            type="button"
-            onClick={() => router.back()}
-            className="text-sm font-semibold leading-7 text-fuchsia-600"
-          >
-            <span aria-hidden="true">&larr;</span> Back to home
-          </button>
-        </div>
+      <main className="h-[90vh] grid place-content-center">
+        <section className="flex flex-col items-start justify-center flex-auto">
+          <p className="font-mono text-base font-semibold leading-8 text-primary-700">
+            404
+          </p>
+          <h1 className="mt-4 text-3xl font-extrabold tracking-tight capitalize font-sanst-bold text-primary-950 sm:text-5xl">
+            Page not found
+          </h1>
+          <p className="mt-6 text-xl font-medium leading-7 tracking-wide text-primary-950">
+            Sorry, we couldn&#39;t find the page you&#39;re looking for.
+          </p>
+          <div className="mt-10">
+            <Button
+              type="button"
+              onClick={() => router.back()}
+              className="items-center gap-1 font-bold capitalize"
+            >
+              <RiArrowLeftLine />
+              Back to home
+            </Button>
+          </div>
+        </section>
       </main>
     </>
   );
