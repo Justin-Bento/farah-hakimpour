@@ -17,12 +17,12 @@ export default function ProjectsSlug({ post }: any) {
         <article>
           <section className="space-y-4">
             <h1 className="text-4xl font-extrabold tracking-wide scroll-m-20">{post.title}</h1>
-            <p className="text-xl text-primary-960/80">{post.description}</p>
+            <p className="text-xl tracking-wide text-primary-960/80">{post.description}</p>
             <div className="relative aspect-video ">
               <Image fill quality={40} src={urlFor(post.mainImage).url()} alt={`Image of ${post.title}`} className="object-cover " />
             </div>
           </section>
-          <section className="my-8 space-y-8 prose-lg">
+          <section className="my-8 space-y-8 tracking-wide prose-lg">
             <PortableText value={post.body} />
           </section>
         </article>
