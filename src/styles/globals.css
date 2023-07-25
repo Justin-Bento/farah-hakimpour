@@ -26,6 +26,27 @@
 
 @layer base {
   html, body {
-    @apply bg-primary-10;
+    @apply bg-primary-10 dark:bg-primary-960;
+  }
+  header {
+    @apply border border-b bg-primary-50 dark:border-primary-950 dark:text-primary-50 dark:bg-primary-950;
+  }
+  footer {
+    @apply bg-primary-100 dark:text-primary-50 dark:bg-primary-950;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    @apply text-primary-960 dark:text-primary-50;
+  }
+  p {
+    @apply text-primary-960 dark:text-primary-50;
+  }
+  dd {
+    @apply text-primary-960 dark:text-primary-50;
+  }
+  label {
+    @apply text-primary-960 dark:text-primary-50;
+  }
+  a {
+    @apply text-primary-960 dark:text-primary-50;
   }
 }

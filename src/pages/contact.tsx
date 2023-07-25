@@ -20,10 +20,10 @@ export default function Contact() {
         <div className="grid items-center grid-cols-1 gap-8 lg:container lg:mx-auto lg:grid-cols-2">
           <div className="relative ">
             <div className="mx-auto lg:mx-0 lg:max-w-lg">
-              <h2 className="mb-1 text-3xl font-bold tracking-tight capitalize scroll-m-20 text-primary-960">
+              <h2 className="mb-1 text-3xl font-bold tracking-tight capitalize scroll-m-20">
                 Get in touch
               </h2>
-              <p className="leading-7 tracking-wider text-primary-960">
+              <p className="leading-7 tracking-wider">
                 Proin volutpat consequat porttitor cras nullam gravida at. Orci
                 molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
                 Arcu sed malesuada et magna.
@@ -33,7 +33,7 @@ export default function Contact() {
                   <dt className="flex-none">
                     <span className="sr-only">Address</span>
                     <BsBuilding
-                      className="w-6 text-primary-700 h-7"
+                      className="w-6 text-primary-700 dark:text-primary-50/70 h-7"
                       aria-hidden="true"
                     />
                   </dt>
@@ -43,7 +43,7 @@ export default function Contact() {
                   <dt className="flex-none">
                     <span className="sr-only">Telephone</span>
                     <BsPhone
-                      className="w-6 text-primary-700 h-7"
+                      className="w-6 text-primary-700 dark:text-primary-50/70 h-7"
                       aria-hidden="true"
                     />
                   </dt>
@@ -60,7 +60,7 @@ export default function Contact() {
                   <dt className="flex-none">
                     <span className="sr-only">Email</span>
                     <BsEnvelope
-                      className="w-6 text-primary-700 h-7"
+                      className="w-6 text-primary-700 dark:text-primary-50/70 h-7"
                       aria-hidden="true"
                     />
                   </dt>

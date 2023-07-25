@@ -8,7 +8,7 @@ export default function Appbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(true);
   const onClick = () => setMobileMenuOpen((mobileMenuOpen) => !mobileMenuOpen);
   return (
-    <header className="p-4 border-b bg-primary-10 lg:p-4">
+    <header className="p-4 lg:p-4">
       <div className="grid grid-cols-1 gap-6 justify-evenly lg:container lg:mx-auto lg:items-center lg:grid-cols-3">
         <div className="flex justify-between">
           <Link href="/">
