@@ -29,10 +29,10 @@
     @apply bg-primary-10 dark:bg-primary-960;
   }
   header {
-    @apply border border-b bg-primary-10 dark:border-primary-950 dark:text-primary-50 dark:bg-primary-950;
+    @apply border border-b bg-primary-50 dark:border-primary-950 dark:text-primary-50 dark:bg-primary-950;
   }
   footer {
-    @apply bg-primary-10 dark:text-primary-50 dark:bg-primary-950;
+    @apply bg-primary-100 dark:text-primary-50 dark:bg-primary-950;
   }
   h1,h2,h3,h4,h5,h6 {
     @apply text-primary-960 dark:text-primary-50;
