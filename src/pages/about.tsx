@@ -47,7 +47,7 @@ export default function About() {
             <div className="lg:pr-4">
               <div className="lg:max-w-lg">
                 <h1 className="pb-2 mt-2 text-5xl font-bold tracking-normal transition-colors scroll-m-20 first:mt-0">Farah Hakimpour&#39;s</h1>
-                <p className="mt-6 text-base tracking-wider lg:text-xl text-primary-960/70">
+                <p className="mt-6 text-base tracking-wider lg:text-xl text-primary-960/70 dark:text-primary-50/80">
                   Welcome to the world of Farah Hakimpour, an artist who specializes in digital art, photography, and graphic design.
                 </p>
               </div>
