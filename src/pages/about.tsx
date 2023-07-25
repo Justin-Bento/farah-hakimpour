@@ -46,8 +46,8 @@ export default function About() {
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
               <div className="lg:max-w-lg">
-                <h1 className="pb-2 mt-2 text-5xl font-bold tracking-tight transition-colors scroll-m-20 first:mt-0">Farah Hakimpour&#39;s</h1>
-                <p className="mt-6 text-base lg:text-xl text-primary-960/70">
+                <h1 className="pb-2 mt-2 text-5xl font-bold tracking-normal transition-colors scroll-m-20 first:mt-0">Farah Hakimpour&#39;s</h1>
+                <p className="mt-6 text-base tracking-wider lg:text-xl text-primary-960/70">
                   Welcome to the world of Farah Hakimpour, an artist who specializes in digital art, photography, and graphic design.
                 </p>
               </div>
@@ -65,7 +65,7 @@ export default function About() {
           </div>
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
-              <div className="max-w-xl space-y-4 text-base leading-7 text-gray-700 lg:max-w-lg">
+              <div className="max-w-xl space-y-4 text-base leading-7 tracking-wider text-gray-700 lg:max-w-lg">
                 <p>
                   Hi there, I&#39;m Farah Hakimpour - a Graphic Designer and Self
                   Taught Artist. I&#39;m all about creating cool stuff that makes
