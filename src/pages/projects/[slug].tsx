@@ -3,6 +3,8 @@ import Footer from "@/components/Footer";
 import { client, urlFor } from "../../../sanityClient";
 import Head from "next/head";
 import BlogPost from "@/components/BlogPost";
+import { PortableText } from "@portabletext/react";
+import Image from "next/image";
 
 export default function ProjectsSlug({ post }: any) {
   return (
@@ -11,8 +13,19 @@ export default function ProjectsSlug({ post }: any) {
         <title>Project Page</title>
       </Head>
       <Appbar />
-      <main className="p-4 my-16 wrapper sm:p-0">
-        <BlogPost Headline={post.title} Description={post.description} Media={post.mainImage} Content={post.body} />
+      <main className="p-4 my-10 md:my-16 lg:container lg:mx-auto lg:p-0 lg:max-w-[80ch]">
+        <article>
+          <section className="space-y-4">
+            <h1 className="text-4xl font-bold tracking-normal scroll-m-20">{post.title}</h1>
+            <p className="text-xl text-primary-960/80">{post.description}</p>
+            <div className="relative aspect-video ">
+              <Image fill quality={40} src={urlFor(post.mainImage).url()} alt={`Image of ${post.title}`} className="object-cover " />
+            </div>
+          </section>
+          <section className="my-8 space-y-8 prose-lg">
+            <PortableText value={post.body} />
+          </section>
+        </article>
       </main>
       <Footer />
     </>
