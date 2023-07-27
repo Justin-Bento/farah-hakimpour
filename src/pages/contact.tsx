@@ -173,7 +173,7 @@ function MyContactForm() {
           </div>
         </div>
         <div className="mt-8 lg:justify-start">
-          <Button className="flex items-center justify-end gap-1 capitalize">
+          <Button className="flex items-center justify-end gap-1 capitalize" aria-label="send-contact">
             <RiSendPlane2Line />
             Send message
           </Button>
