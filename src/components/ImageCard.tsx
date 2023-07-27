@@ -14,8 +14,9 @@ export default function ImageCard({ Media, Title, Links, CardType }: Props) {
       <>
         <Link
           href={Links}
+          aria-label="image-card-container"
           className="flex flex-col gap-3 p-1 transition-all lg:p-4 hover:opacity-80 active:ring-1 ring-primary-400"
-        >
+          >
           <div className="relative w-full aspect-square ">
             <Image
               fill

@@ -11,7 +11,7 @@ interface CardProps {
 export default function Card({ Headline, Media, URL }: CardProps) {
   return (
     <>
-      <Link href={URL}>
+      <Link href={URL} aria-label="project-card">
         <div className="overflow-hidden transition-all border rounded-lg border-primary-300 bg-primary-200 hover:opacity-80 hover:cursor-pointer">
           <div className="relative h-[350px]">
             <Image

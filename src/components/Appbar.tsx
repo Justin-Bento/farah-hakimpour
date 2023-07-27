@@ -11,7 +11,7 @@ export default function Appbar() {
     <header className="p-4 lg:p-4">
       <div className="grid grid-cols-1 gap-6 justify-evenly lg:container lg:mx-auto lg:items-center lg:grid-cols-3">
         <div className="flex justify-between">
-          <Link href="/">
+          <Link href="/" aria-label="link-to-home">
             <Logo classNames="fill-primary-700 dark:fill-primary-50" />
           </Link>
           {mobileMenuOpen ? (
