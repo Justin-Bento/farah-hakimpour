@@ -1,5 +1,4 @@
-import Appbar from '@/components/Appbar'
-import Footer from '@/components/Footer'
+
 import { Button } from '@/components/Button'
 import React from 'react'
 import Image from 'next/image'
@@ -8,8 +7,7 @@ import Link from 'next/link'
 export default function index() {
   return (
     <>
-      <Appbar />
-      <main className="p-4 py-12 md:p-0 lg:container lg:mx-auto lg:p-0">
+      <section className="">
         <div className="flex flex-col items-start gap-8 md:flex-row md:justify-between md:items-center">
           <div className="">
             <h1 className="text-5xl font-extrabold tracking-normal scroll-m-20 ">Hi &#128075;, I&#39;m Farah Hakimpour!</h1>
@@ -22,9 +20,7 @@ export default function index() {
             <Image fill alt='' src="/media/main photo.png" className="object-cover rounded md:rounded-none " />
           </div>
         </div>
-      </main>
-      <Footer
-      />
+      </section>
     </>
   )
 }

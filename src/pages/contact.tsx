@@ -15,8 +15,7 @@ export default function Contact() {
           content="Get to know Fara Hakimpour - a talented Graphic Designer and Illustrator based in Vancouver. Explore her digital portfolio and discover her creative process. "
         />
       </Head>
-      <Appbar />
-      <main className="relative p-6 lg:py-32 isolate">
+      <section className="relative p-6 lg:py-32 isolate">
         <div className="grid items-center grid-cols-1 gap-8 lg:container lg:mx-auto lg:grid-cols-2">
           <div className="relative ">
             <div className="mx-auto lg:mx-0 lg:max-w-lg">
@@ -78,8 +77,7 @@ export default function Contact() {
           </div>
           <MyContactForm />
         </div>
-      </main>
-      <Footer />
+      </section>
     </>
   );
 }
