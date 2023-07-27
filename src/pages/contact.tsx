@@ -175,10 +175,10 @@ function MyContactForm() {
             </div>
           </div>
         </div>
-        <div className="flex justify-end lg:justify-start mt-8">
-          <Button>
-            Send message
+        <div className=" lg:justify-start mt-8">
+          <Button className="flex justify-end items-center gap-1 capitalize">
             <RiSendPlane2Line />
+            Send message
           </Button>
         </div>
       </div>
