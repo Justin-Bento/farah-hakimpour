@@ -29,6 +29,16 @@ module.exports = {
         },
       },
       // ...
+      animation: {
+        'fadeIn': 'fadeIn 0.75s linear',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+      },
+
     },
   },
   plugins: [
