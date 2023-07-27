@@ -10,7 +10,9 @@ export default function projects({ posts }: AllPosts) {
   return (
     <>
       <Head>
-        <title>Projects - Farah Hakimpour</title>
+        <title>Fara Hakimpour - Projects</title>
+        <meta name="title" content="Fara Hakimpour  - Projects" />
+        <meta name="description" content="Is a Graphic Designer and Illustrator based in Toronto, Ontario. Explore her digital portfolio and discover her creative process. " />
       </Head>
       <article className="p-4 my-16 lg:container lg:mx-auto sm:p-0">
         <section className="space-y-1.5">

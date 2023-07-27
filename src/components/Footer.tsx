@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="px-6 py-12 lg:px-0 lg:mx-auto lg:container md:flex md:items-center md:justify-between">
         <div className="flex justify-center space-x-6 md:order-2">
           {footer_navigation.map((item) => (
-            <Link key={item.name} href={item.href} className="transition-all hover:opacity-80">
+            <Link key={item.name} href={item.href} className="transition-all hover:opacity-80" target="_blank" aria-label="external-link-to-social-media">
               <span className="sr-only">{item.name}</span>
               <item.icon className="w-6 h-6" aria-hidden="true" />
             </Link>

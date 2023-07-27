@@ -3,10 +3,16 @@ import { Button } from '@/components/Button'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Head from 'next/head'
 
 export default function index() {
   return (
     <>
+      <Head>
+        <title>Fara Hakimpour</title>
+        <meta name="title" content="Fara Hakimpour " />
+        <meta name="description" content="Is a Graphic Designer and Illustrator based in Toronto, Ontario. Explore her digital portfolio and discover her creative process. " />
+      </Head>
       <section className="p-4 py-12 md:p-0 lg:container lg:mx-auto lg:p-0">
         <div className="flex flex-col items-start gap-8 md:flex-row md:justify-between md:items-center">
           <div className="">

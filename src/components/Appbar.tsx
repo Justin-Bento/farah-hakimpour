@@ -11,7 +11,7 @@ export default function Appbar() {
     <header className="p-4 lg:p-4">
       <div className="grid grid-cols-1 gap-6 justify-evenly lg:container lg:mx-auto lg:items-center lg:grid-cols-3">
         <div className="flex justify-between">
-          <Link href="/">
+          <Link href="/" aria-label="link-to-home">
             <Logo classNames="fill-primary-700 dark:fill-primary-50" />
           </Link>
           {mobileMenuOpen ? (
@@ -20,6 +20,7 @@ export default function Appbar() {
               size="icon"
               className="lg:hidden"
               onClick={onClick}
+              aria-label="nav-button-open"
             >
               <RiMenuLine />
             </Button>
@@ -29,6 +30,7 @@ export default function Appbar() {
               size="icon"
               className="lg:hidden"
               onClick={onClick}
+              aria-label="nav-button-close"
             >
               <RiCloseLine />
             </Button>
@@ -37,22 +39,22 @@ export default function Appbar() {
         <div className={`${mobileMenuOpen ? "hidden lg:flex" : ""}`}>
           <nav className="flex flex-col justify-start w-full gap-6 lg:justify-center lg:flex-row">
             <Link href="/">
-              <Button variant="navLink" size="lg" className="w-full">
+              <Button variant="navLink" size="lg" className="w-full" aria-label="navigation-link-home">
                 Home
               </Button>
             </Link>
             <Link href="/about">
-              <Button variant="navLink" size="lg" className="w-full">
+              <Button variant="navLink" size="lg" className="w-full" aria-label="navigation-link-about">
                 About
               </Button>
             </Link>
             <Link href="/projects">
-              <Button variant="navLink" size="lg" className="w-full">
+              <Button variant="navLink" size="lg" className="w-full" aria-label="navigation-link-projects">
                 Projects
               </Button>
             </Link>
             <Link href="/contact">
-              <Button variant="navLink" size="lg" className="w-full">
+              <Button variant="navLink" size="lg" className="w-full" aria-label="navigation-link-contact">
                 Contact
               </Button>
             </Link>
@@ -70,6 +72,7 @@ export default function Appbar() {
             <Button
               variant="secondary"
               className="flex gap-1.5 w-full lg:w-auto"
+              aria-label="external-link-to-linkedin"
             >
               <RiExternalLinkLine />
               LinkedIn
