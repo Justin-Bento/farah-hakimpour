@@ -19,11 +19,6 @@
   src: url("/fonts/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
 }
 
-#__next {
-  font-family: "Raleway", sans-serif;
-  min-height: 100%;
-}
-
 @layer base {
   html, body {
     @apply bg-primary-10 dark:bg-primary-960;
@@ -49,4 +44,8 @@
   a {
     @apply text-primary-960 dark:text-primary-50;
   }
+}
+
+#__next {
+  min-height: 100%;
 }
