@@ -1,5 +1,3 @@
-import Appbar from '@/components/Appbar'
-import Footer from '@/components/Footer'
 import { GetStaticProps } from 'next';
 import React from 'react'
 import { AllPosts } from '../../typings';

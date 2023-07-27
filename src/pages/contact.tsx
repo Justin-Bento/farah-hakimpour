@@ -1,5 +1,3 @@
-import Appbar from "@/components/Appbar";
-import Footer from "@/components/Footer";
 import { Button } from "@/components/Button";
 import Head from "next/head";
 import { BsBuilding, BsEnvelope, BsPhone } from "react-icons/bs";

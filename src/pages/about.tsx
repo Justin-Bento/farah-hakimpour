@@ -1,5 +1,3 @@
-import Appbar from "@/components/Appbar";
-import Footer from "@/components/Footer";
 import Head from "next/head";
 import Image from "next/image";
 

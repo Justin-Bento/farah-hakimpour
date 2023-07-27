@@ -1,8 +1,5 @@
-import Appbar from "@/components/Appbar";
-import Footer from "@/components/Footer";
 import { client, urlFor } from "../../../sanityClient";
 import Head from "next/head";
-import BlogPost from "@/components/BlogPost";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 
