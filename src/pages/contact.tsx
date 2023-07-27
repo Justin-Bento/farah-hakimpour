@@ -1,6 +1,6 @@
 import { Button } from "@/components/Button";
 import Head from "next/head";
-import { BsBuilding, BsEnvelope, BsPhone } from "react-icons/bs";
+import { RiBuildingLine, RiMailLine, RiPhoneLine, RiSendPlane2Line } from "react-icons/ri";
 
 export default function Contact() {
   return (
@@ -29,7 +29,7 @@ export default function Contact() {
                 <div className="flex gap-x-4">
                   <dt className="flex-none">
                     <span className="sr-only">Address</span>
-                    <BsBuilding
+                    <RiBuildingLine
                       className="w-6 text-primary-700 dark:text-primary-50/70 h-7"
                       aria-hidden="true"
                     />
@@ -39,7 +39,7 @@ export default function Contact() {
                 <div className="flex gap-x-4">
                   <dt className="flex-none">
                     <span className="sr-only">Telephone</span>
-                    <BsPhone
+                    <RiPhoneLine
                       className="w-6 text-primary-700 dark:text-primary-50/70 h-7"
                       aria-hidden="true"
                     />
@@ -56,7 +56,7 @@ export default function Contact() {
                 <div className="flex gap-x-4">
                   <dt className="flex-none">
                     <span className="sr-only">Email</span>
-                    <BsEnvelope
+                    <RiMailLine
                       className="w-6 text-primary-700 dark:text-primary-50/70 h-7"
                       aria-hidden="true"
                     />
@@ -176,7 +176,10 @@ function MyContactForm() {
           </div>
         </div>
         <div className="flex justify-end lg:justify-start mt-8">
-          <Button>Send message</Button>
+          <Button>
+            Send message
+            <RiSendPlane2Line />
+          </Button>
         </div>
       </div>
     </form>
