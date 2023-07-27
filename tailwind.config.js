@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Wix Madefor Text", ...defaultTheme.fontFamily.sans],
+        sans: ["Raleway", ...defaultTheme.fontFamily.sans],
       },
       colors: {
         primary: {
@@ -29,6 +29,16 @@ module.exports = {
         },
       },
       // ...
+      animation: {
+        'fadeIn': 'fadeIn 1s linear',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+      },
+
     },
   },
   plugins: [

@@ -1,5 +1,3 @@
-import Appbar from "@/components/Appbar";
-import Footer from "@/components/Footer";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -14,8 +12,7 @@ export default function About() {
           content="Get to know Fara Hakimpour - a talented Graphic Designer and Illustrator based in Vancouver. Explore her digital portfolio and discover her creative process. "
         />
       </Head>
-      <Appbar />
-      <main className="relative px-6 py-24 overflow-hidden isolate sm:py-32 lg:overflow-visible lg:px-0">
+      <section className="relative px-6 py-24 overflow-hidden isolate sm:py-32 lg:overflow-visible lg:px-0">
         <div className="absolute inset-0 overflow-hidden -z-10">
           <svg
             className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 dark:stroke-primary-700 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
@@ -95,11 +92,10 @@ export default function About() {
                   projects.
                 </p>
               </div>
-              </div>
             </div>
           </div>
-        </main>
-      <Footer/>
-      </>
-      )
+        </div>
+      </section>
+    </>
+  )
 }

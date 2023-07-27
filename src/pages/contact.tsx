@@ -1,8 +1,6 @@
-import Appbar from "@/components/Appbar";
-import Footer from "@/components/Footer";
 import { Button } from "@/components/Button";
 import Head from "next/head";
-import { BsBuilding, BsEnvelope, BsPhone } from "react-icons/bs";
+import { RiBuildingLine, RiMailLine, RiPhoneLine, RiSendPlane2Line } from "react-icons/ri";
 
 export default function Contact() {
   return (
@@ -15,9 +13,8 @@ export default function Contact() {
           content="Get to know Fara Hakimpour - a talented Graphic Designer and Illustrator based in Vancouver. Explore her digital portfolio and discover her creative process. "
         />
       </Head>
-      <Appbar />
-      <main className="relative p-6 lg:py-32 isolate">
-        <div className="grid items-center grid-cols-1 gap-8 lg:container lg:mx-auto lg:grid-cols-2">
+      <section className="relative p-6 lg:py-32 isolate">
+        <div className="grid items-center lg:items-start grid-cols-1 gap-8 lg:container lg:mx-auto lg:grid-cols-2">
           <div className="relative ">
             <div className="mx-auto lg:mx-0 lg:max-w-lg">
               <h2 className="mb-1 text-3xl font-bold tracking-tight capitalize scroll-m-20">
@@ -32,7 +29,7 @@ export default function Contact() {
                 <div className="flex gap-x-4">
                   <dt className="flex-none">
                     <span className="sr-only">Address</span>
-                    <BsBuilding
+                    <RiBuildingLine
                       className="w-6 text-primary-700 dark:text-primary-50/70 h-7"
                       aria-hidden="true"
                     />
@@ -42,7 +39,7 @@ export default function Contact() {
                 <div className="flex gap-x-4">
                   <dt className="flex-none">
                     <span className="sr-only">Telephone</span>
-                    <BsPhone
+                    <RiPhoneLine
                       className="w-6 text-primary-700 dark:text-primary-50/70 h-7"
                       aria-hidden="true"
                     />
@@ -59,7 +56,7 @@ export default function Contact() {
                 <div className="flex gap-x-4">
                   <dt className="flex-none">
                     <span className="sr-only">Email</span>
-                    <BsEnvelope
+                    <RiMailLine
                       className="w-6 text-primary-700 dark:text-primary-50/70 h-7"
                       aria-hidden="true"
                     />
@@ -78,8 +75,7 @@ export default function Contact() {
           </div>
           <MyContactForm />
         </div>
-      </main>
-      <Footer />
+      </section>
     </>
   );
 }
@@ -179,8 +175,11 @@ function MyContactForm() {
             </div>
           </div>
         </div>
-        <div className="flex justify-end mt-8">
-          <Button>Send message</Button>
+        <div className=" lg:justify-start mt-8">
+          <Button className="flex justify-end items-center gap-1 capitalize">
+            <RiSendPlane2Line />
+            Send message
+          </Button>
         </div>
       </div>
     </form>

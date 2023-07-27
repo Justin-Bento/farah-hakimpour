@@ -1,6 +1,5 @@
 import { Button } from "@/components/Button";
 import Head from "next/head";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import { RiArrowLeftLine } from "react-icons/ri";
 
@@ -11,7 +10,7 @@ export default function Error404() {
       <Head>
         <title>Page Not Found</title>
       </Head>
-      <main className="h-[90vh] grid place-content-center">
+      <section className="h-[90vh] grid place-content-center">
         <section className="flex flex-col items-start justify-center flex-auto">
           <p className="font-mono text-base font-semibold leading-8 text-primary-700">
             404
@@ -33,7 +32,7 @@ export default function Error404() {
             </Button>
           </div>
         </section>
-      </main>
+      </section>
     </>
   );
 }
