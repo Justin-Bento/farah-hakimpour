@@ -1,4 +1,4 @@
-import { RiFacebookCircleFill, RiInstagramLine, RiTwitterFill, RiLinkedinBoxFill, RiYoutubeFill } from "react-icons/ri";
+import { RiInstagramLine, RiLinkedinBoxFill, RiPinterestFill } from "react-icons/ri";
 
 export const files = [
   {
@@ -63,28 +63,18 @@ export const data = [
 ]
 export const footer_navigation = [
   {
-    name: 'Facebook',
-    href: '#',
-    icon: (props:any) => <RiFacebookCircleFill {...props} />
-  },
-  {
     name: 'Instagram',
-    href: '#',
+    href: 'https://www.instagram.com/farahsdesignss_/',
     icon: (props:any) => <RiInstagramLine {...props} />
   },
   {
-    name: 'Twitter',
-    href: '#',
-    icon: (props:any) => <RiTwitterFill {...props} />
+    name: 'Pintrest',
+    href: 'https://www.pinterest.ca/fairyhakimpour/',
+    icon: (props:any) => <RiPinterestFill {...props} />
   },
   {
     name: 'LinkedIn',
-    href: '#',
+    href: 'https://www.linkedin.com/in/farah-hakimpour-0b41911b8/',
     icon: (props:any) => <RiLinkedinBoxFill {...props} />
-  },
-  {
-    name: 'YouTube',
-    href: '#',
-    icon: (props:any) => <RiYoutubeFill {...props} />
   },
 ]
