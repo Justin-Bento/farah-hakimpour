@@ -5,12 +5,9 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About - Farah Hakimpour</title>
-        <meta name="title" content=">Design - Farah Hakimpour" />
-        <meta
-          name="description"
-          content="Get to know Fara Hakimpour - a talented Graphic Designer and Illustrator based in Vancouver. Explore her digital portfolio and discover her creative process. "
-        />
+        <title>Fara Hakimpour - About</title>
+        <meta name="title" content="Fara Hakimpour - About" />
+        <meta name="description" content="Is a Graphic Designer and Illustrator based in Toronto, Ontario. Explore her digital portfolio and discover her creative process. " />
       </Head>
       <section className="relative px-6 py-24 overflow-hidden isolate sm:py-32 lg:overflow-visible lg:px-0">
         <div className="absolute inset-0 overflow-hidden -z-10">

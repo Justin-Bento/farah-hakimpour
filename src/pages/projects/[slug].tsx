@@ -7,7 +7,9 @@ export default function ProjectsSlug({ post }: any) {
   return (
     <>
       <Head>
-        <title>Project Page</title>
+        <title>Fara Hakimpour - {post.title}</title>
+        <meta name="title" content={`Fara Hakimpour - ${post.title}`} />
+        <meta name="description" content="Is a Graphic Designer and Illustrator based in Toronto, Ontario. Explore her digital portfolio and discover her creative process. " />
       </Head>
       <article className="p-4 my-10 md:my-16 lg:container lg:mx-auto lg:p-0 lg:max-w-[80ch]">
         <section className="space-y-4">
