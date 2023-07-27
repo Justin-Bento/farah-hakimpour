@@ -14,7 +14,7 @@ export default function Contact() {
         />
       </Head>
       <section className="relative p-6 lg:py-32 isolate">
-        <div className="grid items-center grid-cols-1 gap-8 lg:container lg:mx-auto lg:grid-cols-2">
+        <div className="grid items-center lg:items-start grid-cols-1 gap-8 lg:container lg:mx-auto lg:grid-cols-2">
           <div className="relative ">
             <div className="mx-auto lg:mx-0 lg:max-w-lg">
               <h2 className="mb-1 text-3xl font-bold tracking-tight capitalize scroll-m-20">
@@ -175,7 +175,7 @@ function MyContactForm() {
             </div>
           </div>
         </div>
-        <div className="flex justify-end mt-8">
+        <div className="flex justify-end lg:justify-start mt-8">
           <Button>Send message</Button>
         </div>
       </div>
