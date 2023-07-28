@@ -13,14 +13,12 @@ export default function Contact() {
       <section className="relative p-6 lg:py-32 isolate">
         <div className="grid items-center grid-cols-1 gap-8 lg:items-start lg:container lg:mx-auto lg:grid-cols-2">
           <div className="relative ">
-            <div className="mx-auto lg:mx-0 lg:max-w-lg">
-              <h2 className="mb-1 text-3xl font-bold tracking-tight capitalize scroll-m-20">
-                Get in touch
+            <div className="mx-auto lg:mx-0 lg:max-w-2xl">
+              <h2 className="mb-1 text-4xl font-extrabold tracking-normal capitalize scroll-m-20">
+                Let&#39;s Connect & Create Together!
               </h2>
               <p className="leading-7 tracking-wider">
-                Proin volutpat consequat porttitor cras nullam gravida at. Orci
-                molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
-                Arcu sed malesuada et magna.
+              I&#39;m thrilled that you&#39;ve taken the time to explore my portfolio. If you have any questions, want to collaborate on a project, or simply want to say hello, feel free to reach out. 
               </p>
               <dl className="mt-10 space-y-4 text-base leading-7 text-primary-960">
                 <div className="flex gap-x-4">
@@ -31,7 +29,7 @@ export default function Contact() {
                       aria-hidden="true"
                     />
                   </dt>
-                  <dd>545 Mavis Island Chicago, IL 99191</dd>
+                  <dd>Toronto, Ontario, Canada</dd>
                 </div>
                 <div className="flex gap-x-4">
                   <dt className="flex-none">
@@ -43,7 +41,7 @@ export default function Contact() {
                   </dt>
                   <dd>
                     <a
-                      className="hover:text-primary-900"
+                      className="tracking-wide hover:text-primary-900"
                       href="tel:+1 (555) 234-5678"
                     >
                       +1 (555) 234-5678
@@ -60,10 +58,10 @@ export default function Contact() {
                   </dt>
                   <dd>
                     <a
-                      className="hover:text-primary-900"
+                      className="tracking-wide hover:text-primary-900"
                       href="mailto:hello@example.com"
                     >
-                      hello@example.com
+                      farahdesigns@gmail.com
                     </a>
                   </dd>
                 </div>
@@ -173,7 +171,7 @@ function MyContactForm() {
           </div>
         </div>
         <div className="mt-8 lg:justify-start">
-          <Button className="flex items-center justify-end gap-1 capitalize" aria-label="send-contact">
+          <Button className="flex items-center justify-end gap-1 capitalize" aria-label="send-contact" variant="secondary">
             <RiSendPlane2Line />
             Send message
           </Button>
