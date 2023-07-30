@@ -1,5 +1,6 @@
 import { Button } from "@/components/Button";
 import Head from "next/head";
+import Link from "next/link";
 import { RiBuildingLine, RiMailLine, RiPhoneLine, RiSendPlane2Line } from "react-icons/ri";
 
 export default function Contact() {
@@ -15,39 +16,12 @@ export default function Contact() {
           <div className="relative ">
             <div className="mx-auto lg:mx-0 lg:max-w-2xl">
               <h2 className="mb-1 text-4xl font-extrabold tracking-normal capitalize scroll-m-20">
-                Let&#39;s Connect & Create Together!
+                Want to get in touch?
               </h2>
               <p className="leading-7 tracking-wider">
-              I&#39;m thrilled that you&#39;ve taken the time to explore my portfolio. If you have any questions, want to collaborate on a project, or simply want to say hello, feel free to reach out. 
+                Enter in your information here to get in touch with me!
               </p>
               <dl className="mt-10 space-y-4 text-base leading-7 text-primary-960">
-                <div className="flex gap-x-4">
-                  <dt className="flex-none">
-                    <span className="sr-only">Address</span>
-                    <RiBuildingLine
-                      className="w-6 text-primary-700 dark:text-primary-50/70 h-7"
-                      aria-hidden="true"
-                    />
-                  </dt>
-                  <dd>Toronto, Ontario, Canada</dd>
-                </div>
-                <div className="flex gap-x-4">
-                  <dt className="flex-none">
-                    <span className="sr-only">Telephone</span>
-                    <RiPhoneLine
-                      className="w-6 text-primary-700 dark:text-primary-50/70 h-7"
-                      aria-hidden="true"
-                    />
-                  </dt>
-                  <dd>
-                    <a
-                      className="tracking-wide hover:text-primary-900"
-                      href="tel:+1 (555) 234-5678"
-                    >
-                      +1 (555) 234-5678
-                    </a>
-                  </dd>
-                </div>
                 <div className="flex gap-x-4">
                   <dt className="flex-none">
                     <span className="sr-only">Email</span>
@@ -57,12 +31,12 @@ export default function Contact() {
                     />
                   </dt>
                   <dd>
-                    <a
+                    <Link
                       className="tracking-wide hover:text-primary-900"
-                      href="mailto:hello@example.com"
+                      href="mailto:farahsdesignss@gmail.com"
                     >
-                      farahdesigns@gmail.com
-                    </a>
+                      farahsdesignss@gmail.com
+                    </Link>
                   </dd>
                 </div>
               </dl>
