@@ -34,7 +34,7 @@ export default function ContactForm() {
                 id="first-name"
                 autoComplete="given-name"
                 className="flex w-full px-3 py-1 text-sm transition-colors border rounded-md shadow-sm h-9 ring-primary-600 border-primary-600 dark:text-primary-10 bg-primary-10 dark:bg-primary-960 dark:caret-primary-50 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-gray-960/60 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
-                {...register("firstName")}
+                {...register("firstName", { pattern: /^[A-Za-z]+$/i })}
               />
             </div>
           </div>
@@ -48,7 +48,7 @@ export default function ContactForm() {
             <div className="mt-2.5">
               <input
                 type="text"
-                {...register("lastName")}
+                {...register("lastName", { pattern: /^[A-Za-z]+$/i })}
                 id="last-name"
                 autoComplete="family-name"
                 className="flex w-full px-3 py-1 text-sm transition-colors border rounded-md shadow-sm h-9 ring-primary-600 border-primary-600 dark:text-primary-10 bg-primary-10 dark:bg-primary-960 dark:caret-primary-50 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-gray-960/60 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
