@@ -19,7 +19,7 @@ export default function ContactForm() {
       onSubmit={handleSubmit(onSubmit)}
       className=""
     >
-      <div className="max-w-xl mx-auto lg:mr-0 lg:max-w-lg">
+      <div className="mx-auto lg:max-w-xl lg:mr-0">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label
