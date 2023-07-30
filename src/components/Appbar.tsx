@@ -18,7 +18,7 @@ export default function Appbar() {
             <Button
               variant="outline"
               size="icon"
-              className="lg:hidden"
+              className="lg:hidden dark:text-primary-200 dark:border-primary-300/50"
               onClick={onClick}
               aria-label="nav-button-open"
             >
@@ -28,7 +28,7 @@ export default function Appbar() {
             <Button
               variant="outline"
               size="icon"
-              className="lg:hidden"
+              className="lg:hidden dark:text-primary-200 dark:border-primary-300/50"
               onClick={onClick}
               aria-label="nav-button-close"
             >
