@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="px-6 py-12 lg:px-0 lg:mx-auto lg:container md:flex md:items-center md:justify-between">
-        <div className="flex justify-center space-x-6 md:order-2">
+        <div className="flex justify-start space-x-6 md:justify-center lg:justify-end md:order-2">
           {footer_navigation.map((item) => (
             <Link key={item.name} href={item.href} className="transition-all hover:opacity-80" target="_blank" aria-label="external-link-to-social-media">
               <span className="sr-only">{item.name}</span>
@@ -15,7 +15,7 @@ export default function Footer() {
           ))}
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
-          <p className="text-sm leading-7 tracking-wider ">
+          <p className="text-sm leading-7 tracking-wider">
             &copy; {new Date().getFullYear()} Farah Designs, Inc. All rights reserved.
           </p>
         </div>
