@@ -11,7 +11,7 @@ export default function Contact() {
         <meta name="title" content="Fara Hakimpour - Contact" />
         <meta name="description" content="Is a Graphic Designer and Illustrator based in Toronto, Ontario. Explore her digital portfolio and discover her creative process. " />
       </Head>
-      <section className="relative p-6 lg:py-32 isolate">
+      <section className="relative p-6 py-24 lg:py-32 isolate">
         <div className="grid items-center grid-cols-1 gap-8 lg:items-start lg:container lg:mx-auto lg:grid-cols-2">
           <div className="relative ">
             <div className="mx-auto lg:mx-0 lg:max-w-2xl">
