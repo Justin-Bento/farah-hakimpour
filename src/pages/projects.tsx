@@ -26,7 +26,7 @@ export default function projects({ posts }: AllPosts) {
           </Link>
         </nav>
         <section className="space-y-1.5">
-          <h1 className="pb-2 text-5xl font-extrabold tracking-normal capitalize transition-colors scroll-m-20 first:mt-0">Dive into My Creative Realm!</h1>
+          <h1 className="pb-2 text-5xl font-bold tracking-wide capitalize transition-colors scroll-m-20 first:mt-0">Dive into My Creative Realm!</h1>
           <p className="text-base tracking-wide lg:tracking-wider lg:text-xl">Where Design and Artistry Converge! A Journey Through Exquisite Artistry and Masterful Graphic Solutions.</p>
         </section>
         <section className='my-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid gap-4'>
@@ -37,7 +37,7 @@ export default function projects({ posts }: AllPosts) {
                   <div className=" relative w-full h-[486px]">
                     <Image fill src={urlFor(post.mainImage).url()} alt={post.title} className="rounded-md hover:opacity-80 object-cover" />
                   </div>
-                  <p className=" leading-7 tracking-wider mt-2 font-display opacity-70">{post.title}</p>
+                  <p className=" leading-7 tracking-wider mt-2 font-medium font-display opacity-70">{post.title}</p>
                 </div>
               </Link>
             )
