@@ -19,7 +19,7 @@ export default function projects({ posts }: AllPosts) {
           <h1 className="pb-2 text-5xl font-extrabold tracking-normal capitalize transition-colors scroll-m-20 first:mt-0">Dive into My Creative Realm!</h1>
           <p className="text-base tracking-wide lg:tracking-wider lg:text-xl">Where Design and Artistry Converge! A Journey Through Exquisite Artistry and Masterful Graphic Solutions.</p>
         </section>
-        <GridList Columns="grid-cols-1 md:grid-cols-2" className='my-8'>
+        <GridList Columns="grid-cols-1 md:grid-cols-2 lg:grid-cols-3" className='my-8'>
           {posts.map((post: any) => {
             return <ImageCard key={post._id} Links={`/projects/${post.slug.current}`} Media={urlFor(post.mainImage).url()} Title={post.title} CardType={false} />
           })}
