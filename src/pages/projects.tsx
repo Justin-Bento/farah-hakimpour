@@ -2,9 +2,9 @@ import { GetStaticProps } from 'next';
 import React from 'react'
 import { AllPosts } from '../../typings';
 import { client, urlFor } from '../../sanityClient';
-import ImageCard from '@/components/ImageCard';
-import GridList from '@/components/GridList';
 import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function projects({ posts }: AllPosts) {
   return (
@@ -12,18 +12,27 @@ export default function projects({ posts }: AllPosts) {
       <Head>
         <title>Fara Hakimpour - Projects</title>
         <meta name="title" content="Fara Hakimpour  - Projects" />
-        <meta name="description" content="Is a Graphic Designer and Illustrator based in Toronto, Ontario. Explore her digital portfolio and discover her creative process. " />
+        <meta name="description" content="Is a Graphic Designer and Illustrator based in Toronto, Ontario. Explore her digital portfolio and discover her creative process." />
       </Head>
       <article className="p-4 my-16 lg:container lg:mx-auto md:p-0">
         <section className="space-y-1.5">
           <h1 className="pb-2 text-5xl font-extrabold tracking-normal capitalize transition-colors scroll-m-20 first:mt-0">Dive into My Creative Realm!</h1>
           <p className="text-base tracking-wide lg:tracking-wider lg:text-xl">Where Design and Artistry Converge! A Journey Through Exquisite Artistry and Masterful Graphic Solutions.</p>
         </section>
-        <GridList Columns="grid-cols-1 md:grid-cols-2 lg:grid-cols-3" className='my-8'>
+        <section className='my-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid gap-4'>
           {posts.map((post: any) => {
-            return <ImageCard key={post._id} Links={`/projects/${post.slug.current}`} Media={urlFor(post.mainImage).url()} Title={post.title} CardType={false} />
+            return (
+              <Link href={`/projects/${post.slug.current}`} key={post._id} className="overflow-hidden focus:ring-primary-300 dark:ring-primary-800 dark:border-primary-800 rounded-lg bg-transparent transition-all border hover:ring-1 hover:ring-primary-400 hover:cursor-pointer">
+                <div className="p-4 sm:p-6">
+                  <div className=" relative w-full h-[486px]">
+                    <Image fill src={urlFor(post.mainImage).url()} alt={post.title} className="rounded-md hover:opacity-80 object-cover" />
+                  </div>
+                  <p className=" leading-7 tracking-wider mt-2 font-display opacity-70">{post.title}</p>
+                </div>
+              </Link>
+            )
           })}
-        </GridList>
+        </section>
       </article>
     </>
   )
