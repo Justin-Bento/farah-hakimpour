@@ -8,9 +8,9 @@ export default function Appbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(true);
   const onClick = () => setMobileMenuOpen((mobileMenuOpen) => !mobileMenuOpen);
   return (
-    <header className="p-4 lg:p-4">
+    <header className="p-4 lg:py-0">
       <div className="grid grid-cols-1 gap-6 justify-evenly lg:container lg:mx-auto lg:items-center lg:grid-cols-3">
-        <div className="flex justify-between">
+        <div className="flex items-center justify-between">
           <Link href="/" aria-label="link-to-home">
             <Logo classNames="fill-primary-700 dark:fill-primary-50" />
           </Link>
@@ -18,7 +18,7 @@ export default function Appbar() {
             <Button
               variant="outline"
               size="icon"
-              className="lg:hidden"
+              className="lg:hidden dark:text-primary-200 dark:border-primary-300/50"
               onClick={onClick}
               aria-label="nav-button-open"
             >
@@ -28,7 +28,7 @@ export default function Appbar() {
             <Button
               variant="outline"
               size="icon"
-              className="lg:hidden"
+              className="lg:hidden dark:text-primary-200 dark:border-primary-300/50"
               onClick={onClick}
               aria-label="nav-button-close"
             >
