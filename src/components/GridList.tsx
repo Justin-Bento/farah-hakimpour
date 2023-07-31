@@ -8,7 +8,7 @@ type GridListProps = {
 
 const GridList: React.FC<GridListProps> = ({ children, Columns, className }:  GridListProps) => {
   return (
-    <div aria-label="grid" className={`grid ${Columns} gap-8 ${className}`} >
+    <div aria-label="grid" className={`grid ${Columns} gap-4 ${className}`} >
       {children}
     </div>
   )
