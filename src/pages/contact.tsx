@@ -1,3 +1,4 @@
+import { Button } from "@/components/Button";
 import ContactForm from "@/components/ContactForm";
 import Head from "next/head";
 import Link from "next/link";
@@ -15,6 +16,15 @@ export default function Contact() {
         <div className="grid items-center grid-cols-1 gap-8 lg:items-start lg:container lg:mx-auto lg:grid-cols-2">
           <div className="relative ">
             <div className="mx-auto lg:mx-0 lg:max-w-2xl">
+              <nav className="flex items-center gap-2">
+                <Link href='/'>
+                  <Button variant="ghost" size="sm" className="dark:text-primary-200/80 hover:underline">Home</Button>
+                </Link>
+                <span className="dark:text-primary-200/50">/</span>
+                <Link href='/contact'>
+                  <Button variant="ghost" size="sm" className="hover:underline">Contact</Button>
+                </Link>
+              </nav>
               <h2 className="mb-1 text-4xl font-extrabold tracking-normal capitalize scroll-m-20">
                 Want to get in touch?
               </h2>

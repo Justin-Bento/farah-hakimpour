@@ -5,6 +5,7 @@ import { client, urlFor } from '../../sanityClient';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Button } from '@/components/Button';
 
 export default function projects({ posts }: AllPosts) {
   return (
@@ -15,6 +16,15 @@ export default function projects({ posts }: AllPosts) {
         <meta name="description" content="Is a Graphic Designer and Illustrator based in Toronto, Ontario. Explore her digital portfolio and discover her creative process." />
       </Head>
       <article className="p-4 my-16 lg:container lg:mx-auto md:p-0">
+        <nav className="flex items-center gap-2">
+          <Link href='/'>
+            <Button variant="ghost" size="sm" className="dark:text-primary-200/80 hover:underline">Home</Button>
+          </Link>
+          <span className="dark:text-primary-200/50">/</span>
+          <Link href='/projects'>
+            <Button variant="ghost" size="sm" className="hover:underline">Projects</Button>
+          </Link>
+        </nav>
         <section className="space-y-1.5">
           <h1 className="pb-2 text-5xl font-extrabold tracking-normal capitalize transition-colors scroll-m-20 first:mt-0">Dive into My Creative Realm!</h1>
           <p className="text-base tracking-wide lg:tracking-wider lg:text-xl">Where Design and Artistry Converge! A Journey Through Exquisite Artistry and Masterful Graphic Solutions.</p>
