@@ -8,14 +8,13 @@ What this application does is:
 * Lets people contact her for any requests.
 * Helps clients and requiters know Farah on a more personal level.
 
-Why you used the technologies you used:
+## Tech Stack
 
-Front End: 
-HTML, CSS, JavaScript, React.js, Tailwind CSS. 
+**Front End:** HTML, Tailwind CSS, Next.js, TypeScript 
 
-Back End: 
-Sanity.io - Content Management system. 
-Google Analytics - 
+**Back End:** Node, Express, Sanity
+
+**Business:** Google Analytics and Formspree are integrated to manage the contact form submissions securely and efficiently. 
 Formspree to manage forms.
 
 Some of the challenges you faced and features you hope to implement in the future: 
