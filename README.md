@@ -1,4 +1,4 @@
-# Farah Hakimpour - Graphic Designer and Illustrator Portfolio Website
+# Farah Hakimpour - Portfolio Website
 
 ## Project Overview 🚀
 
