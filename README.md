@@ -27,3 +27,7 @@ Formspree to manage forms.
 4. Handling filtering of an array of objects within JavaScript to showcase projects seamlessly.
 5. Deploying website using vercels new layout.
 
+## Future Enhancements 🚀
+
+* Project filtering and categorization for an awe-inspiring user journey.
+* Evolving Portfolio: Regular updates to keep showcasing the latest creative marvels and adventures.
