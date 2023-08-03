@@ -18,10 +18,3 @@ This repository hosts the code for Farah Hakimpour's personal portfolio website,
 
 **Business:** Google Analytics and Formspree are integrated to manage the contact form submissions securely and efficiently. 
 Formspree to manage forms.
-
-Some of the challenges you faced and features you hope to implement in the future: 
-
-* Setting up a content management system. 
-* Post CSS issues not working. 
-* Getting and Posting data to a sanity api.
-* Flitering An array of Objects inside JavaScript 
