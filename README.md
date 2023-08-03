@@ -1,6 +1,6 @@
 # Farah Hakimpour - Graphic Designer and Illustrator Portfolio Website
 
-Is an online platform which showcase her work as a Graphic Designer and Illustrator. The aim for this project is to turn her design portfolio into a website. 
+This repository hosts the code for Farah Hakimpour's personal portfolio website, showcasing her remarkable talents as a Graphic Designer and Illustrator. The primary goal of this project is to provide a user-friendly platform for visitors to explore Farah's art pieces and design works.
 
 What this application does is: 
 
