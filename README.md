@@ -1,4 +1,4 @@
-# Farah's Website
+# Farah Hakimpour - Graphic Designer and Illustrator Portfolio Website
 
 Is an online platform which showcase her work as a Graphic Designer and Illustrator. The aim for this project is to turn her design portfolio into a website. 
 
