@@ -51,7 +51,7 @@ export default function index() {
               </Link>
             </div>
             <div className="relative w-full aspect-square md:h-screen md:w-72 lg:w-96">
-              <Image fill alt='' src="/media/main-photo.webp" className="object-cover rounded md:rounded-none " />
+              <Image fill alt='illustration of farah' src="/media/main-photo.webp" className="object-cover rounded md:rounded-none " />
             </div>
           </div>
         </div>
