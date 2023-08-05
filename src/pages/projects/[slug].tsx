@@ -1,9 +1,11 @@
-import { client, urlFor } from "../../../sanityClient";
 import Head from "next/head";
-import { PortableText } from "@portabletext/react";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
+// End Of Next.js imports
 import { Button } from "@/components/Button";
+import { PortableText } from "@portabletext/react";
+import { client, urlFor } from "../../../sanityClient";
+// End Of Sanity imports
 
 export default function ProjectsSlug({ post }: any) {
   return (
