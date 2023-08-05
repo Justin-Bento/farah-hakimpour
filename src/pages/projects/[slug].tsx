@@ -43,11 +43,14 @@ export default function ProjectsSlug({ post }: any) {
     </>
   )
 }
-
-
-
-
-
+export async function generateStaticParams() {
+  const query = `*[_type == "post"]{ slug }`;
+  const slugs: any = await client.fetch(query)
+  const slugRoutes = slugs.map((slug:any) => slug.slug.current)
+  return slugRoutes.map((slug:any )=> {
+    slug 
+  })
+}
 export async function getStaticPaths() {
   const query = `*[_type == "post"]{ 'slug': slug.current }`;
   const posts = await client.fetch(query);
