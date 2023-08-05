@@ -41,17 +41,17 @@ export default function index() {
           </svg>
         </div>
         {/* End of Background Pattern */}
-        <div className="p-4 md:p-0 lg:container lg:mx-auto lg:p-0">
+        <div className="p-4 py-16 lg:container lg:mx-auto lg:p-0">
           <div className="flex flex-col items-start gap-8 md:flex-row md:justify-between md:items-center">
-            <div className="">
+            <div className=" [text-wrap:balance]">
               <h1 className="text-5xl font-extrabold tracking-normal scroll-m-20 ">Hi &#128075;, I&#39;m Farah Hakimpour!</h1>
               <p className="mt-3 text-xl leading-7 tracking-wider">See my designs, art, and love of the colour purple!</p>
               <Link href="/projects">
                 <Button variant="secondary" className="mt-6">View My Work</Button>
               </Link>
             </div>
-            <div className="relative w-full aspect-square md:h-screen md:w-72 lg:w-96">
-              <Image fill alt='' src="/media/main photo.png" className="object-cover rounded md:rounded-none " />
+            <div className="relative w-full aspect-[3/4] md:h-screen md:w-72 lg:w-96">
+              <Image fill alt='illustration of farah' src="/media/main-photo.webp" className="object-cover rounded md:rounded-none " />
             </div>
           </div>
         </div>

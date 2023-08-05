@@ -1,9 +1,11 @@
-import { client, urlFor } from "../../../sanityClient";
 import Head from "next/head";
-import { PortableText } from "@portabletext/react";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
+// End Of Next.js imports
 import { Button } from "@/components/Button";
+import { PortableText } from "@portabletext/react";
+import { client, urlFor } from "../../../sanityClient";
+// End Of Sanity imports
 
 export default function ProjectsSlug({ post }: any) {
   return (
@@ -41,11 +43,14 @@ export default function ProjectsSlug({ post }: any) {
     </>
   )
 }
-
-
-
-
-
+export async function generateStaticParams() {
+  const query = `*[_type == "post"]{ slug }`;
+  const slugs: any = await client.fetch(query)
+  const slugRoutes = slugs.map((slug:any) => slug.slug.current)
+  return slugRoutes.map((slug:any )=> {
+    slug 
+  })
+}
 export async function getStaticPaths() {
   const query = `*[_type == "post"]{ 'slug': slug.current }`;
   const posts = await client.fetch(query);
