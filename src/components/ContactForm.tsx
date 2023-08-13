@@ -7,47 +7,117 @@ import { Button } from "./Button";
 import { RiSendPlane2Line } from "react-icons/ri";
 
 type FormInputs = {
-  firstName: string;
-  lastName: string;
+  fullName: string;
   company: string;
-  Email: string;
-  Message: string;
+  email: string;
+  message: string;
 };
 
 export default function ContactForm() {
   const [serverState, sendToFormspree] = useFormspree(`${process.env.NEXT_PUBLIC_FORM_DATA}`); // replace
   const { register, handleSubmit, formState: { errors }, } = useForm<FormInputs>();
-  if (serverState.succeeded) {
-    return <p>Thanks for joining!</p>;
-  }
+  if (serverState.succeeded) { return (<span className="min-h-screen capitalize dark:text-gray-300">Thanks for the message</span>) }
   return (
     <>
       <form onSubmit={handleSubmit(sendToFormspree)} method="POST" className="">
-        <div className="space-y-8">
-          <div className="space-y-2">
-            <label htmlFor="fullName" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Full Name</label>
-            <input type="text" className="flex w-full h-10 px-3 py-2 text-sm border rounded-md border-input file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:border-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" />
+        <div className="lg:max-w-3xl">
+          <div className="flex flex-col gap-8">
+            <div >
+              <label
+                htmlFor="full-name"
+                defaultValue="full_Name"
+                className="text-sm font-bold capitalize"
+              >
+                Full name
+              </label>
+              <div className="mt-2.5">
+                <input
+                  type="text"
+                  {...register("fullName", { required: true })}
+                  id="full-name"
+                  autoComplete="given-name"
+                  className="flex w-full h-10 px-3 py-2 text-sm tracking-wider border rounded-md border-primary-500 bg-primary-50 dark:bg-primary-960 dark:caret-gray-300 dark:text-gray-300 ring-offset-primary-500 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:border-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                />
+                {errors.fullName && (
+                  <span className="text-xs font-normal tracking-wider text-red-800 capitalize dark:text-red-600">
+                    * Your full name is required
+                  </span>
+                )}
+              </div>
+            </div>
+            <div className="sm:col-span-2">
+              <label
+                htmlFor="email"
+                className="text-sm font-bold capitalize"
+              >
+                email
+              </label>
+              <div className="mt-2.5">
+                <input
+                  type="email"
+                  id="email"
+                  autoComplete="email"
+                  {...register("email", { required: true })}
+                  className="flex w-full h-10 px-3 py-2 text-sm tracking-wider border rounded-md border-primary-500 bg-primary-50 dark:bg-primary-960 dark:caret-gray-300 dark:text-gray-300 ring-offset-primary-500 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:border-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                />
+              </div>
+              {errors.email && (
+                <span className="text-xs font-normal tracking-wider text-red-800 capitalize dark:text-red-600">
+                  * email  is required
+                </span>
+              )}
+            </div>
+            <div className="sm:col-span-2">
+              <label
+                htmlFor="email"
+                className="text-sm font-bold capitalize"
+              >
+                Your Company
+              </label>
+              <div className="mt-2.5">
+                <input
+                  type="text"
+                  id="company"
+                  autoComplete="company"
+                  {...register("company", { required: true })}
+                  className="flex w-full h-10 px-3 py-2 text-sm tracking-wider border rounded-md border-primary-500 bg-primary-50 dark:bg-primary-960 dark:caret-gray-300 dark:text-gray-300 ring-offset-primary-500 file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:border-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                />
+              </div>
+              {errors.company && (
+                <span className="text-xs font-normal tracking-wider text-red-800 capitalize dark:text-red-600">
+                  * Your Company Name is required
+                </span>
+              )}
+            </div>
+            <div className="sm:col-span-2">
+              <label
+                htmlFor="message"
+                className="text-sm font-bold capitalize"
+              >
+                message
+              </label>
+              <div className="mt-2.5">
+                <textarea
+                  id="message"
+                  rows={4}
+                  className={"flex min-h-[80px] w-full rounded-md border border-primary-500  bg-inherit px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:border-primary-500 focus-visible:ring-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:caret-gray-300 dark:text-gray-300"}
+                  {...register("message", { required: true })}
+                />
+                {errors.message && (
+                  <span className="text-xs font-normal tracking-wider text-red-800 capitalize dark:text-red-600">
+                    * Your message is required
+                  </span>
+                )}
+              </div>
+            </div>
           </div>
-          {/* End Of Full Name */}
-
-          <div className="space-y-2">
-            <label htmlFor="email" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Email</label>
-            <input type="email" className="flex w-full h-10 px-3 py-2 text-sm border rounded-md border-input file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:border-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" />
-          </div>
-          {/* End Of input type email */}
-          <div className="space-y-2">
-            <label htmlFor="company" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Company</label>
-            <input type="text" className="flex w-full h-10 px-3 py-2 text-sm border rounded-md border-input file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:border-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" />
-          </div>
-          {/* End Of Full Name */}
-          {/* End Of input type email */}
-          <div className="space-y-2">
-            <label htmlFor="message" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">Your Message</label>
-            <textarea className="flex min-h-[80px] w-full rounded-md border border-input bg-primary-50 px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:border-primary-500 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" />
-          </div>
-          {/* End Of Your Message */}
-          <div className="mt-8 lg:justify-start">
-            <Button className="flex items-center justify-end gap-1 capitalize dark:text-primary-100" aria-label="send-contact" variant="secondary">
+          <div className="mt-8">
+            {/* errors will return when  validation fails  */}
+            <Button
+              type="submit"
+              variant="secondary"
+              className="gap-1"
+            >
               <RiSendPlane2Line />
               Send message
             </Button>
