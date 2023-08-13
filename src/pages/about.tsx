@@ -35,7 +35,7 @@ export default function About() {
             </svg>
             <rect width="100%" height="100%" strokeWidth={0} fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
           </svg>
-        </div>
+        </div> 
         <div className="grid grid-cols-1 mx-auto gap-x-8 gap-y-16 lg:mx-0 lg:grid-cols-2 lg:items-start lg:gap-y-10">
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:container lg:grid-cols-2 lg:px-4">
             <div className="lg:pr-4">
@@ -52,7 +52,7 @@ export default function About() {
               <Image
                 fill
                 className="object-cover object-center bg-gray-900 shadow-xl max-w-none rounded-xl ring-1 ring-gray-400/10 "
-                src="/media/dummy-image.png"
+                src="/media/about-photo.png"
                 alt=""
               />
             </div>
