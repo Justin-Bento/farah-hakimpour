@@ -51,7 +51,7 @@ export default function About() {
             <div className="w-[48rem] sm:w-[57rem] aspect-square h-[26rem] relative">
               <Image
                 fill
-                className="object-cover object-center bg-gray-900 shadow-xl max-w-none rounded-xl ring-1 ring-gray-400/10 "
+                className="object-cover object-center bg-gray-900 max-w-none rounded-xl ring-1 ring-gray-400/10 "
                 src="/media/about-photo.png"
                 alt=""
               />
