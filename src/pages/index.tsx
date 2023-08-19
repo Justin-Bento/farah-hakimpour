@@ -9,8 +9,8 @@ export default function index() {
   return (
     <>
       <Head>
-        <title>Fara Hakimpour</title>
-        <meta name="title" content="Fara Hakimpour " />
+        <title>Farah Hakimpour</title>
+        <meta name="title" content="Farah Hakimpour " />
         <meta name="description" content="Is a Graphic Designer and Illustrator based in Toronto, Ontario. Explore her digital portfolio and discover her creative process. " />
       </Head>
       <section className="relative w-full overflow-hidden isolate lg:overflow-visible">

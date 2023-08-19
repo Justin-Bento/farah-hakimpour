@@ -8,8 +8,8 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Fara Hakimpour - Contact</title>
-        <meta name="title" content="Fara Hakimpour - Contact" />
+        <title>Farah Hakimpour - Contact</title>
+        <meta name="title" content="Farah Hakimpour - Contact" />
         <meta name="description" content="Is a Graphic Designer and Illustrator based in Toronto, Ontario. Explore her digital portfolio and discover her creative process. " />
       </Head>
       <section className="relative p-6 py-24 lg:py-32 isolate">

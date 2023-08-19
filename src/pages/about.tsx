@@ -5,7 +5,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>Fara Hakimpour - About</title>
+        <title>Farah Hakimpour - About</title>
         <meta name="title" content="Fara Hakimpour - About" />
         <meta name="description" content="Is a Graphic Designer and Illustrator based in Toronto, Ontario. Explore her digital portfolio and discover her creative process. " />
       </Head>
