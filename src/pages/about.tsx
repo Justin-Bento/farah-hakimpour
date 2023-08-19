@@ -52,7 +52,7 @@ export default function About() {
               <Image
                 fill
                 className="object-cover object-center bg-gray-900 shadow-xl max-w-none rounded-xl ring-1 ring-gray-400/10 "
-                src="/media/dummy-image.png"
+                src="/media/about-page.webp"
                 alt=""
               />
             </div>
