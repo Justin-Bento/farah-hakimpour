@@ -84,6 +84,6 @@ export async function getStaticProps({ params }: any) {
   const post = await client.fetch(query, options);
   return {
     props: { post: post[0] },
-    fallback: true,
+    fallback: false,
   };
 }
