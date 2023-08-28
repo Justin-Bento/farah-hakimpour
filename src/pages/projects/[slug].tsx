@@ -82,8 +82,5 @@ export async function getStaticProps({ params }: any) {
   `;
   const options = { slug: params.slug };
   const post = await client.fetch(query, options);
-  return {
-    props: { post: post[0] },
-    fallback: false,
-  };
+  return { props: { post: post[0] } };
 }
