@@ -29,15 +29,15 @@ export default function projects({ posts }: AllPosts) {
           <h1 className="pb-2 text-5xl font-bold tracking-wide capitalize transition-colors scroll-m-20 first:mt-0">Dive into My Creative Realm!</h1>
           <p className="text-base tracking-wide lg:tracking-wider lg:text-xl">Where Design and Artistry Converge! A Journey Through Exquisite Artistry and Masterful Graphic Solutions.</p>
         </section>
-        <section className='my-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid gap-4'>
+        <section className='grid grid-cols-1 gap-4 my-8 md:grid-cols-2 lg:grid-cols-3'>
           {posts.map((post: any) => {
             return (
-              <Link href={`/projects/${post.slug.current}`} key={post._id} className="overflow-hidden focus:ring-primary-300 dark:ring-primary-800 dark:border-primary-800 rounded-lg bg-transparent transition-all border hover:ring-1 hover:ring-primary-400 hover:cursor-pointer">
+              <Link href={`/projects/${post.slug.current}`} key={post._id} className="overflow-hidden transition-all bg-transparent border rounded-lg focus:ring-primary-300 dark:ring-primary-800 dark:border-primary-800 hover:ring-1 hover:ring-primary-400 hover:cursor-pointer">
                 <div className="p-4 sm:p-6">
                   <div className=" relative w-full h-[486px]">
-                    <Image fill src={urlFor(post.mainImage).url()} alt={post.title} className="rounded-md hover:opacity-80 object-cover" />
+                    <Image fill src={urlFor(post.mainImage).url()} alt={post.title} className="object-cover rounded-md hover:opacity-80" />
                   </div>
-                  <p className=" leading-7 tracking-wider mt-2 font-medium font-display opacity-70">{post.title}</p>
+                  <p className="mt-2 font-medium leading-7 tracking-wider font-display opacity-70">{post.title}</p>
                 </div>
               </Link>
             )
@@ -54,5 +54,7 @@ export const getStaticProps: GetStaticProps<AllPosts> = async () => {
   `);
   return {
     props: { posts: data },
+    // If webhooks isn't setup then attempt to re-generate in 1 minute intervals
+    revalidate: 60,
   };
 };
