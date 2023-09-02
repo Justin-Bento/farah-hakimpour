@@ -39,6 +39,9 @@ export default function About() {
         <div className="relative w-full bg-primary-300 aspect-video  lg:aspect-[16/5] rounded-b-2xl">
           <Image fill src="/media/about-page.webp" alt="picture of farah" className="object-cover" />
         </div>
+        <article className=" max-w-[90ch] mx-auto my-8 lg:my-16 space-y-4 p-4">
+          <h1 className="text-4xl font-extrabold lg:leading-tight tracking-normal scroll-m-20 [text-wrap:balance] capitalize lg:text-5xl">Farah Hakimpour, an artist who specializes in digital art, photography, and graphic design</h1>
+        </article>
       </section>
     </>
   )
