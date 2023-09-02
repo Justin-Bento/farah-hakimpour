@@ -39,8 +39,14 @@ export default function About() {
         <div className="relative w-full bg-primary-300 aspect-video  lg:aspect-[16/5] rounded-b-2xl">
           <Image fill src="/media/about-page.webp" alt="picture of farah" className="object-cover" />
         </div>
-        <article className=" max-w-[90ch] mx-auto my-8 lg:my-16 space-y-4 p-4">
+        <article className=" max-w-[90ch] mx-auto my-8 lg:my-16 p-4">
           <h1 className="text-4xl font-extrabold lg:leading-tight tracking-normal scroll-m-20 [text-wrap:balance] capitalize lg:text-5xl">Farah Hakimpour, an artist who specializes in digital art, photography, and graphic design</h1>
+          <div className="my-5 space-y-5 text-lg leading-7 tracking-wide">
+            <p>Hi there, I&#39;m Farah Hakimpour - a Graphic Designer and Self Taught Artist. I&#39;m all about creating cool stuff that makes people go &#34;wow!&#34; Whether it&#39;s a branding project, website mockup, or fan art piece, I put my heart and soul into everything I create.</p>
+            <p>When I&#39;m designing, you&#39;ll usually find me working my magic with Adobe Illustrator and Photoshop. For my art pieces, I use FireAlpaca and ibisPaint X, often with references to make sure everything looks just right. Music is my muse, and I love jamming out to BTS, Post Malone, Melanie Martinez, and MCR while I work. But when I need a break from the tunes, I dive into my favorite horror podcasts for some spooky inspiration.</p>
+            <p>In my free time, you&#39;ll find me drawing fan art of my favorite YouTube personalities and TV shows, or creating original characters. I&#39;m always pushing myself to improve my skills and create better work, and I can&#39;t wait to see where my art takes me next.</p>
+            <p>Thanks for stopping by my website, and I hope you enjoy checking out my portfolio! You can follow me on social-media for simpler projects.</p>
+          </div>
         </article>
       </section>
     </>
