@@ -77,5 +77,8 @@ export async function getStaticProps({ params }: any) {
   `;
   const options = { slug: params.slug };
   const post = await client.fetch(query, options);
-  return { props: { post: post[0] } };
+  return {
+    props: { post: post[0] },
+    revalidate: 60 // Update data every 60s
+  };
 }
