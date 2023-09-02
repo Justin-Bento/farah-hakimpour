@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Button } from "@/components/Button";
 import { PortableText } from "@portabletext/react";
 import { client, urlFor } from "../../../sanityClient";
+import RichTextComponents from "@/components/RichTextComponents";
 // End Of Sanity imports
 
 export default function ProjectsSlug({ post }: any) {
@@ -37,7 +38,7 @@ export default function ProjectsSlug({ post }: any) {
           </div>
         </section>
         <section className="my-8 space-y-8 tracking-wide prose-lg">
-          <PortableText value={post.body} />
+          <PortableText value={post.body} components={RichTextComponents} />
         </section>
       </article>
     </>
