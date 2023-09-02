@@ -36,6 +36,9 @@ export default function About() {
             <rect width="100%" height="100%" strokeWidth={0} fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
           </svg>
         </div>
+        <div className="relative w-full bg-primary-300 aspect-video  lg:aspect-[16/5] rounded-b-2xl">
+          <Image fill src="/media/about-page.webp" alt="picture of farah" className="object-cover" />
+        </div>
       </section>
     </>
   )
