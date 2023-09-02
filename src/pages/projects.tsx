@@ -53,9 +53,7 @@ export const getStaticProps: GetStaticProps<AllPosts> = async () => {
     *[_type == "post"]{_id, title, slug,   "mainImage": mainImage.asset->url  }
   `);
   return {
-    props: { 
-      posts: data,
-      revalidate: 60,
-    }
-};
+    props: { posts: data },
+    revalidate: 60,
+  };
 }
