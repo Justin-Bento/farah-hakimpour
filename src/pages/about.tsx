@@ -9,7 +9,7 @@ export default function About() {
         <meta name="title" content="Fara Hakimpour - About" />
         <meta name="description" content="Is a Graphic Designer and Illustrator based in Toronto, Ontario. Explore her digital portfolio and discover her creative process. " />
       </Head>
-      <section className="relative min-h-screen px-6 py-24 overflow-hidden isolate sm:py-32 lg:overflow-visible lg:px-0">
+      <section className="relative min-h-screen overflow-hidden isolate lg:overflow-visible lg:px-0">
         <div className="absolute inset-0 overflow-hidden -z-10">
           <svg
             className="absolute left-[max(50%,25rem)] blur-[.5px] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 dark:stroke-primary-700 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
