@@ -1,10 +1,7 @@
 import Head from "next/head";
-import Link from "next/link";
-import Image from "next/image";
 // End Of Next.js imports
-import { Button } from "@/components/Button";
 import { PortableText } from "@portabletext/react";
-import { client, urlFor } from "../../../sanityClient";
+import { client } from "../../../sanityClient";
 import RichTextComponents from "@/components/RichTextComponents";
 // End Of Sanity imports
 
@@ -43,18 +40,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }: any) {
-  const query = `*[_type == "post" && slug.current == $slug] {
-    _id,
-    title,
-    description,
-    'slug': slug.current,
-    mainImage {
-      asset-> {
-        url
-      }
-    },
-    body
-  }
+  const query = `*[_type == "post" && slug.current == $slug] { body }
   `;
   const options = { slug: params.slug };
   const post = await client.fetch(query, options);
