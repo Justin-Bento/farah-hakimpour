@@ -17,19 +17,6 @@ export default function ProjectsSlug({ post }: any) {
         <meta name="description" content="Is a Graphic Designer and Illustrator based in Toronto, Ontario. Explore her digital portfolio and discover her creative process. " />
       </Head>
       <article className="p-4 py-12 md:py-16 lg:container lg:mx-auto lg:py-20 lg:max-w-[80ch]">
-        <nav className="flex items-center gap-2">
-          <Link href='/'>
-            <Button variant="ghost" size="sm" className="dark:text-primary-200/80 hover:underline">Home</Button>
-          </Link>
-          <span className="dark:text-primary-200/50">/</span>
-          <Link href='/projects'>
-            <Button variant="ghost" size="sm" className="dark:text-primary-200/80 hover:underline">Projects</Button>
-          </Link>
-          <span className="dark:text-primary-200/50">/</span>
-          <Link href='/'>
-            <Button variant="ghost" size="sm" className="hover:underline">{post.title}</Button>
-          </Link>
-        </nav>
         <section className="space-y-4">
           <h1 className="text-4xl font-extrabold tracking-wide scroll-m-20">{post.title}</h1>
           <p className="text-xl tracking-wide">{post.description}</p>
