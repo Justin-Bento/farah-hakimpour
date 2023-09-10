@@ -17,13 +17,6 @@ export default function ProjectsSlug({ post }: any) {
         <meta name="description" content="Is a Graphic Designer and Illustrator based in Toronto, Ontario. Explore her digital portfolio and discover her creative process. " />
       </Head>
       <article className="p-4 py-12 md:py-16 lg:container lg:mx-auto lg:py-20 lg:max-w-[80ch]">
-        <section className="space-y-4">
-          <h1 className="text-4xl font-extrabold tracking-wide scroll-m-20">{post.title}</h1>
-          <p className="text-xl tracking-wide">{post.description}</p>
-          <div className="relative aspect-video ">
-            <Image fill quality={40} src={urlFor(post.mainImage).url()} alt={`Image of ${post.title}`} className="object-cover" />
-          </div>
-        </section>
         <section className="my-8 space-y-8 tracking-wide prose-lg">
           <PortableText value={post.body} components={RichTextComponents} />
         </section>
