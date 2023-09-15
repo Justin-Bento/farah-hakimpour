@@ -5,7 +5,7 @@ import { footer_navigation } from "../../lib/data";
 export default function Footer() {
   return (
     <footer>
-      <div className="px-6 py-12 lg:px-0 lg:mx-auto lg:container md:flex md:items-center md:justify-between">
+      <div className="py-16 sm:px-6 lg:px-8 lg:container lg:mx-auto md:flex md:items-center md:justify-between">
         <div className="flex justify-start space-x-6 md:justify-center lg:justify-end md:order-2">
           {footer_navigation.map((item) => (
             <Link key={item.name} href={item.href} className="transition-all hover:opacity-80" target="_blank" aria-label="external-link-to-social-media">
