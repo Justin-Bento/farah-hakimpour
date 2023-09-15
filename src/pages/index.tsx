@@ -41,7 +41,7 @@ export default function index() {
           </svg>
         </div>
         {/* End of Background Pattern */}
-        <div className="p-4 py-16 lg:container lg:mx-auto lg:p-0">
+        <div className="sm:px-6 lg:px-8 lg:container lg:mx-auto">
           <div className="flex flex-col items-start gap-8 md:flex-row md:justify-between md:items-center">
             <div className=" [text-wrap:balance]">
               <h1 className="text-5xl font-extrabold tracking-normal scroll-m-20 ">Hi &#128075;, I&#39;m Farah Hakimpour!</h1>
