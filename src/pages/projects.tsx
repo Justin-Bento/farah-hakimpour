@@ -19,7 +19,7 @@ export default function projects({ posts }: AllPosts) {
         />
       </Head>
       <article className="p-4 my-16 lg:container lg:mx-auto md:p-0">
-        <nav className="flex items-center gap-2">
+        <nav className="flex items-center gap-2 px-1 sm:px-6 lg:px-8">
           <Link href="/">
             <Button
               variant="ghost"
@@ -36,7 +36,7 @@ export default function projects({ posts }: AllPosts) {
             </Button>
           </Link>
         </nav>
-        <section className="space-y-1.5">
+        <section className="space-y-1.5 px-4 sm:px-6 lg:px-8">
           <h1 className="pb-2 text-5xl font-bold tracking-wide capitalize transition-colors scroll-m-20 first:mt-0">
             Dive into My Creative Realm!
           </h1>
@@ -45,7 +45,7 @@ export default function projects({ posts }: AllPosts) {
             Artistry and Masterful Graphic Solutions.
           </p>
         </section>
-        <section className="grid grid-cols-1 gap-4 my-8 md:grid-cols-2 lg:grid-cols-3">
+        <section className="grid grid-cols-1 gap-4 px-4 my-8 :grid-cols-2 lg:grid-cols-3 sm:px-6 lg:px-8">
           {posts.map((post: any) => {
             return (
               <Link
