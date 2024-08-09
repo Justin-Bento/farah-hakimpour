@@ -9,7 +9,7 @@ export default function Logo({ classNames, props }: any) {
       height={80}
       viewBox="0 0 792 792"
       xmlSpace="preserve"
-      className="stroke-[12px] stroke-primary dark:stroke-white dark:hover:stroke-white/80 dark:active:stroke-primary-light transitions-colours"
+      className="stroke-[12px] fill-none stroke-primary-dark hover:stroke-primary-dark/80 dark:stroke-white dark:hover:stroke-primary-light/80 transition-colors"
       {...props}
     >
       <path d="M265 606.3L265 187.3 528 187.3" />
