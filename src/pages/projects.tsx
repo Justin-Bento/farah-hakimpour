@@ -6,6 +6,11 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+} from "@/components/ui/card"
 
 export default function projects({ posts }: AllPosts) {
   return (
@@ -48,24 +53,22 @@ export default function projects({ posts }: AllPosts) {
         <section className="grid grid-cols-1 gap-4 px-4 my-8 :grid-cols-2 lg:grid-cols-3 sm:px-6 lg:px-8">
           {posts.map((post: any) => {
             return (
-              <Link
-                href={`/projects/${post.slug.current}`}
-                key={post._id}
-                className="overflow-hidden transition-all bg-transparent border rounded-lg focus:ring-primary-300 dark:ring-primary-800 dark:border-primary-800 hover:ring-1 hover:ring-primary-400 hover:cursor-pointer"
-              >
-                <div className="p-4 sm:p-6">
-                  <div className=" relative w-full h-[486px]">
-                    <Image
-                      fill
-                      src={urlFor(post.mainImage).url()}
-                      alt={post.title}
-                      className="object-cover rounded-md hover:opacity-80"
-                    />
-                  </div>
-                  <p className="mt-2 font-medium leading-7 tracking-wider font-display opacity-70 dark:text-white">
-                    {post.title}
-                  </p>
-                </div>
+              <Link href={`/projects/${post.slug.current}`}>
+                <Card key={post._id} className="dark:bg-primary-dark dark:ring-1 dark:ring-primary-light">
+                  <CardHeader>
+                    <div className=" relative w-full h-[486px]">
+                      <Image
+                        fill
+                        src={urlFor(post.mainImage).url()}
+                        alt={post.title}
+                        className="object-cover rounded-md hover:opacity-80"
+                      />
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <h2 className="text-lg font-semibold tracking-wide dark:text-white">{post.title}</h2>
+                  </CardContent>
+                </Card>
               </Link>
             );
           })}
