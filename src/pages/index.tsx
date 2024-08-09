@@ -43,11 +43,11 @@ export default function index() {
         {/* End of Background Pattern */}
         <div className="p-4 py-16 lg:p-0 sm:px-6 lg:px-8 lg:container lg:mx-auto md:py-0">
           <div className="flex flex-col items-start gap-8 md:flex-row md:justify-between md:items-center">
-            <div className="space-y-4">
+            <div className="space-y-6">
               <h1 className="text-5xl font-extrabold tracking-normal scroll-m-20 dark:text-white">Hi &#128075;, I&#39;m Farah Hakimpour!</h1>
               <p className="mt-3 text-xl leading-7 tracking-wide dark:text-white">See my designs, art, and love of the colour purple!</p>
               <Link href="/projects">
-                <Button variant="secondary" className='mt-6'>View My Work</Button>
+                <Button className="bg-primary hover:bg-primary/80 dark:bg-primary-light">View My Work</Button>
               </Link>
             </div>
             <div className="relative w-full aspect-[3/4] md:h-screen md:w-72 lg:w-96">
