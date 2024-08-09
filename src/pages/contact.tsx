@@ -1,8 +1,9 @@
-import { Button } from "@/components/Button";
-import ContactForm from "@/components/ContactForm";
 import Head from "next/head";
 import Link from "next/link";
 import { RiMailLine } from "react-icons/ri";
+import { Button } from '@/components/ui/button'
+import ContactForm from "@/components/ContactForm";
+
 
 export default function Contact() {
   return (

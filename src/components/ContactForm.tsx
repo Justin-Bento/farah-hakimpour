@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from './Button'
+import { Button } from '@/components/ui/button'
 import { RiSendPlane2Line } from 'react-icons/ri'
 import { useForm, SubmitHandler } from "react-hook-form";
 
