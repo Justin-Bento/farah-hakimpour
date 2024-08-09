@@ -2,6 +2,14 @@ import { Button } from "@/components/ui/button";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
 
 export default function About() {
   return (
@@ -42,15 +50,17 @@ export default function About() {
           <Image fill src="/media/about-page.webp" alt="picture of farah" className="object-cover" />
         </div>
         <article className=" max-w-[90ch] mx-auto my-8 lg:my-16 p-4">
-        <nav className="flex items-center gap-2">
-          <Link href='/'>
-            <Button variant="ghost" size="sm" className="dark:text-primary-200/80 hover:underline">Home</Button>
-          </Link>
-          <span className="dark:text-primary-200/50">/</span>
-          <Link href='/projects'>
-            <Button variant="ghost" size="sm" className="dark:text-primary-200/80 hover:underline">About</Button>
-          </Link>
-        </nav>
+          <Breadcrumb className="mb-3">
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink href="/" className="font-bold">Home</BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage className="font-bold text-primary underline">About</BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
           <h1 className="text-4xl lg:text-5xl tracking-wide font-extrabold capitalize leading-normal [text-wrap: pretty;] dark:text-white">Farah Hakimpour, an artist who specializes in digital art, photography, and graphic design</h1>
           <div className="my-5 text-lg leading-7 space-y-6 dark:text-white">
             <p>Hi there, I&#39;m Farah Hakimpour - a Graphic Designer and Self Taught Artist. I&#39;m all about creating cool stuff that makes people go &#34;wow!&#34; Whether it&#39;s a branding project, website mockup, or fan art piece, I put my heart and soul into everything I create.</p>

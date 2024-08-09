@@ -11,6 +11,15 @@ import {
   CardContent,
   CardHeader,
 } from "@/components/ui/card"
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
+
 
 export default function projects({ posts }: AllPosts) {
   return (
@@ -23,24 +32,18 @@ export default function projects({ posts }: AllPosts) {
           content="Is a Graphic Designer and Illustrator based in Toronto, Ontario. Explore her digital portfolio and discover her creative process."
         />
       </Head>
-      <article className="p-4 my-16 lg:container lg:mx-auto md:p-0">
-        <nav className="flex items-center gap-2 px-1 sm:px-6 lg:px-8">
-          <Link href="/">
-            <Button
-              variant="ghost"
-              size="sm"
-              className="dark:text-primary-200/80 hover:underline"
-            >
-              Home
-            </Button>
-          </Link>
-          <span className="dark:text-primary-200/50">/</span>
-          <Link href="/projects">
-            <Button variant="ghost" size="sm" className="hover:underline">
-              Projects
-            </Button>
-          </Link>
-        </nav>
+      <article className="p-4 my-16 lg:container lg:mx-auto sm:px-6 lg:px-8">
+        <Breadcrumb className="mb-3 sm:px-6 lg:px-8">
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/" className="font-bold">Home</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage className="font-bold text-primary underline">Projects</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
         <section className="space-y-1.5 px-4 sm:px-6 lg:px-8">
           <h1 className="pb-2 text-5xl font-bold tracking-wide capitalize transition-colors scroll-m-20 first:mt-0 dark:text-white">
             Dive into My Creative Realm!
@@ -54,7 +57,7 @@ export default function projects({ posts }: AllPosts) {
           {posts.map((post: any) => {
             return (
               <Link href={`/projects/${post.slug.current}`}>
-                <Card key={post._id} className="dark:bg-primary-dark dark:ring-1 dark:ring-primary-light">
+                <Card key={post._id} className="border-primary-dark dark:bg-primary-dark dark:ring-1 dark:ring-primary-light">
                   <CardHeader>
                     <div className=" relative w-full h-[486px]">
                       <Image

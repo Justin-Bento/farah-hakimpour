@@ -6,6 +6,14 @@ import RichTextComponents from "@/components/RichTextComponents";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 // End Of Sanity imports
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
 
 export default function ProjectsSlug({ post }: any) {
   return (
@@ -18,6 +26,21 @@ export default function ProjectsSlug({ post }: any) {
       <article className="p-4 py-12 md:py-16 lg:container lg:mx-auto lg:py-20 lg:max-w-[80ch]">
         <section className="my-8 space-y-8 tracking-wide">
           <div className="space-y-6">
+            <Breadcrumb className="mb-3">
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="/" className="font-bold">Home</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="/projects" className="font-bold">Projects</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbPage className="font-bold text-primary underline">{post.title}</BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
             <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl dark:text-white">{post.title}</h1>
             <p className="text-lg font-semibold dark:text-white">{post.description}</p>
             <div className="border-t dark:boder-white"></div>
