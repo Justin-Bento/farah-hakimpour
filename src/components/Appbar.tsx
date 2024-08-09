@@ -70,7 +70,8 @@ export default function Appbar() {
             href="https://www.linkedin.com/in/farah-hakimpour-0b41911b8/"
           >
             <Button
-              aria-label="external-link-to-linkedin"
+            variant="primary"
+            aria-label="external-link-to-linkedin"
             >
               <RiExternalLinkLine />
               LinkedIn
