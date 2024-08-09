@@ -5,7 +5,7 @@ import { client, urlFor } from "../../sanityClient";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/Button";
+import { Button } from "@/components/ui/button";
 
 export default function projects({ posts }: AllPosts) {
   return (
@@ -37,10 +37,10 @@ export default function projects({ posts }: AllPosts) {
           </Link>
         </nav>
         <section className="space-y-1.5 px-4 sm:px-6 lg:px-8">
-          <h1 className="pb-2 text-5xl font-bold tracking-wide capitalize transition-colors scroll-m-20 first:mt-0">
+          <h1 className="pb-2 text-5xl font-bold tracking-wide capitalize transition-colors scroll-m-20 first:mt-0 dark:text-white">
             Dive into My Creative Realm!
           </h1>
-          <p className="text-base tracking-wide lg:tracking-wider lg:text-xl">
+          <p className="text-base tracking-wide lg:tracking-wider lg:text-xl dark:text-white">
             Where Design and Artistry Converge! A Journey Through Exquisite
             Artistry and Masterful Graphic Solutions.
           </p>
@@ -62,7 +62,7 @@ export default function projects({ posts }: AllPosts) {
                       className="object-cover rounded-md hover:opacity-80"
                     />
                   </div>
-                  <p className="mt-2 font-medium leading-7 tracking-wider font-display opacity-70">
+                  <p className="mt-2 font-medium leading-7 tracking-wider font-display opacity-70 dark:text-white">
                     {post.title}
                   </p>
                 </div>
