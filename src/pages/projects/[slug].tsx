@@ -3,6 +3,8 @@ import Head from "next/head";
 import { PortableText } from "@portabletext/react";
 import { client } from "../../../sanityClient";
 import RichTextComponents from "@/components/RichTextComponents";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 // End Of Sanity imports
 
 export default function ProjectsSlug({ post }: any) {
@@ -14,10 +16,18 @@ export default function ProjectsSlug({ post }: any) {
         <meta name="description" content="Is a Graphic Designer and Illustrator based in Toronto, Ontario. Explore her digital portfolio and discover her creative process. " />
       </Head>
       <article className="p-4 py-12 md:py-16 lg:container lg:mx-auto lg:py-20 lg:max-w-[80ch]">
-        <section className="my-8 space-y-8 tracking-wide prose-lg">
-          <h1>{post.title}</h1>
-          <p>{post.description}</p>
-          <PortableText value={post.body} components={RichTextComponents} />
+        <section className="my-8 space-y-8 tracking-wide">
+          <div className="space-y-6">
+            <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl dark:text-white">{post.title}</h1>
+            <p className="text-lg font-semibold dark:text-white">{post.description}</p>
+            <div className="border-t dark:boder-white"></div>
+          </div>
+          <div className="space-y-6 dark:text-white">
+            <PortableText value={post.body} components={RichTextComponents} />
+            <Link href="/projects" className="mt-6">
+              <Button variant="link" className="text-sm underline underline-offset-4 tracking-wide font-bold hover:no-underline uppercase dark:text-primary-light">Go Home</Button>
+            </Link>
+          </div>
         </section>
       </article>
     </>
