@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { urlFor } from "../../sanityClient";
+import Link from "next/link";
 
 const RichTextComponents = {
   types: {
@@ -21,39 +22,42 @@ const RichTextComponents = {
   },
   list: {
     bullet: ({ children }: any) => {
-      return <ul>{children}</ul>;
+      return <ul className="my-6 ml-6 list-disc [&>li]:mt-2">{children}</ul>;
     },
     number: ({ children }: any) => {
-      return <ol>{children}</ol>;
+      return <ol className="my-6 ml-6 list-decimal [&>li]:mt-2">{children}</ol>;
     },
   },
   block: {
     h1: ({ children }: any) => {
       // Ex. 1: customizing h1 block types
-      return <h1 className="">{children}</h1>;
+      return <h1 className="text-4xl dark:text-white">{children}</h1>;
     },
     h2: ({ children }: any) => {
       // Ex. 1: customizing h2 block types
-      return <h2 className="">{children}</h2>;
+      return <h2 className="text-3xl dark:text-white">{children}</h2>;
     },
     h3: ({ children }: any) => {
       // Ex. 1: customizing h3 block types
-      return <h3 className="">{children}</h3>;
+      return <h3 className="text-2xl dark:text-white">{children}</h3>;
     },
     h4: ({ children }: any) => {
       // Ex. 1: customizing h4 block types
-      return <h4 className="">{children}</h4>;
+      return <h4 className="text-xl dark:text-white">{children}</h4>;
     },
     h5: ({ children }: any) => {
       // Ex. 1: customizing h5 block types
-      return <h4 className="">{children}</h4>;
+      return <h5 className="text-lg dark:text-white">{children}</h5>;
     },
     h6: ({ children }: any) => {
       // Ex. 1: customizing h6 block types
-      return <h4 className="">{children}</h4>;
+      return <h6 className="text-lg font-bold dark:text-white">{children}</h6>;
     },
     p: ({ children }: any) => {
-      return <p className="">{children}</p>;
+      return <p className="leading-7 dark:text-white">{children}</p>;
+    },
+    a: ({ children }: any) => {
+      return <a href={children.url} className="underline dark:text-primary-light">{children.text}</a>
     },
   },
 };
