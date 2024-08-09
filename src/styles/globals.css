@@ -21,30 +21,10 @@
 
 @layer base {
   html, body {
-    @apply bg-primary-10 dark:bg-primary-960;
+    @apply bg-white dark:bg-black;
   }
-  header {
-    @apply  border-b bg-primary-50 dark:text-primary-50 dark:border-primary-300/20 dark:bg-primary-960;
-  }
-  footer {
-    @apply bg-primary-100 dark:text-primary-50 dark:bg-primary-950;
-  }
-  h1,h2,h3,h4,h5,h6 {
-    @apply text-primary-960 dark:text-primary-50;
-  }
-  p {
-    @apply text-primary-960 dark:text-primary-50;
-  }
-  dd {
-    @apply text-primary-960 dark:text-primary-50;
-  }
-  label {
-    @apply text-primary-960 dark:text-primary-50;
-  }
-  a {
-    @apply text-primary-960 dark:text-primary-50;
-  }
-}
+}       
+
 
 #__next {
   min-height: 100%;
