@@ -59,6 +59,11 @@ const RichTextComponents = {
     a: ({ children }: any) => {
       return <a href={children.url} className="underline dark:text-primary-light">{children.text}</a>
     },
+    code: ({ children }: any) => {
+      return <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">{children}</code>
+    },
+    blockquote: ({children}: any) => <blockquote className="mt-y  border-l-2 dark:border-white pl-6 italic">{children}</blockquote>,
+
   },
 };
 
