@@ -1,5 +1,5 @@
 
-import { Button } from '@/components/Button'
+import { Button } from '@/components/ui/button'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -16,7 +16,7 @@ export default function index() {
       <section className="relative w-full overflow-hidden isolate lg:overflow-visible">
         <div className="absolute inset-0 overflow-hidden -z-10">
           <svg
-            className="absolute left-[max(50%,25rem)] opacity-80 blur-[.5px] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-primary-950/20 dark:stroke-primary-700 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+            className="absolute left-[max(50%,25rem)] opacity-80 blur-[.5px] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-primary/20 dark:stroke-primary-light/70 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
             aria-hidden="true"
           >
             <defs>
@@ -31,7 +31,7 @@ export default function index() {
                 <path d="M100 200V.5M.5 .5H200" fill="none" />
               </pattern>
             </defs>
-            <svg x="50%" y={-1} className="overflow-visible fill-gray-50 dark:fill-primary-900/20">
+            <svg x="50%" y={-1} className="overflow-visible fill-gray-50 dark:fill-primary/20">
               <path
                 d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
                 strokeWidth={0}
@@ -43,11 +43,11 @@ export default function index() {
         {/* End of Background Pattern */}
         <div className="p-4 py-16 lg:p-0 sm:px-6 lg:px-8 lg:container lg:mx-auto md:py-0">
           <div className="flex flex-col items-start gap-8 md:flex-row md:justify-between md:items-center">
-            <div className=" [text-wrap:balance]">
-              <h1 className="text-5xl font-extrabold tracking-normal scroll-m-20 ">Hi &#128075;, I&#39;m Farah Hakimpour!</h1>
-              <p className="mt-3 text-xl leading-7 tracking-wider">See my designs, art, and love of the colour purple!</p>
+            <div className="space-y-4">
+              <h1 className="text-5xl font-extrabold tracking-normal scroll-m-20 dark:text-white">Hi &#128075;, I&#39;m Farah Hakimpour!</h1>
+              <p className="mt-3 text-xl leading-7 tracking-wide dark:text-white">See my designs, art, and love of the colour purple!</p>
               <Link href="/projects">
-                <Button variant="secondary" className="mt-6">View My Work</Button>
+                <Button variant="secondary" className='mt-6'>View My Work</Button>
               </Link>
             </div>
             <div className="relative w-full aspect-[3/4] md:h-screen md:w-72 lg:w-96">
