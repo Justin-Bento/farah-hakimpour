@@ -12,21 +12,18 @@ module.exports = {
         sans: ["Raleway", ...defaultTheme.fontFamily.sans],
       },
       colors: {
+        black: '#140c16',
+        white: '#f9f5fa',
         primary: {
-          10: "hsl(276, 2%, 98%)",
-          50: "hsl(276, 45%, 98%)",
-          100: "hsl(273, 48%, 95%)",
-          200: "hsl(278, 46%, 91%)",
-          300: "hsl(284, 43%, 83%)",
-          400: "hsl(284, 41%, 73%)",
-          500: "hsl(284, 38%, 61%)",
-          600: "hsl(285, 32%, 49%)",
-          700: "hsl(286, 33%, 40%)",
-          800: "hsl(287, 32%, 34%)",
-          900: "hsl(288, 29%, 28%)",
-          950: "hsl(288, 41%, 16%)",
-          960: "hsl(288, 41%, 10%)",
+          light: '#d5bddb',
+          DEFAULT: '#784488',
+          dark: '#0f0910',
         },
+        secondary: '#cca4d9',
+        accent: '#b97acc',
+        transparent: 'transparent',
+        current: 'currentColor',
+
       },
       // ...
       animation: {
