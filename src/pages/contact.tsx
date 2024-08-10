@@ -3,6 +3,7 @@ import Link from "next/link";
 import { RiMailLine } from "react-icons/ri";
 import { Button } from '@/components/ui/button'
 import ContactForm from "@/components/ContactForm";
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "../components/ui/breadcrumb";
 
 
 export default function Contact() {
@@ -13,49 +14,44 @@ export default function Contact() {
         <meta name="title" content="Farah Hakimpour - Contact" />
         <meta name="description" content="Is a Graphic Designer and Illustrator based in Toronto, Ontario. Explore her digital portfolio and discover her creative process. " />
       </Head>
-      <section className="relative p-6 py-24 lg:py-32 isolate">
-        <div className="grid items-center grid-cols-1 gap-8 lg:items-start lg:container lg:mx-auto lg:grid-cols-2">
-          <div className="relative ">
-            <div className="mx-auto lg:mx-0 lg:max-w-2xl">
-              <nav className="flex items-center gap-2">
-                <Link href='/'>
-                  <Button variant="ghost" size="sm" className="dark:text-primary-200/80 hover:underline">Home</Button>
-                </Link>
-                <span className="dark:text-primary-200/50">/</span>
-                <Link href='/contact'>
-                  <Button variant="ghost" size="sm" className="hover:underline">Contact</Button>
-                </Link>
-              </nav>
-              <h2 className="mb-1 text-4xl font-extrabold tracking-normal capitalize scroll-m-20">
-                Want to get in touch?
-              </h2>
-              <p className="leading-7 tracking-wider">
-                Enter in your information here to get in touch with me!
-              </p>
-              <dl className="mt-10 space-y-4 text-base leading-7 text-primary-960">
-                <div className="flex gap-x-4">
-                  <dt className="flex-none">
-                    <span className="sr-only">Email</span>
-                    <RiMailLine
-                      className="w-6 text-primary-700 dark:text-primary-50/70 h-7"
-                      aria-hidden="true"
-                    />
-                  </dt>
-                  <dd>
-                    <Link
-                      className="tracking-wide hover:text-primary-900"
-                      href="mailto:farahsdesignss@gmail.com"
-                    >
-                      farahsdesignss@gmail.com
-                    </Link>
-                  </dd>
-                </div>
-              </dl>
-            </div>
+      <main className="container mx-auto min-h-screen mt-32">
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-x-12 lg:gap-y-24">
+          <div className="">
+            <Breadcrumb className="mb-3">
+              <BreadcrumbList>
+                <BreadcrumbItem>
+                  <BreadcrumbLink href="/" className="font-bold">Home</BreadcrumbLink>
+                </BreadcrumbItem>
+                <BreadcrumbSeparator />
+                <BreadcrumbItem>
+                  <BreadcrumbPage className="font-bold text-primary underline">Contact</BreadcrumbPage>
+                </BreadcrumbItem>
+              </BreadcrumbList>
+            </Breadcrumb>
+            <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight">
+              Want To Get In Touch?
+            </h1>
+            <p className="text-lg text-muted-foreground my-2">
+              Enter in your information here to get in touch with me!
+            </p>
+            <hr className="border-black/30 mt-6" />
+            <Link
+              className="tracking-wide hover:text-primary-900"
+              href="mailto:farahsdesignss@gmail.com"
+            >
+              <Button variant="link" className="mt-6">
+                <RiMailLine
+                  className="w-5 h-5 mr-1 text-primary-700 dark:text-primary-50/70"
+                  aria-hidden="true" />
+                farahsdesignss@gmail.com
+              </Button>
+            </Link>
           </div>
-          <ContactForm />
-        </div>
-      </section>
+          <div className="w-full">
+            <ContactForm />
+          </div>
+        </section>
+      </main>
     </>
   );
 }

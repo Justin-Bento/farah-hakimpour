@@ -52,7 +52,7 @@ export default function projects({ posts }: AllPosts) {
             Artistry and Masterful Graphic Solutions.
           </p>
         </section>
-        <section className="grid grid-cols-1 gap-4 px-4 my-8 :grid-cols-2 lg:grid-cols-3 sm:px-6 lg:px-8">
+        <section className="grid grid-cols-1 gap-4 px-4 my-8 lg:grid-cols-2 sm:px-6 lg:px-8">
           {posts.map((post: any) => {
             return (
               <Link href={`/projects/${post.slug.current}`}>

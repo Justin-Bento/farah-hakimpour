@@ -41,17 +41,25 @@ export default function index() {
           </svg>
         </div>
         {/* End of Background Pattern */}
-        <div className="p-4 py-16 lg:p-0 sm:px-6 lg:px-8 lg:container lg:mx-auto md:py-0">
-          <div className="flex flex-col items-start gap-8 md:flex-row md:justify-between md:items-center">
-            <div className="gap-x-6">
-              <h1 className="text-5xl font-extrabold tracking-normal scroll-m-20 dark:text-white">Hi &#128075;, I&#39;m Farah Hakimpour!</h1>
-              <p className="mt-3 text-xl leading-7 tracking-wide dark:text-white">See my designs, art, and love of the colour purple!</p>
-              <Link href="/projects" className="mt-6">
-                <Button variant="primary">View My Work</Button>
-              </Link>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-0">
+          <div className="grid grid-cols-1 lg:grid-cols-2">
+            <div className="flex flex-col items-start justify-center gap-y-4 mb-16">
+              <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+                Hi &#128075;, I&#39;m Farah Hakimpour!
+              </h1>
+              <p className="text-xl text-muted-foreground">
+                See my designs, art, and love of the colour purple!
+              </p>
+              <div className="">
+                <Link href="/projects">
+                  <Button variant="primary">Explore My Projects</Button>
+                </Link>
+              </div>
             </div>
-            <div className="relative w-full aspect-[3/4] md:h-screen md:w-72 lg:w-96">
-              <Image fill alt='illustration of farah' src="/media/main-photo.webp" className="object-cover rounded md:rounded-none " />
+            <div className="lg:flex lg:justify-end">
+              <div className="relative w-full aspect-[3/4] lg:h-screen lg:w-96">
+                <Image fill alt='illustration of farah' src="/media/main-photo.webp" className="object-cover rounded md:rounded-none " />
+              </div>
             </div>
           </div>
         </div>
