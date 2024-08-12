@@ -58,12 +58,12 @@ export default function projects({ posts }: AllPosts) {
               <Link key={post._id} href={`/projects/${post.slug.current}`}>
                 <Card  className="border-primary-dark dark:bg-primary-dark dark:ring-1 dark:ring-primary-light">
                   <CardHeader>
-                    <div className=" relative w-full h-[486px]">
+                    <div className="relative w-full aspect-square">
                       <Image
                         fill
                         src={urlFor(post.mainImage).url()}
                         alt={post.title}
-                        className="object-cover rounded-md hover:opacity-80"
+                        className="object-cover object-top rounded-md hover:opacity-80"
                       />
                     </div>
                   </CardHeader>
