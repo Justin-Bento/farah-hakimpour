@@ -55,8 +55,8 @@ export default function projects({ posts }: AllPosts) {
         <section className="grid grid-cols-1 gap-4 px-4 my-8 lg:grid-cols-2 sm:px-6 lg:px-8">
           {posts.map((post: any) => {
             return (
-              <Link id={post.key} href={`/projects/${post.slug.current}`}>
-                <Card key={post._id} className="border-primary-dark dark:bg-primary-dark dark:ring-1 dark:ring-primary-light">
+              <Link key={post._id} href={`/projects/${post.slug.current}`}>
+                <Card  className="border-primary-dark dark:bg-primary-dark dark:ring-1 dark:ring-primary-light">
                   <CardHeader>
                     <div className=" relative w-full h-[486px]">
                       <Image
