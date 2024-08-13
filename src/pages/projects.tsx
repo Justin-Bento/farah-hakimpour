@@ -18,6 +18,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 
 export default function projects({ posts }: AllPosts) {
@@ -58,14 +59,14 @@ export default function projects({ posts }: AllPosts) {
               <Link key={post._id} href={`/projects/${post.slug.current}`}>
                 <Card  className="border-primary-dark dark:bg-primary-dark dark:ring-1 dark:ring-primary-light">
                   <CardHeader>
-                    <div className="relative w-full aspect-square">
+                    <AspectRatio ratio={1/1} classNaaspect-squareme="relative w-full">
                       <Image
                         fill
                         src={urlFor(post.mainImage).url()}
                         alt={post.title}
                         className="object-cover object-top rounded-md hover:opacity-80"
                       />
-                    </div>
+                    </AspectRatio>
                   </CardHeader>
                   <CardContent>
                     <h2 className="text-lg font-semibold tracking-wide dark:text-white">{post.title}</h2>
