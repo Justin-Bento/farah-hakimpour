@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Script from "next/script";
 import '@/styles/globals.css'
-import Appbar from '@/components/Appbar'
 import Footer from '@/components/Footer'
 import type { AppProps } from 'next/app'
+import Navigation from '@/components/Navigation';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
         `}
       </Script>
       <main className="animate-fadeIn">
-        <Appbar />
+        <Navigation />
         <Component {...pageProps} />
         <Footer />
       </main>
