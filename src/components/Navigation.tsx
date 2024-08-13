@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { RiMenuLine, RiExternalLinkLine, RiCloseLine } from "react-icons/ri";
 import Link from "next/link";
 
-export default function Appbar() {
+export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(true);
   const onClick = () => setMobileMenuOpen((mobileMenuOpen) => !mobileMenuOpen);
   return (
