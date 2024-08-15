@@ -40,7 +40,11 @@ export default defineType({
         // preference or highlighting by editors.
         decorators: [
           {title: 'Strong', value: 'strong'},
+          {title: 'Underline', value: 'underline'},
           {title: 'Emphasis', value: 'em'},
+          {title: 'Code', value: 'code'},
+          {title: 'Highlight', value: 'highlight'},
+          {title: 'Quote', value: 'blockquote'},
         ],
         // Annotations can be any object structure – e.g. a link or a footnote.
         annotations: [
