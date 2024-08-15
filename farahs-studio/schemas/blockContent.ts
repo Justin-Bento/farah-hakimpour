@@ -1,4 +1,13 @@
 import {defineType, defineArrayMember} from 'sanity'
+import {
+  AiOutlineBold,
+  AiOutlineCode,
+  AiOutlineHighlight,
+  AiOutlineItalic,
+  AiOutlineMenuUnfold,
+  AiOutlineUnderline,
+} from 'react-icons/ai'
+
 
 /**
  * This is the schema definition for the rich text fields used for
@@ -40,12 +49,12 @@ export default defineType({
         // Decorators usually describe a single property – e.g. a typographic
         // preference or highlighting by editors.
         decorators: [
-          {title: 'Strong', value: 'strong'},
-          {title: 'Underline', value: 'underline'},
-          {title: 'Emphasis', value: 'em'},
-          {title: 'Code', value: 'code'},
-          {title: 'Highlight', value: 'highlight'},
-          {title: 'Quote', value: 'blockquote'},
+          {title: 'Strong', value: 'strong', icon: AiOutlineBold},
+          {title: 'Underline', value: 'underline', icon: AiOutlineUnderline},
+          {title: 'Emphasis', value: 'em', icon: AiOutlineItalic},
+          {title: 'Code', value: 'code', icon: AiOutlineCode},
+          {title: 'Highlight', value: 'highlight', icon: AiOutlineHighlight},
+          {title: 'Quote', value: 'blockquote', icon: AiOutlineMenuUnfold},
         ],
         // Annotations can be any object structure – e.g. a link or a footnote.
         annotations: [
