@@ -1,14 +1,14 @@
 # Farah Hakimpour - Portfolio Website
 
-## Project Overview 🚀
+This repository hosts the code for Farah Hakimpour's personal portfolio website, the goal of this website is to showcase her projects as a Graphic Designer and Illustrator. 
 
-This repository hosts the code for Farah Hakimpour's personal portfolio website, showcasing her remarkable talents as a Graphic Designer and Illustrator. The primary goal of this project is to provide a user-friendly platform for visitors to explore Farah's art pieces and design works.
+## Key Features
 
-## Key Features 🌟
-
-* Uses a Content Management System to upload and edit new and old projects.
-* Lets people contact her for any requests.
-* Helps clients and requiters know Farah on a more personal level.
+- Implimented Sanity Content Management System to controll projects showcased within the app.
+- Setup a form request to ensuring clients email her work address.
+- Light and Dark mode using Tailwind CSS.
+- Mobile-First Design approach
+- Soft Animation's throughout the website to ease the page transition.
 
 ## Technologies Used 🛠️
 
