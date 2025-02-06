@@ -16,14 +16,6 @@ This repository hosts the code for Farah Hakimpour's personal portfolio website,
 - **Back End:** Node, Next.js, Express, next-sanity, react-hook-form,
 - **Business:** Google Analytics and Formspree.
 
-## Challenges Faced 🤯
-
-1. Setting up and integrating the content management system to ensure smooth project uploads and updates.
-2. Resolving Post CSS issues and ensuring proper functionality in the website's design.
-3. Implementing data retrieval and posting functionalities to interact with the Sanity API effectively.
-4. Handling filtering of an array of objects within JavaScript to showcase projects seamlessly.
-5. Deploying website using vercels new layout.
-
 ## Run Locally
 Clone the project
 
@@ -56,4 +48,12 @@ Start the server
 ```bash
   npm run dev
 ```
+## Challenges Faced 🤯
+
+1. Setting up and integrating the content management system to ensure smooth project uploads and updates.
+2. Resolving Post CSS issues and ensuring proper functionality in the website's design.
+3. Implementing data retrieval and posting functionalities to interact with the Sanity API effectively.
+4. Handling filtering of an array of objects within JavaScript to showcase projects seamlessly.
+5. Deploying website using vercels new layout.
+
 ## Lessons Learned
