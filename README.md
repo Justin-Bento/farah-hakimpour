@@ -24,7 +24,36 @@ This repository hosts the code for Farah Hakimpour's personal portfolio website,
 4. Handling filtering of an array of objects within JavaScript to showcase projects seamlessly.
 5. Deploying website using vercels new layout.
 
-## Future Enhancements 🚀
+## Run Locally
+Clone the project
 
-* Project filtering and categorization for an awe-inspiring user journey.
-* Evolving Portfolio: Regular updates to keep showcasing the latest creative marvels and adventures.
+```bash
+  git clone git@github.com:Justin-Bento/farah-hakimpour.git
+```
+
+Go to the project directory
+
+```bash
+  cd path/to/project/farah-hakimpour
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Setup Environment Variables for Sanity 
+
+```bash
+  touch .env.local
+```
+- NEXT_PUBLIC_SANITY_DATASET
+- NEXT_PUBLIC_SANITY_PROJECT_ID
+
+Start the server
+
+```bash
+  npm run dev
+```
+## Lessons Learned
