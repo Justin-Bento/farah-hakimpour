@@ -2,7 +2,7 @@
 
 This repository hosts the code for Farah Hakimpour's personal portfolio website, the goal of this website is to showcase her projects as a Graphic Designer and Illustrator. 
 
-## Key Features
+## Features
 
 - Implimented Sanity Content Management System to controll projects showcased within the app.
 - Setup a form request to ensuring clients email her work address.
@@ -10,14 +10,11 @@ This repository hosts the code for Farah Hakimpour's personal portfolio website,
 - Mobile-First Design approach
 - Soft Animation's throughout the website to ease the page transition.
 
-## Technologies Used 🛠️
+## Technologies
 
-**Front End:** HTML, Tailwind CSS, Next.js, TypeScript 
-
-**Back End:** Node, Express, Sanity
-
-**Business:** Google Analytics and Formspree are integrated to manage the contact form submissions securely and efficiently. 
-Formspree to manage forms.
+- **Front End:** HTML, CSS, Tailwind CSS, PostCSS, JavaScript, TypeScript , React.js, clsx, eslint, react-icons, react-icons
+- **Back End:** Node, Next.js, Express, next-sanity, react-hook-form,
+- **Business:** Google Analytics and Formspree.
 
 ## Challenges Faced 🤯
 
