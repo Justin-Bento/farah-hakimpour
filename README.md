@@ -57,3 +57,5 @@ Start the server
 5. Deploying website using vercels new layout.
 
 ## Lessons Learned
+
+When working with content management systems, I faced challenges in customizing and creating unique datasets for the client, particularly after the version upgrade to the Sanity Content Management System. To address this, I learned how to leverage Next.js catch-all segments and API calls to dynamically fetch and display customized backend content. This solution not only streamlined the content publishing process but also empowered the client (Fara) to independently manage and publish the content she wanted moving forward. Through this experience, I gained a deeper understanding of Sanity CMS customization, Next.js dynamic routing, and API integration, which improved my ability to deliver scalable and user-friendly solutions.
