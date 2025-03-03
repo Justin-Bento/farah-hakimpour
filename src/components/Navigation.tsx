@@ -13,8 +13,9 @@ export default function Navigation() {
     <header className="sticky top-0 z-10 p-4 lg:p-0 bg-white shadow shadow-black/10 dark:bg-black dark:shadow-white/10">
       <div className="grid grid-cols-1 gap-6 justify-evenly lg:container sm:px-6 lg:px-8 lg:mx-auto lg:items-center lg:grid-cols-3">
         <div className="flex items-center justify-between">
-          <Link href="/" aria-label="link-to-home">
+          <Link href="/" aria-label="link-to-home" className="flex items-center">
             <Logo classNames="" />
+            <p className="uppercase text-xs">farah hakimpour</p>
           </Link>
           {mobileMenuOpen ? (
             <Button
