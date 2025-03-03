@@ -6,34 +6,58 @@ import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
+
 
 export default async function Page() {
   const { data: posts } = await sanityFetch({ query: POSTS_QUERY });
 
   return (
     <main className="container mx-auto mt-24">
-      <h1 className="mb-4 text-3xl font-bold tracking-tight">Hello, Projects Page.</h1>
+      <section className="my-6 space-y-2">
+        <Breadcrumb>
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/">Home</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/projects">Projects</BreadcrumbLink>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+        <h1 className="text-3xl font-bold tracking-tight">Dive into My Creative Realm.</h1>
+        <p className="">Where Design and Artistry Converge! A Journey Through Exquisite Artistry and Masterful Graphic Solutions.</p>
+      </section>
       <ul className="grid grid-cols-3 gap-6">
         {posts.map((post: any) => (
           <li>
-            <Card className="group border hover:border-blue-300">
-              <CardHeader>
-                <AspectRatio ratio={16 / 9} className="relative">
-                  <Image src={urlFor(post.mainImage)
-                    .width(2432)
-                    .height(1442)
-                    .quality(80)
-                    .auto("format")
-                    .url()}
-                    alt={post?.mainImage?.alt || ""} fill className="rounded-md" />
-                </AspectRatio>
-              </CardHeader>
-              <CardContent className="space-y-2">
-                <CardTitle>{post?.title}</CardTitle>
-                <CardDescription>{post?.description}</CardDescription>
-                <Link href="/#" className="text-muted-foreground text-sm group-hover:underline">See More</Link>
-              </CardContent>
-            </Card>
+            <Link href={`/projects/${post?.slug.current}`}>
+              <Card className="group border hover:border-blue-300">
+                <CardHeader>
+                  <AspectRatio ratio={16 / 9} className="relative">
+                    <Image src={urlFor(post.mainImage)
+                      .width(2432)
+                      .height(1442)
+                      .quality(80)
+                      .auto("format")
+                      .url()}
+                      alt={post?.mainImage?.alt || ""} fill className="rounded-md" />
+                  </AspectRatio>
+                </CardHeader>
+                <CardContent className="space-y-2">
+                  <CardTitle>{post?.title}</CardTitle>
+                  <CardDescription>{post?.description}</CardDescription>
+                  <p className="text-muted-foreground text-sm group-hover:underline">See More</p>
+                </CardContent>
+              </Card>
+            </Link>
           </li>
         ))}
       </ul>
