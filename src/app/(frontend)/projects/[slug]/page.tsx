@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
+import { PortableText } from "next-sanity";
 
 export default async function Page({
   params,
@@ -20,7 +21,7 @@ export default async function Page({
   }
 
   return (
-    <main className="container mx-auto grid grid-cols-1 gap-6 p-12">
+    <main className="container mx-auto grid grid-cols-1 gap-6 p-12 max-w-[100ch]">
       {post?.mainImage ? (
         <Image
           className="w-full aspect-video position-center"
@@ -31,9 +32,16 @@ export default async function Page({
             .auto("format")
             .url()}
           alt={post?.mainImage?.alt || ""}
+          width={2432}
+          height={1442}
         />
       ) : <img src="" alt="nothing" className="w-full h-full bg-gray-400 pulse" />}
       <h1 className="text-4xl font-bold text-balance">{post?.title}</h1>
+      {post?.body ? (
+        <article className="prose space-y-6 text-base/7 text-wide">
+          <PortableText value={post.body} />
+        </article>
+      ) : null}
       <hr />
       <Link href="/projects">&larr; Return to index</Link>
     </main>
