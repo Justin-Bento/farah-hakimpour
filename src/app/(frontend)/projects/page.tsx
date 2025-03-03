@@ -13,7 +13,7 @@ export default async function Page() {
           <li key={post._id}>
             <Link
               className="block p-4 hover:text-gray-500"
-              href={`/posts/${post?.slug?.current}`}
+              href={`/projects/${post?.slug?.current}`}
             >
               {post?.title}
             </Link>
