@@ -30,7 +30,7 @@ export default async function Page({
   }
 
   return (
-    <main className="container mx-auto grid grid-cols-1 gap-6 p-12 max-w-[100ch]">
+    <main className="min-h-dvh container mx-auto grid grid-cols-1 gap-6 p-12 max-w-[100ch]">
       {post?.mainImage ? (
         <Image
           className="w-full aspect-video position-center"

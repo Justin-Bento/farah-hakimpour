@@ -19,7 +19,7 @@ export default async function Page() {
   const { data: posts } = await sanityFetch({ query: POSTS_QUERY });
 
   return (
-    <main className="container mx-auto mt-24">
+    <main className="min-h-dvh container mx-auto py-24">
       <section className="my-6 space-y-2">
         <Breadcrumb>
           <BreadcrumbList>
@@ -61,8 +61,6 @@ export default async function Page() {
           </li>
         ))}
       </ul>
-      <hr className="opacity-25 my-4" />
-      <Link href="/" className="text-sm">&larr; Return home</Link>
     </main>
   );
 }
