@@ -35,7 +35,7 @@ export default async function Page() {
         <h1 className="text-3xl font-bold tracking-tight">Dive into My Creative Realm.</h1>
         <p className="">Where Design and Artistry Converge! A Journey Through Exquisite Artistry and Masterful Graphic Solutions.</p>
       </section>
-      <ul className="grid grid-cols-3 gap-6">
+      <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {posts.map((post: any) => (
           <li>
             <Link href={`/projects/${post?.slug.current}`}>
