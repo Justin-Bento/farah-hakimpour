@@ -9,7 +9,7 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbP
 export default function Contact() {
   return (
     <>
-      <main className="container mx-auto min-h-screen mt-32">
+      <main className="container mx-auto min-h-dvh mt-32">
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-x-12 lg:gap-y-24">
           <div className="">
             <Breadcrumb className="mb-3">
