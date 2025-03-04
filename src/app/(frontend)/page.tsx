@@ -4,7 +4,6 @@ import Link from 'next/link'
 import React from 'react'
 
 export default function page() {
-  const links = ["home", "about", "projects", "contact"]
   return (
     <section className="relative w-full overflow-hidden isolate lg:overflow-visible">
       <div className="absolute inset-0 overflow-hidden -z-10">

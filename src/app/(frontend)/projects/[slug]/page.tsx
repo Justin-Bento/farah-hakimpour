@@ -14,7 +14,6 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
 
-
 export default async function Page({
   params,
 }: {
@@ -44,7 +43,7 @@ export default async function Page({
           width={2432}
           height={1442}
         />
-      ) : <img src="" alt="nothing" className="w-full h-full bg-gray-400 pulse" />}
+      ) : <div className="w-full aspect-video bg-gray-400 pulse" />}
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>

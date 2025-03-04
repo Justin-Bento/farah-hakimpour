@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import { RiMailLine } from "react-icons/ri";
 import { Button } from '@/components/ui/button'

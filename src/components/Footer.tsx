@@ -3,25 +3,33 @@ import React from "react";
 import Link from "next/link";
 import { RiInstagramLine, RiPinterestFill, RiLinkedinBoxFill } from "react-icons/ri";
 import { Card } from "./ui/card";
+import { IconType } from "react-icons/lib";
 
 
 export const footer_navigation = [
   {
     name: 'Instagram',
     href: 'https://www.instagram.com/farahsdesignss_/',
-    icon: (props: any) => <RiInstagramLine {...props} />
+    icon: (props: IconType) => <RiInstagramLine {...props} />
   },
   {
     name: 'Pintrest',
     href: 'https://www.pinterest.ca/fairyhakimpour/',
-    icon: (props: any) => <RiPinterestFill {...props} />
+    icon: (props: IconType) => <RiPinterestFill {...props} />
   },
   {
     name: 'LinkedIn',
     href: 'https://www.linkedin.com/in/farah-hakimpour-0b41911b8/',
-    icon: (props: any) => <RiLinkedinBoxFill {...props} />
+    icon: (props: IconType) => <RiLinkedinBoxFill {...props} />
   },
 ]
+
+export interface FooterNavProps {
+  name: string;
+  href: string;
+  ariaLabel: string;
+  icon: Element; // IconType here defines the icon as a component, not JSX
+}
 
 export default function Footer() {
   return (

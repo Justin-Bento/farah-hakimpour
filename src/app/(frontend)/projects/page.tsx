@@ -13,6 +13,17 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
 
+interface POSTS_TYPES {
+  _id: string,
+  title: string,
+  description: string,
+  slug: {
+    current: string
+  },
+  mainImage: {
+    alt: string
+  }
+}
 
 export default async function Page() {
   const { data: posts } = await sanityFetch({ query: POSTS_QUERY });
@@ -35,7 +46,7 @@ export default async function Page() {
         <p className="">Where Design and Artistry Converge! A Journey Through Exquisite Artistry and Masterful Graphic Solutions.</p>
       </section>
       <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {posts.map((post: any) => (
+        {posts.map((post: POSTS_TYPES) => (
           <li key={post._id}>
             <Link href={`/projects/${post?.slug.current}`}>
               <Card className="group border hover:border-purple-300 hover:bg-purple-50/50 dark:hover:bg-purple-950/10">
