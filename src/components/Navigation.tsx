@@ -14,9 +14,9 @@ export default function Navigation() {
       <Card className="rounded-none border-none dark:shadow-gray-700/30">
         <div className="container mx-auto grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 sm:items-center">
           <div className="flex items-center justify-between">
-            <Link href="/" aria-label="link-to-home" className="flex items-center">
-              <Logo classNames="" />
-              <p className="dark:text-forground uppercase tracking-wide text-sm">Farah Hakimpour</p>
+            <Link href="/" aria-label="link-to-home" className="flex items-center group transition-all">
+              <Logo classNames="stroke-gray-900 group-hover:stroke-purple-500 dark:stroke-purple-50 dark:group-hover:stroke-purple-500" />
+              <p className="text-gray-900 group-hover:text-purple-500 dark:text-purple-50 dark:group-hover:text-purple-500 group-hover:underline uppercase tracking-wide text-sm">Farah Hakimpour</p>
             </Link>
             {mobileMenuOpen ? (
               <Button
