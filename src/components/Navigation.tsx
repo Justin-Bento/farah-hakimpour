@@ -33,7 +33,7 @@ export default function Navigation() {
                 variant="outline"
                 size="icon"
                 onClick={onClick}
-                className="lg:hidden"
+                className="lg:hidden mr-4"
                 aria-label="nav-button-close"
               >
                 <RiCloseLine />
