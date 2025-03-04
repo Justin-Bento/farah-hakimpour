@@ -67,7 +67,7 @@ export default async function Page({
         </article>
       ) : null}
       <hr />
-      <Link href="/projects">&larr; Return to index</Link>
+      <Link href="/projects">&larr; Return to Projects</Link>
     </main>
   );
 }
