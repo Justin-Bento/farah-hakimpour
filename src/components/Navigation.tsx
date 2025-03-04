@@ -43,22 +43,22 @@ export default function Navigation() {
           <div className={`${mobileMenuOpen ? "hidden lg:flex" : ""}`}>
             <nav className="flex flex-col justify-start w-full gap-6 lg:justify-center lg:flex-row">
               <Link href="/">
-                <Button variant="link" aria-label="navigation-link-home">
+                <Button variant="link" aria-label="navigation-link-home" className="hover:cursor-pointer hover:text-purple-500 dark:hover:text-purple-400">
                   Home
                 </Button>
               </Link>
               <Link href="/about">
-                <Button variant="link" aria-label="navigation-link-about">
+                <Button variant="link" aria-label="navigation-link-about" className="hover:cursor-pointer hover:text-purple-500 dark:hover:text-purple-400">
                   About
                 </Button>
               </Link>
               <Link href="/projects">
-                <Button variant="link" aria-label="navigation-link-projects">
+                <Button variant="link" aria-label="navigation-link-projects" className="hover:cursor-pointer hover:text-purple-500 dark:hover:text-purple-400">
                   Projects
                 </Button>
               </Link>
               <Link href="/contact">
-                <Button variant="link" aria-label="navigation-link-contact">
+                <Button variant="link" aria-label="navigation-link-contact" className="hover:cursor-pointer hover:text-purple-500 dark:hover:text-purple-400">
                   Contact
                 </Button>
               </Link>
