@@ -2,6 +2,7 @@ import "@/app/globals.css";
 import type { Metadata } from "next";
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { ThemeProvider } from "@/components/theme-provider"
+import { Raleway } from 'next/font/google'
 
 export const metadata: Metadata = {
   title: 'Farah Hakimpour',
@@ -16,13 +17,17 @@ export const metadata: Metadata = {
   },
 };
 
+const raleway = Raleway({
+  subsets: ['latin'],
+})
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${raleway.className}`}>
       <body>
         <ThemeProvider
           attribute="class"
