@@ -9,6 +9,14 @@ import { Card } from "./ui/card";
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(true);
   const onClick = () => setMobileMenuOpen((mobileMenuOpen) => !mobileMenuOpen);
+
+  const navItems = [
+    { href: "/", label: "Home", ariaLabel: "navigation-link-home" },
+    { href: "/about", label: "About", ariaLabel: "navigation-link-about" },
+    { href: "/projects", label: "Projects", ariaLabel: "navigation-link-projects" },
+    { href: "/contact", label: "Contact", ariaLabel: "navigation-link-contact" },
+  ];
+
   return (
     <header className="sticky top-0 z-10 lg:p-0">
       <Card className="rounded-none border-none dark:shadow-gray-700/30">
@@ -42,26 +50,17 @@ export default function Navigation() {
           </div>
           <div className={`${mobileMenuOpen ? "hidden lg:flex" : ""}`}>
             <nav className="flex flex-col justify-start w-full gap-6 lg:justify-center lg:flex-row">
-              <Link href="/">
-                <Button variant="link" aria-label="navigation-link-home" className="hover:cursor-pointer hover:text-purple-500 dark:hover:text-purple-400">
-                  Home
-                </Button>
-              </Link>
-              <Link href="/about">
-                <Button variant="link" aria-label="navigation-link-about" className="hover:cursor-pointer hover:text-purple-500 dark:hover:text-purple-400">
-                  About
-                </Button>
-              </Link>
-              <Link href="/projects">
-                <Button variant="link" aria-label="navigation-link-projects" className="hover:cursor-pointer hover:text-purple-500 dark:hover:text-purple-400">
-                  Projects
-                </Button>
-              </Link>
-              <Link href="/contact">
-                <Button variant="link" aria-label="navigation-link-contact" className="hover:cursor-pointer hover:text-purple-500 dark:hover:text-purple-400">
-                  Contact
-                </Button>
-              </Link>
+              {navItems.map((item) => (
+                <Link key={item.href} href={item.href}>
+                  <Button
+                    variant="link"
+                    aria-label={item.ariaLabel}
+                    className="w-full lg:w-auto dark:hover:bg-purple-900/15 hover:cursor-pointer hover:text-purple-500 dark:hover:text-purple-400"
+                  >
+                    {item.label}
+                  </Button>
+                </Link>
+              ))}
             </nav>
           </div>
           <div
@@ -75,6 +74,7 @@ export default function Navigation() {
               <Button
                 variant="secondary"
                 aria-label="external-link-to-linkedin"
+                className="w-full lg:w-auto dark:hover:bg-purple-900/15 hover:cursor-pointer hover:text-purple-500 dark:hover:text-purple-400"
               >
                 <RiExternalLinkLine className="mb-1 mr-1" />
                 LinkedIn
@@ -83,6 +83,6 @@ export default function Navigation() {
           </div>
         </div>
       </Card>
-    </header>
+    </header >
   );
 }
