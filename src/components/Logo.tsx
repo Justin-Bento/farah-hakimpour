@@ -9,8 +9,8 @@ export default function Logo({ classNames = "", ...props }: LogoProps) {
     <svg
       id="Layer_1"
       xmlns="http://www.w3.org/2000/svg"
-      width={80}
-      height={80}
+      width={64}
+      height={64}
       viewBox="0 0 792 792"
       className={`stroke-[12px] fill-none stroke-gray-800 hover:stroke-gray-800/80 dark:stroke-white dark:hover:stroke-primary-light/80 transition-colors ${classNames}`}
       {...props}
