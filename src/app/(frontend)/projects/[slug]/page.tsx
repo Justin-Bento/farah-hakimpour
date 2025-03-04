@@ -56,7 +56,7 @@ export default async function Page({
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbPage>{post.title}</BreadcrumbPage>
+            <BreadcrumbPage className="text-purple-500 underline">{post.title}</BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>

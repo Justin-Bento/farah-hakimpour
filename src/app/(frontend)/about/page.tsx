@@ -8,7 +8,7 @@ export default function page() {
       <section className="relative min-h-screen overflow-hidden isolate lg:overflow-visible lg:px-0">
         <div className="absolute inset-0 overflow-hidden -z-10">
           <svg
-            className="absolute left-[max(50%,25rem)] opacity-80 blur-[.5px] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-primary/50 dark:stroke-primary-light/70 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+            className="absolute left-[max(50%,25rem)] opacity-80 blur-[.5px] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-purple-200 dark:stroke-purple-200/50 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
             aria-hidden="true"
           >
             <defs>
@@ -23,7 +23,7 @@ export default function page() {
                 <path d="M100 200V.5M.5 .5H200" fill="none" />
               </pattern>
             </defs>
-            <svg x="50%" y={-1} className="overflow-visible fill-primary/30 dark:fill-primary/20">
+            <svg x="50%" y={-1} className="overflow-visible fill-purple-200 dark:fill-primary/20">
               <path
                 d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
                 strokeWidth={0}

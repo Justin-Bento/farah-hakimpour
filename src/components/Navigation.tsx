@@ -42,22 +42,22 @@ export default function Navigation() {
         <div className={`${mobileMenuOpen ? "hidden lg:flex" : ""}`}>
           <nav className="flex flex-col justify-start w-full gap-6 lg:justify-center lg:flex-row">
             <Link href="/">
-              <Button variant="link" aria-label="navigation-link-home">
+              <Button variant="link" aria-label="navigation-link-home" className="hover:text-purple-500 hover:cursor-pointer">
                 Home
               </Button>
             </Link>
             <Link href="/about">
-              <Button variant="link" aria-label="navigation-link-about">
+              <Button variant="link" aria-label="navigation-link-about" className="hover:text-purple-500 hover:cursor-pointer">
                 About
               </Button>
             </Link>
             <Link href="/projects">
-              <Button variant="link" aria-label="navigation-link-projects">
+              <Button variant="link" aria-label="navigation-link-projects" className="hover:text-purple-500 hover:cursor-pointer">
                 Projects
               </Button>
             </Link>
             <Link href="/contact">
-              <Button variant="link" aria-label="navigation-link-contact">
+              <Button variant="link" aria-label="navigation-link-contact" className="hover:text-purple-500 hover:cursor-pointer">
                 Contact
               </Button>
             </Link>
@@ -74,6 +74,7 @@ export default function Navigation() {
             <Button
               variant="secondary"
               aria-label="external-link-to-linkedin"
+              className="bg-purple-100 hover:bg-purple-200 hover:cursor-pointer shadow-none"
             >
               <RiExternalLinkLine className="mb-1 mr-1" />
               LinkedIn

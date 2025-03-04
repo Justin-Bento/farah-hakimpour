@@ -23,7 +23,7 @@ export const footer_navigation = [
 
 export default function Footer() {
   return (
-    <footer className="bg-primary dark:bg-primary/20">
+    <footer className="bg-purple-900 dark:bg-purple/20">
       <div className="p-4 py-12 sm:px-6 lg:px-8 lg:container lg:mx-auto md:flex md:items-center md:justify-between">
         <div className="flex justify-start space-x-6 md:justify-center lg:justify-end md:order-2">
           {footer_navigation.map((item: any) => (
