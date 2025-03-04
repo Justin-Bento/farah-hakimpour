@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <>
       <main className="container mx-auto min-h-dvh mt-32">
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-x-12 lg:gap-y-24">
+        <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-x-12 lg:gap-y-24 px-6 lg:px-0">
           <div className="">
             <Breadcrumb className="mb-3">
               <BreadcrumbList>

@@ -29,7 +29,7 @@ export default async function Page() {
   const { data: posts } = await sanityFetch({ query: POSTS_QUERY });
 
   return (
-    <main className="min-h-dvh container mx-auto py-24">
+    <main className="min-h-dvh container mx-auto py-24 px-6">
       <section className="my-6 space-y-2">
         <Breadcrumb>
           <BreadcrumbList>

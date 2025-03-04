@@ -33,7 +33,7 @@ export default function Footer() {
   return (
     <footer>
       <Card className="rounded-none bg-purple-800 dark:bg-purple-950">
-        <div className="p-4 py-12 sm:px-6 lg:px-8 lg:container lg:mx-auto md:flex md:items-center md:justify-between">
+        <div className="py-12 px-6 lg:px-8 lg:container lg:mx-auto md:flex md:items-center md:justify-between">
           <div className="flex justify-start space-x-6 md:justify-center lg:justify-end md:order-2">
             {footer_navigation.map((item) => (
               <Link key={item.name} href={item.href} className="transition-all hover:opacity-80" target="_blank" aria-label="external-link-to-social-media">

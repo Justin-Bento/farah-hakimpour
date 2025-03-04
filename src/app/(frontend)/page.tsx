@@ -33,7 +33,7 @@ export default function page() {
         </svg>
       </div>
       {/* End of Background Pattern */}
-      <div className="container mx-auto lg:px-8 py-16 lg:py-0">
+      <div className="container mx-auto px-6 lg:px-8 py-16 lg:py-0">
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="flex flex-col items-start justify-center gap-y-4 mb-16">
             <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
