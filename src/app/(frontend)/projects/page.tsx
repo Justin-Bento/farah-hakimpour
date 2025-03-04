@@ -37,7 +37,7 @@ export default async function Page() {
       </section>
       <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {posts.map((post: any) => (
-          <li>
+          <li key={post._id}>
             <Link href={`/projects/${post?.slug.current}`}>
               <Card className="group border hover:border-purple-300 hover:bg-purple-50/50 dark:hover:bg-purple-950/10">
                 <CardHeader>
