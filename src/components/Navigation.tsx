@@ -12,7 +12,7 @@ export default function Navigation() {
   return (
     <header className="sticky top-0 z-10 lg:p-0">
       <Card className="rounded-none border-none dark:shadow-gray-700/30">
-        <div className="container mx-auto grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 sm:items-center">
+        <div className="container mx-auto grid grid-cols-1 gap-6 lg:grid-cols-3 sm:items-center">
           <div className="flex items-center justify-between">
             <Link href="/" aria-label="link-to-home" className="flex items-center group transition-all">
               <Logo classNames="stroke-gray-900 group-hover:stroke-purple-500 dark:stroke-purple-50 dark:group-hover:stroke-purple-500" />
