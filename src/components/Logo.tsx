@@ -12,7 +12,7 @@ export default function Logo({ classNames = "", ...props }: LogoProps) {
       width={64}
       height={64}
       viewBox="0 0 792 792"
-      className={`stroke-[12px] fill-none stroke-gray-800 hover:stroke-gray-800/80 dark:stroke-white dark:hover:stroke-primary-light/80 transition-colors ${classNames}`}
+      className={`stroke-[12px] fill-none stroke-gray-800 hover:stroke-gray-800/80 transition-colors ${classNames}`}
       {...props}
     >
       <path d="M265 606.3L265 187.3 528 187.3" />
