@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { RiInstagramLine, RiPinterestFill, RiLinkedinBoxFill } from "react-icons/ri";
+import { Card } from "./ui/card";
 
 
 export const footer_navigation = [
@@ -23,22 +24,24 @@ export const footer_navigation = [
 
 export default function Footer() {
   return (
-    <footer className="bg-purple-900 dark:bg-purple/20">
-      <div className="p-4 py-12 sm:px-6 lg:px-8 lg:container lg:mx-auto md:flex md:items-center md:justify-between">
-        <div className="flex justify-start space-x-6 md:justify-center lg:justify-end md:order-2">
-          {footer_navigation.map((item: any) => (
-            <Link key={item.name} href={item.href} className="transition-all hover:opacity-80" target="_blank" aria-label="external-link-to-social-media">
-              <span className="sr-only">{item.name}</span>
-              <item.icon className="w-6 h-6 fill-white" aria-hidden="true" />
-            </Link>
-          ))}
+    <footer>
+      <Card className="rounded-none dark:bg-purple-950">
+        <div className="p-4 py-12 sm:px-6 lg:px-8 lg:container lg:mx-auto md:flex md:items-center md:justify-between">
+          <div className="flex justify-start space-x-6 md:justify-center lg:justify-end md:order-2">
+            {footer_navigation.map((item: any) => (
+              <Link key={item.name} href={item.href} className="transition-all hover:opacity-80" target="_blank" aria-label="external-link-to-social-media">
+                <span className="sr-only">{item.name}</span>
+                <item.icon className="w-6 h-6 fill-white" aria-hidden="true" />
+              </Link>
+            ))}
+          </div>
+          <div className="mt-8 md:order-1 md:mt-0">
+            <p className="text-sm leading-7 tracking-wider text-white">
+              &copy; {new Date().getFullYear()} Farah Designs, Inc. All rights reserved.
+            </p>
+          </div>
         </div>
-        <div className="mt-8 md:order-1 md:mt-0">
-          <p className="text-sm leading-7 tracking-wider text-white">
-            &copy; {new Date().getFullYear()} Farah Designs, Inc. All rights reserved.
-          </p>
-        </div>
-      </div>
+      </Card>
     </footer>
   )
 }
