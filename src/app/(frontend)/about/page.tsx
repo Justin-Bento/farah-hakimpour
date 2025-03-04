@@ -44,7 +44,7 @@ export default function page() {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbPage className="text-primary underline">About</BreadcrumbPage>
+                <BreadcrumbPage className="text-purple-500 underline">About</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>

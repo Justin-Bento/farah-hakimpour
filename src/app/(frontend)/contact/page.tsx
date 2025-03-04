@@ -19,7 +19,7 @@ export default function Contact() {
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
-                  <BreadcrumbPage className="text-gray-800 dark:text-purple-600 underline">Contact</BreadcrumbPage>
+                  <BreadcrumbPage className="text-purple-500 dark:text-purple-600 underline">Contact</BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>

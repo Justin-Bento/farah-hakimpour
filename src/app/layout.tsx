@@ -19,6 +19,7 @@ export const metadata: Metadata = {
 
 const raleway = Raleway({
   subsets: ['latin'],
+  weight: 'variable'
 })
 
 export default function RootLayout({
@@ -27,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${raleway.className}`}>
+    <html lang="en" className={`${raleway}`}>
       <body>
         <ThemeProvider
           attribute="class"
