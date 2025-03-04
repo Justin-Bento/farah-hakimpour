@@ -57,8 +57,8 @@ export default function ContactForm() {
         {/* End Of User Message Input */}
         <div className="">
           <Button className='flex items-center gap-2 bg-purple-800 hover:bg-purple-800/70 hover:cursor-pointer trasnition-all' aria-label="send-contact" >
-            <RiSendPlane2Line />
-            <div>
+            <RiSendPlane2Line className="dark:text-purple-50" />
+            <div className="dark:text-purple-50">
               Send Message
             </div>
           </Button>

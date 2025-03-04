@@ -39,7 +39,7 @@ export default async function Page() {
         {posts.map((post: any) => (
           <li>
             <Link href={`/projects/${post?.slug.current}`}>
-              <Card className="group border hover:border-purple-300 hover:bg-purple-50/50">
+              <Card className="group border hover:border-purple-300 hover:bg-purple-50/50 dark:hover:bg-purple-950/10">
                 <CardHeader>
                   <AspectRatio ratio={16 / 9} className="relative">
                     <Image src={urlFor(post.mainImage)
@@ -54,7 +54,7 @@ export default async function Page() {
                 <CardContent className="space-y-2">
                   <CardTitle>{post?.title}</CardTitle>
                   <CardDescription>{post?.description}</CardDescription>
-                  <p className="text-muted-foreground text-sm group-hover:underline group-hover:text-purple-800">See More</p>
+                  <p className="text-muted-foreground text-sm group-hover:underline group-hover:text-purple-800 dark:group-hover:text-purple-400">See More</p>
                 </CardContent>
               </Card>
             </Link>

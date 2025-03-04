@@ -19,7 +19,7 @@ export default function Contact() {
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
-                  <BreadcrumbPage className="text-gray-800 underline">Contact</BreadcrumbPage>
+                  <BreadcrumbPage className="text-gray-800 dark:text-purple-600 underline">Contact</BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
@@ -34,7 +34,7 @@ export default function Contact() {
               className="tracking-wide hover:text-gray-900"
               href="mailto:farahsdesignss@gmail.com"
             >
-              <Button variant="link" className="mt-6 hover:text-purple-700 hover:underline hover:cursor-pointer dark:text-purple-50/70">
+              <Button variant="link" className="mt-6 hover:text-purple-700 hover:underline hover:cursor-pointer dark:text-purple-100">
                 <RiMailLine
                   className="size-4"
                   aria-hidden="true" />

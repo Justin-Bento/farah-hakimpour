@@ -45,7 +45,7 @@ export default function page() {
             </p>
             <div className="">
               <Link href="/projects">
-                <Button className="bg-purple-800">Explore My Projects</Button>
+                <Button className="bg-purple-800 dark:text-purple-50 dark:hover:bg-purple-900 hover:cursor-pointer">Explore My Projects</Button>
               </Link>
             </div>
           </div>
