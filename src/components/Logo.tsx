@@ -1,15 +1,18 @@
 import React from "react";
 
-export default function Logo({ classNames, props }: any) {
+interface LogoProps extends React.SVGProps<SVGSVGElement> {
+  classNames?: string;
+}
+
+export default function Logo({ classNames = "", ...props }: LogoProps) {
   return (
     <svg
       id="Layer_1"
       xmlns="http://www.w3.org/2000/svg"
-      width={80}
-      height={80}
+      width={64}
+      height={64}
       viewBox="0 0 792 792"
-      xmlSpace="preserve"
-      className="stroke-[12px] fill-none stroke-primary-dark hover:stroke-primary-dark/80 dark:stroke-white dark:hover:stroke-primary-light/80 transition-colors"
+      className={`stroke-[12px] fill-none stroke-gray-800 hover:stroke-gray-800/80 transition-colors ${classNames}`}
       {...props}
     >
       <path d="M265 606.3L265 187.3 528 187.3" />

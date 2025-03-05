@@ -1,9 +1,9 @@
 "use client"
 import { RiSendPlane2Line } from 'react-icons/ri'
 import { Input } from "@/components/ui/input"
-import { Label } from './ui/label'
-import { Textarea } from './ui/textarea'
-import { Button } from './ui/button'
+import { Label } from '@/components/ui/label'
+import { Textarea } from '@/components/ui/textarea'
+import { Button } from '@/components/ui/button'
 import { useForm, SubmitHandler } from "react-hook-form";
 
 interface IFormInput {
@@ -23,20 +23,20 @@ export default function ContactForm() {
     <form onSubmit={handleSubmit(onSubmit)} className="flex items-center">
       <div className="w-full space-y-6">
         <div className="space-y-1.5">
-          <Label htmlFor="first-name" className="font-bold">First Name</Label>
+          <Label htmlFor="first-name">First Name</Label>
           <Input type="text" id="first-name" placeholder="Eg: John" className="border-black dark:border-white" />
         </div>
         {/* End Of First Name - Input */}
         <div className="space-y-1.5">
-          <Label htmlFor="last-name" className="font-bold">Last Name</Label>
+          <Label htmlFor="last-name">Last Name</Label>
           <Input type="text" id="last-name" placeholder="Eg: doe" className="border-black dark:border-white" />
         </div>
         {/* End Of Last Name Name - Input */}
         <div className="space-y-1.5">
-          <Label htmlFor="email" className="font-bold">Email</Label>
-          <Input type="email" 
+          <Label htmlFor="email">Email</Label>
+          <Input type="email"
             {...register("email", { required: "* Email Address is required" })}
-            id="email" 
+            id="email"
             placeholder="Email"
             className="border-black dark:border-white"
             autoComplete="email" />
@@ -44,7 +44,7 @@ export default function ContactForm() {
         </div>
         {/* End Of Email Input */}
         <div className="space-y-1.5">
-          <Label htmlFor="email" className="font-bold">Your Message</Label>
+          <Label htmlFor="email">Your Message</Label>
           <Textarea
             placeholder="Type your message here."
             className="border-black dark:border-white"
@@ -56,9 +56,9 @@ export default function ContactForm() {
         </div>
         {/* End Of User Message Input */}
         <div className="">
-          <Button variant="primary" className='flex items-center gap-2'  aria-label="send-contact" >
-            <RiSendPlane2Line />
-            <div>
+          <Button className='flex items-center gap-2 bg-purple-800 hover:bg-purple-800/70 hover:cursor-pointer trasnition-all' aria-label="send-contact" >
+            <RiSendPlane2Line className="dark:text-purple-50" />
+            <div className="dark:text-purple-50">
               Send Message
             </div>
           </Button>
@@ -68,7 +68,6 @@ export default function ContactForm() {
     </form>
   )
 }
-
 
 
 
