@@ -283,10 +283,11 @@ export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette
 export declare const internalGroqTypeReferenceTo: unique symbol;
 // Source: ./src/sanity/lib/queries.ts
 // Variable: POSTS_QUERY
-// Query: *[_type == "post" && defined(slug.current)] {  _id,   title,   slug,  mainImage  // ...}
+// Query: *[_type == "post" && defined(slug.current)] {  _id,   title,   description,  slug,  mainImage  // ...}
 export type POSTS_QUERYResult = Array<{
   _id: string;
   title: string | null;
+  description: string | null;
   slug: Slug | null;
   mainImage: {
     asset?: {
@@ -353,7 +354,7 @@ export type POST_QUERYResult = {
 import "@sanity/client";
 declare module "@sanity/client" {
   interface SanityQueries {
-    "*[_type == \"post\" && defined(slug.current)] {\n  _id, \n  title, \n  slug,\n  mainImage\n  // ...\n}": POSTS_QUERYResult;
+    "*[_type == \"post\" && defined(slug.current)] {\n  _id, \n  title, \n  description,\n  slug,\n  mainImage\n  // ...\n}": POSTS_QUERYResult;
     "*[_type == \"post\" && slug.current == $slug][0]{\n  title, \n  body, \n  mainImage\n  // ...\n}": POST_QUERYResult;
   }
 }
