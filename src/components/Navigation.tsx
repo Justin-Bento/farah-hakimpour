@@ -62,7 +62,7 @@ export default function Navigation() {
                   <Button
                     variant="link"
                     aria-label={item.ariaLabel}
-                    className="w-full lg:w-auto dark:hover:bg-purple-900/15 hover:cursor-pointer hover:text-purple-500 dark:hover:text-purple-400"
+                    className="w-full lg:w-auto hover:text-primary"
                   >
                     {item.label}
                   </Button>
