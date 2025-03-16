@@ -84,7 +84,7 @@ export default function Navigation() {
               <Button
                 variant="secondary"
                 aria-label="external-link-to-linkedin"
-                className="w-full lg:w-auto dark:hover:bg-purple-900/15 hover:cursor-pointer hover:text-purple-500 dark:hover:text-purple-400"
+                className="w-full lg:w-auto bg-primary/20 hover:bg-primary-10"
               >
                 <RiExternalLinkLine className="mb-1 mr-1" />
                 LinkedIn
