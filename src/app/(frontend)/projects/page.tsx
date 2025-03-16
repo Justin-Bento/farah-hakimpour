@@ -47,22 +47,24 @@ export default async function Page() {
       <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {posts.map((post) => (
           <li key={post._id}>
-            <Link href={`/projects/${post?.slug.current}`}>
+            <Link href={`/projects/${post.slug?.current}`}>
               <Card className="group border hover:border-purple-300 hover:bg-purple-50/50 dark:hover:bg-purple-950/10">
                 <CardHeader>
-                  <AspectRatio ratio={16 / 9} className="relative">
-                    <Image
-                      src={urlFor(post.mainImage)
-                        .width(2432)
-                        .height(1442)
-                        .quality(80)
-                        .auto("format")
-                        .url()}
-                      alt={post?.mainImage?.alt || ""}
-                      fill
-                      className="rounded-md"
-                    />
-                  </AspectRatio>
+                  {post.mainImage ? (
+                    <AspectRatio ratio={16 / 10} className="relative">
+                      <Image
+                        src={urlFor(post.mainImage)
+                          .width(2432)
+                          .height(1442)
+                          .quality(80)
+                          .auto("format")
+                          .url()}
+                        alt={post?.mainImage?.alt || ""}
+                        fill
+                        className="rounded-md"
+                      />
+                    </AspectRatio>
+                  ) : null}
                 </CardHeader>
                 <CardContent className="space-y-2">
                   <CardTitle>{post?.title}</CardTitle>
