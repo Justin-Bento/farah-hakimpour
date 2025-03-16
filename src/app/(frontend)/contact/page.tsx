@@ -1,9 +1,15 @@
 import Link from "next/link";
 import { RiMailLine } from "react-icons/ri";
-import { Button } from '@/components/ui/button'
+import { Button } from "@/components/ui/button";
 import ContactForm from "@/components/ContactForm";
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 export default function Contact() {
   return (
@@ -18,7 +24,9 @@ export default function Contact() {
                 </BreadcrumbItem>
                 <BreadcrumbSeparator />
                 <BreadcrumbItem>
-                  <BreadcrumbPage className="text-purple-500 dark:text-purple-600 underline">Contact</BreadcrumbPage>
+                  <BreadcrumbPage className="text-primary">
+                    Contact
+                  </BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>
@@ -33,10 +41,11 @@ export default function Contact() {
               className="tracking-wide hover:text-gray-900"
               href="mailto:farahsdesignss@gmail.com"
             >
-              <Button variant="link" className="mt-6 hover:text-purple-700 hover:underline hover:cursor-pointer dark:text-purple-100">
-                <RiMailLine
-                  className="size-4"
-                  aria-hidden="true" />
+              <Button
+                variant="link"
+                className="mt-6 hover:text-primary hover:underline"
+              >
+                <RiMailLine className="size-4" aria-hidden="true" />
                 farahsdesignss@gmail.com
               </Button>
             </Link>

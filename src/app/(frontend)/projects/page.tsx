@@ -31,7 +31,7 @@ export default async function Page() {
               <BreadcrumbLink href="/">Home</BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
-            <BreadcrumbItem className="text-purple-500 underline">
+            <BreadcrumbItem className="text-primary underline">
               <BreadcrumbLink href="/projects">Projects</BreadcrumbLink>
             </BreadcrumbItem>
           </BreadcrumbList>
@@ -48,7 +48,7 @@ export default async function Page() {
         {posts.map((post) => (
           <li key={post._id}>
             <Link href={`/projects/${post.slug?.current}`}>
-              <Card className="group border hover:border-purple-300 hover:bg-purple-50/50 dark:hover:bg-purple-950/10">
+              <Card className="group border hover:border-primary hover:bg-primary/5">
                 <CardHeader>
                   {post.mainImage ? (
                     <AspectRatio ratio={16 / 10} className="relative">
