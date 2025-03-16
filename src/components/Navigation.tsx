@@ -36,8 +36,8 @@ export default function Navigation() {
               aria-label="link-to-home"
               className="flex items-center group transition-all"
             >
-              <Logo classNames="stroke-gray-900 group-hover:stroke-purple-500 dark:stroke-purple-50 dark:group-hover:stroke-purple-500" />
-              <p className="text-gray-900 group-hover:text-purple-500 dark:text-purple-50 dark:group-hover:text-purple-500 group-hover:underline uppercase tracking-wide text-sm">
+              <Logo classNames="stroke-foreground group-hover:stroke-primary" />
+              <p className="text-foreground group-hover:text-primary group-hover:underline uppercase tracking-wide text-sm">
                 Farah Hakimpour
               </p>
             </Link>
